@@ -6,8 +6,12 @@ It does **not** contain the native research files or source-derived read-level
 inputs. It is not a publicly complete scientific recalculation package, an
 independent replication, a caller benchmark, or a submission-ready release.
 
-No project software license has been selected or granted. See
-[THIRD_PARTY_SOURCES.md](THIRD_PARTY_SOURCES.md).
+RNA-ModTruth project code is licensed under the [MIT License](LICENSE).
+Third-party data, tools and source materials retain their own terms; this
+software license does not grant rights to omitted study records. See
+[THIRD_PARTY_SOURCES.md](THIRD_PARTY_SOURCES.md). The repository remains a
+code and frozen-aggregate verification resource, not a complete public
+read-level scientific recalculation package.
 
 ## One portable, offline check
 

@@ -160,7 +160,7 @@ def main() -> int:
         result = dict(status="PASS_FROZEN_AGGREGATE_VERIFICATION_ONLY", inventory=inventory, table2=table2, scope=scope,
                       scope_boundary="Read-only aggregate identity/display verification; not a record-level replay or independent scientific replication",
                       scientific_recalculation=False, research_data_acquisition=False, caller_executed=False,
-                      software_license_selected=False, public_complete_recalculation_package=False)
+                      software_license_selected=True, public_complete_recalculation_package=False)
         print(json.dumps(result, indent=2, ensure_ascii=False))
         return 0
     except Exception as error:

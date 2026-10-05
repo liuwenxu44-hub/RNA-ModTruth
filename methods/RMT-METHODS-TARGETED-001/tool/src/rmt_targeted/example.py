@@ -59,5 +59,5 @@ def create_example(output):
     write_json(output / 'FICTIONAL_EXAMPLE.json', dict(
         status='FICTIONAL_TEST_ONLY', original_study_records=0, original_UUIDs=0,
         native_BAM_BED_files=0, description='Two invented sequences, invented read labels and deliberately chosen integer scores.',
-        license='No project software license is selected or granted by this example. Local candidate only.'))
+        license='Project software: MIT (repository-root LICENSE); this example contains no third-party study records.'))
     return dict(status='PASS', operation='CREATE_FICTIONAL_EXAMPLE', output=str(output.resolve()), fictional=True)

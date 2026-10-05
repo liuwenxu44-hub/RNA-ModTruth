@@ -6,26 +6,32 @@
   "scope": "Public code, scientific protocol/input identities and frozen aggregates; no record-level replay claim.",
   "limitations": [
     "Original read-level input files and record bundles are not distributed.",
-    "No software license selected; third-party terms are separate."
+    "MIT applies to RNA-ModTruth project code; third-party data and tools retain their own terms."
   ],
   "files": [
     {
       "role": "public_documentation_or_verification",
+      "path": "LICENSE",
+      "bytes": 1082,
+      "sha256": "dfd098c3caa821e32440aecb4a3310e6c6ffe5bd68cf82cedafe802cac3c8fc7"
+    },
+    {
+      "role": "public_documentation_or_verification",
       "path": "README.md",
-      "bytes": 5592,
-      "sha256": "466b4a5f9591cccbb18b157785d61ee4aec38a2cc2418cc33bb09601cdfe6ee8"
+      "bytes": 5886,
+      "sha256": "16f0cbdbbc12ca98e9948b70d6b446a8a82d2767472eaa29b94a10148d49b06a"
     },
     {
       "role": "public_documentation_or_verification",
       "path": "SOURCE_FILES.json",
-      "bytes": 25724,
-      "sha256": "720af716d4ff2c779b832d3192e8de9dafc76e4e78f5714913859f71837ac089"
+      "bytes": 26175,
+      "sha256": "9effdd55c2a9cad29045a76c0a7f5744172f5809638dc363e5eeca7042998ebb"
     },
     {
       "role": "public_documentation_or_verification",
       "path": "THIRD_PARTY_SOURCES.md",
-      "bytes": 3491,
-      "sha256": "1ec320dd099f535f0991175747a6df7c76505e584347194b984e738211d7228d"
+      "bytes": 3467,
+      "sha256": "47d142eec032aab422e7db93226c00ad02444de77936fe784bd38e003b703c71"
     },
     {
       "role": "retained_source",
@@ -480,8 +486,8 @@
     {
       "role": "retained_source",
       "path": "methods/RMT-METHODS-TARGETED-001/tool/README.md",
-      "bytes": 7312,
-      "sha256": "b2cfb738900d154dc3c80147a992d0aee6be454861108e42dc184192c3b3f5f9"
+      "bytes": 7552,
+      "sha256": "84bc8bf2caafc1e084cd430213e4805aac3493070b509b30c2e5782851735664"
     },
     {
       "role": "retained_source",
@@ -528,8 +534,8 @@
     {
       "role": "retained_source",
       "path": "methods/RMT-METHODS-TARGETED-001/tool/src/rmt_targeted/example.py",
-      "bytes": 4495,
-      "sha256": "747668707d45e97b07713ca19305422bd2735af24b3254bfee2f07a797fa9a8d"
+      "bytes": 4506,
+      "sha256": "b47dfaca8c32e80ae05a8529749f9a3da8e512d5931a80803e1cb17248c967eb"
     },
     {
       "role": "retained_source",
@@ -558,8 +564,8 @@
     {
       "role": "public_documentation_or_verification",
       "path": "verify_public_candidate.py",
-      "bytes": 10351,
-      "sha256": "9702ac556f730a0adc182a383d24dc79283fe0d013e1316d7843baa572082a62"
+      "bytes": 10350,
+      "sha256": "d72589fd706d2c92c882b7d2f81723abcafb1fb8ac90583c132becacfa19bdd9"
     }
   ]
 }

@@ -3,10 +3,10 @@
 ## Project code and derived summaries
 
 The retained checker, adapter, analysis, example and test code was produced in
-the RNA-ModTruth project. No project software license is selected or granted by
-this candidate; in particular, there is no MIT license grant. Code-publication
-authorization and software licensing are separate decisions. The fictional
-example is entirely self-authored and contains zero original study records.
+the RNA-ModTruth project and is licensed under the [MIT License](LICENSE).
+This license applies to project software, not third-party data, tools or source
+materials, which retain their own terms. The fictional example is entirely
+self-authored and contains zero original study records.
 
 The numerical outputs are project-derived aggregate descriptions of the named
 provider releases, not new biological observations. Scientific protocols and source bindings

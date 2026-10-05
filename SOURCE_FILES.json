@@ -68,8 +68,8 @@
     {
       "path": "methods/RMT-METHODS-TARGETED-001/tool/README.md",
       "source_sha256": "cb3522f932bc21613831e926433a93e327f28b8fdabfa59b6bcdfabcfde41f05",
-      "public_sha256": "b2cfb738900d154dc3c80147a992d0aee6be454861108e42dc184192c3b3f5f9",
-      "change": "Scientific metadata only or file-location/hash-binding adaptation; no scientific definition or result change."
+      "public_sha256": "84bc8bf2caafc1e084cd430213e4805aac3493070b509b30c2e5782851735664",
+      "change": "Public documentation, file-location/hash-binding and license metadata only; no scientific definition or result change."
     },
     {
       "path": "methods/RMT-METHODS-TARGETED-001/tool/src/rmt_targeted/__init__.py",
@@ -82,6 +82,12 @@
       "source_sha256": "4af40aac6ca92fa84d73423cc1f12f547f534eb1d13e5560663f75afaf5807cb",
       "public_sha256": "780b158a3cfb8258f824b67a6a86c890949e34b7c1cfbeff26062cd4f9522518",
       "change": "Scientific metadata only or file-location/hash-binding adaptation; no scientific definition or result change."
+    },
+    {
+      "path": "methods/RMT-METHODS-TARGETED-001/tool/src/rmt_targeted/example.py",
+      "source_sha256": "747668707d45e97b07713ca19305422bd2735af24b3254bfee2f07a797fa9a8d",
+      "public_sha256": "b47dfaca8c32e80ae05a8529749f9a3da8e512d5931a80803e1cb17248c967eb",
+      "change": "License metadata only: replace pre-license status with author-selected MIT; scientific logic and fictional data-generation definitions unchanged."
     }
   ],
   "files": [
@@ -538,8 +544,8 @@
     {
       "role": "retained_source",
       "path": "methods/RMT-METHODS-TARGETED-001/tool/README.md",
-      "bytes": 7312,
-      "sha256": "b2cfb738900d154dc3c80147a992d0aee6be454861108e42dc184192c3b3f5f9"
+      "bytes": 7552,
+      "sha256": "84bc8bf2caafc1e084cd430213e4805aac3493070b509b30c2e5782851735664"
     },
     {
       "role": "retained_source",
@@ -586,8 +592,8 @@
     {
       "role": "retained_source",
       "path": "methods/RMT-METHODS-TARGETED-001/tool/src/rmt_targeted/example.py",
-      "bytes": 4495,
-      "sha256": "747668707d45e97b07713ca19305422bd2735af24b3254bfee2f07a797fa9a8d"
+      "bytes": 4506,
+      "sha256": "b47dfaca8c32e80ae05a8529749f9a3da8e512d5931a80803e1cb17248c967eb"
     },
     {
       "role": "retained_source",

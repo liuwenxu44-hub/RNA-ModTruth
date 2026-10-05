@@ -7,7 +7,10 @@ reads, native callers, models, network connection, repository layout or original
 research files are required for the fictional example.
 
 This is a narrowly scoped export-checking tool, not a generally applicable
-benchmarking framework. No software license has been selected or granted.
+benchmarking framework. RNA-ModTruth project code is licensed under the
+[MIT License](../../../LICENSE); third-party data and tools retain their own terms.
+When redistributing a wheel built by the retained minimal builder, include the
+repository-root LICENSE; the builder does not package that file automatically.
 The fictional example contains no original study records. No recovery command
 or source-adapter/caller is exposed.
 
