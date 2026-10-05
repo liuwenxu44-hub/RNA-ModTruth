@@ -1,0 +1,53 @@
+{
+  "adapter_status": "SCHEMA_AND_SITE_LINK_EXECUTED; UUID_AND_TRUTH_JOIN_UNDETERMINED",
+  "caller_executed": false,
+  "duplicate_individual_keys": 0,
+  "files": {
+    "data.indiv_proba.csv.gz": {
+      "bytes": 75502,
+      "columns": [
+        "transcript_id",
+        "transcript_position",
+        "read_index",
+        "probability_modified"
+      ],
+      "probability_range": [
+        1.6373288977469923e-20,
+        0.5286316275596619
+      ],
+      "rows": 5595,
+      "sha256": "50f086b5c78ab703e3089401227e9e856b3541e5d4e8cb58a089309da0e5d44f"
+    },
+    "data.site_proba.csv.gz": {
+      "bytes": 2552,
+      "columns": [
+        "transcript_id",
+        "transcript_position",
+        "n_reads",
+        "probability_modified",
+        "kmer",
+        "mod_ratio"
+      ],
+      "probability_range": [
+        0.0539428219199181,
+        0.9952387809753418
+      ],
+      "rows": 101,
+      "sha256": "7b4b0e63eb0770213246610a5d49ff0857433118c520e5e01a8588d6a5ae3eec"
+    }
+  },
+  "fixture_type": "OFFICIAL_SOFTWARE_TEST_OUTPUT_NOT_INDEPENDENT_BIOLOGICAL_VALIDATION",
+  "individual_sites": 101,
+  "individual_sites_without_site_row": 0,
+  "read_index_uuid_mapping": "NOT_AVAILABLE_IN_INSPECTED_OFFICIAL_TEST_TREE",
+  "read_truth": "NOT_AVAILABLE; READ_LEVEL_ACCURACY_NOT_COMPUTED",
+  "repository_commit": "590ec277cb48d61774f0872395099e466022e810",
+  "semantics": "individual probability_modified and site probability_modified are different resolutions; identical column name is not a conversion rule",
+  "site_as_read_substitution": "SCORE_RESOLUTION_CONFLICT:SITE->READ_SITE",
+  "site_n_reads_matches": 101,
+  "site_rows": 101,
+  "valid_routing": [
+    "READ_SITE",
+    "SITE"
+  ]
+}

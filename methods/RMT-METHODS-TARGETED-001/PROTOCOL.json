@@ -1,0 +1,55 @@
+{
+  "issue": "RMT-METHODS-TARGETED-001",
+  "analysis_class": "POSTHOC_TARGETED_SUPPLEMENTARY_ANALYSIS",
+  "historical_result": "RMT_EXEC_001_NO_INCREMENTAL_UTILITY remains unchanged",
+  "inputs": "Four source-bound record_inputs in INPUTS.json; full saved joins only. Prior first100 and five seeds are retained, not new independent evidence.",
+  "population": {
+    "opportunities": "Every saved truth-overlapping alignment site; not all sequenced molecules",
+    "N": "alignment_status=MATCHED_READ_SITE; endpoint-eligible records including eligible omitted probabilities",
+    "O": "N with explicit score, modification a or 28871, score_kind=read_site_ML_interval, consistent integer ML 0..255",
+    "S": "Retained O under declared selection policy",
+    "unit": "read-site and provider construct-condition label; no verified molecule purity",
+    "strata": "Separate 2025_DRACH/2026_all5mer releases, all constructs and both truth classes; never pool releases or rank models"
+  },
+  "A": {
+    "thresholds": [
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      0.95,
+      0.99
+    ],
+    "policies": [
+      "explicit_baseline",
+      "symmetric_confidence",
+      "one_sided_high_p_reference"
+    ],
+    "selection": "Primary midpoint p=(ML+0.5)/256; symmetric max(p,1-p)>=t. One-sided historical p>=0.9 is legal only as a labelled selected subset; all-population interpretation invalid. Non-m6A is not multiclass canonical probability.",
+    "interval_selection": "Half-open ML [m/256,(m+1)/256). Separately count definite/possible/ambiguous retention by class. Symmetric definite when lo>=t or hi<=1-t (all at t=0.5); possible when hi>t or lo<=1-t. Midpoint is not exact latent threshold selection.",
+    "classification": "Predict modified if p>=0.5. Risk mean I(prediction!=label); class risk, observed risk, equal-class risk and balanced accuracy. Missing class => NA, never renormalize.",
+    "outputs": "opportunities,N,O,S,S/O,S/N; class-specific counts/coverage/Brier/risk; observed and equal-class Brier/risk; balanced accuracy; definite/possible/ambiguous counts",
+    "construct_weights": "Fixed 1/K over all baseline constructs and 1/2 within construct classes. Any required construct-class absent => full fixed-support NA. Separately report observed pooled and pooled equal-class estimates.",
+    "modkit": "Reuse actual saved default/no-confidence multiclass results with own definitions, no new modkit run or binary/multiclass metric merge"
+  },
+  "B": {
+    "comparisons": "Each symmetric threshold and one-sided reference versus explicit baseline; class and construct strata only, releases separate",
+    "formula": "delta=sum((w1+w0)/2*(L1-L0))+sum((L1+L0)/2*(w1-w0)); observed stratum proportions w, stratum observed Brier L",
+    "missing_strata": "Disappearing baseline stratum => full decomposition UNIDENTIFIABLE; separate COMMON_SUPPORT_ONLY analysis with renormalized condition weights, excluded IDs and original mass, never replaces full-support difference",
+    "fixed_construct_check": "Report equal construct and equal within-construct class weights against original K; no effect-selected groups",
+    "site_identity": "Group by release/sample/run/contig/ref_pos0/strand, independently verify single label per group. Only then read Brier minus repeated site-mean Brier equals weighted population within-group variance. Mixed labels => NOT_APPLICABLE, no shortcut",
+    "numeric_tolerance": 1e-10,
+    "inference": "Descriptive algebra, not causal attribution or new statistic; no biological replicate, significance or monotonicity claims"
+  },
+  "C": {
+    "native": "Bounded exact-file source review. No reliable historical omission threshold => NOT_IDENTIFIED and stop native threshold branch. MM dot/current defaults never establish u. Ineligible alignment/base/model scope not threshold omissions",
+    "controlled_hiding": "One demonstration on O: hide explicit intervals whose upper endpoint<=0.25. Hidden p in [0,0.25); retained records keep ML intervals. Per-class/observed/equal-class loss bounds over original O must contain original midpoint loss. CONTROLLED_SCORE_REMOVAL, not native mechanism validation",
+    "loss_bounds": "y0:[l*l,u*u]; y1:[(1-u)^2,(1-l)^2]. Infimum/supremum envelopes, not CIs or occupancy",
+    "uninformative_native": "Optional [0,1] domain envelope for eligible missing scores; explicitly uninformative, never threshold-derived"
+  },
+  "D": {
+    "scope": "Path-independent minimal installable Python CLI, explicit input contract, self-authored fictional example, denominators/exclusions/conditional metrics, duplicate/conflict checks, isolated directory/env test. No platform",
+    "exit_semantics": "Default completed audit may exit0 for scientific statuses; optional strict mode distinguishes rejection, insufficient information, pass and runtime failure. Existing B2/RMT code/results unchanged; shared support equal"
+  }
+}

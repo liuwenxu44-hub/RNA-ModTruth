@@ -1,0 +1,2246 @@
+[
+  {
+    "case_id": "00_canonical",
+    "method": "B0",
+    "recovery": {},
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "False",
+    "role": "DEVELOPMENT",
+    "source_check": "execution/RMT-EXEC-001/results/development_test_final/checks/00_canonical_B0.json",
+    "source_check_sha256": "7fabb06569b4eeb94dcc8e514455743d35dbd4b7e17c83cd4026d64207e6978d",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "00_canonical",
+    "method": "B1",
+    "recovery": {},
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "False",
+    "role": "DEVELOPMENT",
+    "source_check": "execution/RMT-EXEC-001/results/development_test_final/checks/00_canonical_B1.json",
+    "source_check_sha256": "b06bd540a1b70b5d84f3bf9c1ecef689d87f2363ffafee4d02bfd3f5f8dd10e2",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "00_canonical",
+    "method": "B2",
+    "new_v2_issue_identity": "UNCHANGED",
+    "new_v2_status": "ACCEPT",
+    "recovery": {
+      "rules": [],
+      "status": "NOT_NEEDED",
+      "written": false
+    },
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "False",
+    "role": "DEVELOPMENT",
+    "source_check": "execution/RMT-EXEC-001/results/development_test_final/checks/00_canonical_B2.json",
+    "source_check_sha256": "1724210df6d1ec8f94812adcf807882a8a369f25bd155ea91a269f7c7d02f165",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "00_canonical",
+    "method": "RMT",
+    "new_v2_issue_identity": "UNCHANGED",
+    "new_v2_status": "ACCEPT",
+    "recovery": {
+      "rules": [],
+      "status": "NOT_NEEDED",
+      "written": false
+    },
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "False",
+    "role": "DEVELOPMENT",
+    "source_check": "execution/RMT-EXEC-001/results/development_test_final/checks/00_canonical_RMT.json",
+    "source_check_sha256": "5e94d2ea089860cb8d059439e4b2a808e2093804e09345349ec2b25f7fe0c922",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "01_sample_reference_BED_mismatch",
+    "method": "B0",
+    "recovery": {},
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "",
+    "role": "DEVELOPMENT",
+    "source_check": "execution/RMT-EXEC-001/results/development_test_final/checks/01_sample_reference_BED_mismatch_B0.json",
+    "source_check_sha256": "7fabb06569b4eeb94dcc8e514455743d35dbd4b7e17c83cd4026d64207e6978d",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "01_sample_reference_BED_mismatch",
+    "method": "B1",
+    "recovery": {},
+    "reported_detects_error": "True",
+    "reported_legal_false_rejection": "",
+    "role": "DEVELOPMENT",
+    "source_check": "execution/RMT-EXEC-001/results/development_test_final/checks/01_sample_reference_BED_mismatch_B1.json",
+    "source_check_sha256": "54e56a69d7802630962f9a72ffd95e93c457c6d9bada6b223234831521a1a463",
+    "status": "REJECT"
+  },
+  {
+    "case_id": "01_sample_reference_BED_mismatch",
+    "method": "B2",
+    "new_v2_issue_identity": "UNCHANGED",
+    "new_v2_status": "REJECT",
+    "recovery": {
+      "after_sha256": {
+        "contract.json": "a0352b93f69ccd983498fad6cb36bfa741d774e62e5cd695a865ab1ccb139c20",
+        "predictions.tsv.gz": "88c31a2b0943155500f6affb0651dd115787ad89315dbc073fe1749e3129ccac",
+        "read_map.tsv": "8f6f1a4ba80796754812791eecae90891d44b4df8ddb42a90d603d8ffaa23b98",
+        "reference.fa": "b635fa1993531e77537ad1080d59f49473ffbf92b1d30da7041920ff41dae48b",
+        "truth.tsv": "a0e9b5f65b91f4a2922442f8f6881cf34ea64bd123e1e5940f91dfd35ed651a4"
+      },
+      "before_sha256": {
+        "contract.json": "a0352b93f69ccd983498fad6cb36bfa741d774e62e5cd695a865ab1ccb139c20",
+        "predictions.tsv.gz": "88c31a2b0943155500f6affb0651dd115787ad89315dbc073fe1749e3129ccac",
+        "read_map.tsv": "8f6f1a4ba80796754812791eecae90891d44b4df8ddb42a90d603d8ffaa23b98",
+        "reference.fa": "b635fa1993531e77537ad1080d59f49473ffbf92b1d30da7041920ff41dae48b",
+        "truth.tsv": "5f8354463e6474fdbc8f5e9e3734244bf64f230e3ba74ed8360e739d7fb69d2c"
+      },
+      "evidence_sha256": "b7765d4030c9c87dc9939beccf2efb50ff3489f3b149a88a5d8d472fa4193c7a",
+      "postvalidation_status": "ACCEPT",
+      "rules": [
+        "SAMPLE_BED_MAPPING"
+      ],
+      "status": "RECOVERED_SOURCE_DETERMINED",
+      "written": true
+    },
+    "reported_detects_error": "True",
+    "reported_legal_false_rejection": "",
+    "role": "DEVELOPMENT",
+    "source_check": "execution/RMT-EXEC-001/results/development_test_final/checks/01_sample_reference_BED_mismatch_B2.json",
+    "source_check_sha256": "0a08c6351cb7f69e0957e17275e68eedb303cb417e3e60c30e97bc8a77c0b41e",
+    "status": "REJECT"
+  },
+  {
+    "case_id": "01_sample_reference_BED_mismatch",
+    "method": "RMT",
+    "new_v2_issue_identity": "UNCHANGED",
+    "new_v2_status": "REJECT",
+    "recovery": {
+      "after_sha256": {
+        "contract.json": "a0352b93f69ccd983498fad6cb36bfa741d774e62e5cd695a865ab1ccb139c20",
+        "predictions.tsv.gz": "88c31a2b0943155500f6affb0651dd115787ad89315dbc073fe1749e3129ccac",
+        "read_map.tsv": "8f6f1a4ba80796754812791eecae90891d44b4df8ddb42a90d603d8ffaa23b98",
+        "reference.fa": "b635fa1993531e77537ad1080d59f49473ffbf92b1d30da7041920ff41dae48b",
+        "truth.tsv": "a0e9b5f65b91f4a2922442f8f6881cf34ea64bd123e1e5940f91dfd35ed651a4"
+      },
+      "before_sha256": {
+        "contract.json": "a0352b93f69ccd983498fad6cb36bfa741d774e62e5cd695a865ab1ccb139c20",
+        "predictions.tsv.gz": "88c31a2b0943155500f6affb0651dd115787ad89315dbc073fe1749e3129ccac",
+        "read_map.tsv": "8f6f1a4ba80796754812791eecae90891d44b4df8ddb42a90d603d8ffaa23b98",
+        "reference.fa": "b635fa1993531e77537ad1080d59f49473ffbf92b1d30da7041920ff41dae48b",
+        "truth.tsv": "5f8354463e6474fdbc8f5e9e3734244bf64f230e3ba74ed8360e739d7fb69d2c"
+      },
+      "evidence_sha256": "b7765d4030c9c87dc9939beccf2efb50ff3489f3b149a88a5d8d472fa4193c7a",
+      "postvalidation_status": "ACCEPT",
+      "rules": [
+        "OFFICIAL_TRUTH_MAPPING"
+      ],
+      "status": "RECOVERED_SOURCE_DETERMINED",
+      "written": true
+    },
+    "reported_detects_error": "True",
+    "reported_legal_false_rejection": "",
+    "role": "DEVELOPMENT",
+    "source_check": "execution/RMT-EXEC-001/results/development_test_final/checks/01_sample_reference_BED_mismatch_RMT.json",
+    "source_check_sha256": "ccba0a5b2e5be0d720b05430517892acd875f62ae7c5eb028ad716f8585f1fb5",
+    "status": "REJECT"
+  },
+  {
+    "case_id": "02_declared_zero_one_based_coordinate_error",
+    "method": "B0",
+    "recovery": {},
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "",
+    "role": "DEVELOPMENT",
+    "source_check": "execution/RMT-EXEC-001/results/development_test_final/checks/02_declared_zero_one_based_coordinate_error_B0.json",
+    "source_check_sha256": "7fabb06569b4eeb94dcc8e514455743d35dbd4b7e17c83cd4026d64207e6978d",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "02_declared_zero_one_based_coordinate_error",
+    "method": "B1",
+    "recovery": {},
+    "reported_detects_error": "True",
+    "reported_legal_false_rejection": "",
+    "role": "DEVELOPMENT",
+    "source_check": "execution/RMT-EXEC-001/results/development_test_final/checks/02_declared_zero_one_based_coordinate_error_B1.json",
+    "source_check_sha256": "6839f9ffdcecacc52e94dfbadf08753d629f72af2c3dcbe1004fc5b94403a746",
+    "status": "REJECT"
+  },
+  {
+    "case_id": "02_declared_zero_one_based_coordinate_error",
+    "method": "B2",
+    "new_v2_issue_identity": "UNCHANGED",
+    "new_v2_status": "REJECT",
+    "recovery": {
+      "after_sha256": {
+        "contract.json": "421f684c1273f6a9f1a77bb7872d99e6203ee740b087c5a001e31fc1bb81643f",
+        "predictions.tsv.gz": "e821dece9a431967efe3ec06f2523b9ff34e9a3c8c6f8a91283dd2d526884719",
+        "read_map.tsv": "8f6f1a4ba80796754812791eecae90891d44b4df8ddb42a90d603d8ffaa23b98",
+        "reference.fa": "b635fa1993531e77537ad1080d59f49473ffbf92b1d30da7041920ff41dae48b",
+        "truth.tsv": "a0e9b5f65b91f4a2922442f8f6881cf34ea64bd123e1e5940f91dfd35ed651a4"
+      },
+      "before_sha256": {
+        "contract.json": "89c167765c2e4c2a3e2cec2e0c6794c2024754db2a95e198ce91e488eaceab84",
+        "predictions.tsv.gz": "e821dece9a431967efe3ec06f2523b9ff34e9a3c8c6f8a91283dd2d526884719",
+        "read_map.tsv": "8f6f1a4ba80796754812791eecae90891d44b4df8ddb42a90d603d8ffaa23b98",
+        "reference.fa": "b635fa1993531e77537ad1080d59f49473ffbf92b1d30da7041920ff41dae48b",
+        "truth.tsv": "a0e9b5f65b91f4a2922442f8f6881cf34ea64bd123e1e5940f91dfd35ed651a4"
+      },
+      "evidence_sha256": "b7765d4030c9c87dc9939beccf2efb50ff3489f3b149a88a5d8d472fa4193c7a",
+      "postvalidation_status": "ACCEPT",
+      "rules": [
+        "COORDINATE_DECLARATION"
+      ],
+      "status": "RECOVERED_SOURCE_DETERMINED",
+      "written": true
+    },
+    "reported_detects_error": "True",
+    "reported_legal_false_rejection": "",
+    "role": "DEVELOPMENT",
+    "source_check": "execution/RMT-EXEC-001/results/development_test_final/checks/02_declared_zero_one_based_coordinate_error_B2.json",
+    "source_check_sha256": "379274c4449cbf0cf41c2c5b58019aa600b44cad013b2f4bdb960e6b97aa477a",
+    "status": "REJECT"
+  },
+  {
+    "case_id": "02_declared_zero_one_based_coordinate_error",
+    "method": "RMT",
+    "new_v2_issue_identity": "UNCHANGED",
+    "new_v2_status": "REJECT",
+    "recovery": {
+      "after_sha256": {
+        "contract.json": "421f684c1273f6a9f1a77bb7872d99e6203ee740b087c5a001e31fc1bb81643f",
+        "predictions.tsv.gz": "e821dece9a431967efe3ec06f2523b9ff34e9a3c8c6f8a91283dd2d526884719",
+        "read_map.tsv": "8f6f1a4ba80796754812791eecae90891d44b4df8ddb42a90d603d8ffaa23b98",
+        "reference.fa": "b635fa1993531e77537ad1080d59f49473ffbf92b1d30da7041920ff41dae48b",
+        "truth.tsv": "a0e9b5f65b91f4a2922442f8f6881cf34ea64bd123e1e5940f91dfd35ed651a4"
+      },
+      "before_sha256": {
+        "contract.json": "89c167765c2e4c2a3e2cec2e0c6794c2024754db2a95e198ce91e488eaceab84",
+        "predictions.tsv.gz": "e821dece9a431967efe3ec06f2523b9ff34e9a3c8c6f8a91283dd2d526884719",
+        "read_map.tsv": "8f6f1a4ba80796754812791eecae90891d44b4df8ddb42a90d603d8ffaa23b98",
+        "reference.fa": "b635fa1993531e77537ad1080d59f49473ffbf92b1d30da7041920ff41dae48b",
+        "truth.tsv": "a0e9b5f65b91f4a2922442f8f6881cf34ea64bd123e1e5940f91dfd35ed651a4"
+      },
+      "evidence_sha256": "b7765d4030c9c87dc9939beccf2efb50ff3489f3b149a88a5d8d472fa4193c7a",
+      "postvalidation_status": "ACCEPT",
+      "rules": [
+        "DECLARED_COORDINATE_CONFLICT"
+      ],
+      "status": "RECOVERED_SOURCE_DETERMINED",
+      "written": true
+    },
+    "reported_detects_error": "True",
+    "reported_legal_false_rejection": "",
+    "role": "DEVELOPMENT",
+    "source_check": "execution/RMT-EXEC-001/results/development_test_final/checks/02_declared_zero_one_based_coordinate_error_RMT.json",
+    "source_check_sha256": "e3b4fb096f95a7803dcc65b344fef953fb79c50a848b39e8b00ff97a73bbfe73",
+    "status": "REJECT"
+  },
+  {
+    "case_id": "03_strand_or_reference_version_conflict",
+    "method": "B0",
+    "recovery": {},
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "",
+    "role": "DEVELOPMENT",
+    "source_check": "execution/RMT-EXEC-001/results/development_test_final/checks/03_strand_or_reference_version_conflict_B0.json",
+    "source_check_sha256": "7fabb06569b4eeb94dcc8e514455743d35dbd4b7e17c83cd4026d64207e6978d",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "03_strand_or_reference_version_conflict",
+    "method": "B1",
+    "recovery": {},
+    "reported_detects_error": "True",
+    "reported_legal_false_rejection": "",
+    "role": "DEVELOPMENT",
+    "source_check": "execution/RMT-EXEC-001/results/development_test_final/checks/03_strand_or_reference_version_conflict_B1.json",
+    "source_check_sha256": "4ed0b9c053b9c2274ecd0a1f101f97748adcc165043f07a579bc3ed018b1cfb4",
+    "status": "REJECT"
+  },
+  {
+    "case_id": "03_strand_or_reference_version_conflict",
+    "method": "B2",
+    "new_v2_issue_identity": "UNCHANGED",
+    "new_v2_status": "REJECT",
+    "recovery": {
+      "rules": [
+        "ALIGNMENT"
+      ],
+      "status": "REFUSED_NOT_IDENTIFIABLE_OR_OUTSIDE_WHITELIST",
+      "written": false
+    },
+    "reported_detects_error": "True",
+    "reported_legal_false_rejection": "",
+    "role": "DEVELOPMENT",
+    "source_check": "execution/RMT-EXEC-001/results/development_test_final/checks/03_strand_or_reference_version_conflict_B2.json",
+    "source_check_sha256": "82413b8fd1bac1aef3415bf00eedf0ebc774312ae324f07bc159cc17475b6b03",
+    "status": "REJECT"
+  },
+  {
+    "case_id": "03_strand_or_reference_version_conflict",
+    "method": "RMT",
+    "new_v2_issue_identity": "UNCHANGED",
+    "new_v2_status": "REJECT",
+    "recovery": {
+      "rules": [
+        "SOURCE_ALIGNMENT_CONFLICT"
+      ],
+      "status": "REFUSED_NOT_IDENTIFIABLE_OR_OUTSIDE_WHITELIST",
+      "written": false
+    },
+    "reported_detects_error": "True",
+    "reported_legal_false_rejection": "",
+    "role": "DEVELOPMENT",
+    "source_check": "execution/RMT-EXEC-001/results/development_test_final/checks/03_strand_or_reference_version_conflict_RMT.json",
+    "source_check_sha256": "3575f50f1131c63e95a1b53ce9ee8495ae00acfc0af1b80b471712302d04fd58",
+    "status": "REJECT"
+  },
+  {
+    "case_id": "04_lost_sample_join_key",
+    "method": "B0",
+    "recovery": {},
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "",
+    "role": "DEVELOPMENT",
+    "source_check": "execution/RMT-EXEC-001/results/development_test_final/checks/04_lost_sample_join_key_B0.json",
+    "source_check_sha256": "7fabb06569b4eeb94dcc8e514455743d35dbd4b7e17c83cd4026d64207e6978d",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "04_lost_sample_join_key",
+    "method": "B1",
+    "recovery": {},
+    "reported_detects_error": "True",
+    "reported_legal_false_rejection": "",
+    "role": "DEVELOPMENT",
+    "source_check": "execution/RMT-EXEC-001/results/development_test_final/checks/04_lost_sample_join_key_B1.json",
+    "source_check_sha256": "74ee27720b0046d51c64914ee637a80ae4961bb373b2cc85f2241a68e5bd229e",
+    "status": "REJECT"
+  },
+  {
+    "case_id": "04_lost_sample_join_key",
+    "method": "B2",
+    "new_v2_issue_identity": "UNCHANGED",
+    "new_v2_status": "REJECT",
+    "recovery": {
+      "rules": [
+        "JOIN_KEYS"
+      ],
+      "status": "REFUSED_NOT_IDENTIFIABLE_OR_OUTSIDE_WHITELIST",
+      "written": false
+    },
+    "reported_detects_error": "True",
+    "reported_legal_false_rejection": "",
+    "role": "DEVELOPMENT",
+    "source_check": "execution/RMT-EXEC-001/results/development_test_final/checks/04_lost_sample_join_key_B2.json",
+    "source_check_sha256": "65805b0ecbe24001f93a3f6907d0de33faa3ddf775af37ce925ad08be6747378",
+    "status": "REJECT"
+  },
+  {
+    "case_id": "04_lost_sample_join_key",
+    "method": "RMT",
+    "new_v2_issue_identity": "UNCHANGED",
+    "new_v2_status": "REJECT",
+    "recovery": {
+      "rules": [
+        "INCOMPLETE_TRUTH_JOIN_KEY"
+      ],
+      "status": "REFUSED_NOT_IDENTIFIABLE_OR_OUTSIDE_WHITELIST",
+      "written": false
+    },
+    "reported_detects_error": "True",
+    "reported_legal_false_rejection": "",
+    "role": "DEVELOPMENT",
+    "source_check": "execution/RMT-EXEC-001/results/development_test_final/checks/04_lost_sample_join_key_RMT.json",
+    "source_check_sha256": "115e3cffe6623e6266312c6101eb8984298bef8f2683eac0f6ee92283365e2f5",
+    "status": "REJECT"
+  },
+  {
+    "case_id": "05_read_index_reuse_across_runs",
+    "method": "B0",
+    "recovery": {},
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "",
+    "role": "DEVELOPMENT",
+    "source_check": "execution/RMT-EXEC-001/results/development_test_final/checks/05_read_index_reuse_across_runs_B0.json",
+    "source_check_sha256": "7fabb06569b4eeb94dcc8e514455743d35dbd4b7e17c83cd4026d64207e6978d",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "05_read_index_reuse_across_runs",
+    "method": "B1",
+    "recovery": {},
+    "reported_detects_error": "True",
+    "reported_legal_false_rejection": "",
+    "role": "DEVELOPMENT",
+    "source_check": "execution/RMT-EXEC-001/results/development_test_final/checks/05_read_index_reuse_across_runs_B1.json",
+    "source_check_sha256": "22ad1aa78a7627065e8d7a66d27000d96c78a2b156e0c5f949cbad738e908cf5",
+    "status": "REJECT"
+  },
+  {
+    "case_id": "05_read_index_reuse_across_runs",
+    "method": "B2",
+    "new_v2_issue_identity": "UNCHANGED",
+    "new_v2_status": "REJECT",
+    "recovery": {
+      "after_sha256": {
+        "contract.json": "a0352b93f69ccd983498fad6cb36bfa741d774e62e5cd695a865ab1ccb139c20",
+        "predictions.tsv.gz": "88c31a2b0943155500f6affb0651dd115787ad89315dbc073fe1749e3129ccac",
+        "read_map.tsv": "8f6f1a4ba80796754812791eecae90891d44b4df8ddb42a90d603d8ffaa23b98",
+        "reference.fa": "b635fa1993531e77537ad1080d59f49473ffbf92b1d30da7041920ff41dae48b",
+        "truth.tsv": "a0e9b5f65b91f4a2922442f8f6881cf34ea64bd123e1e5940f91dfd35ed651a4"
+      },
+      "before_sha256": {
+        "contract.json": "a0352b93f69ccd983498fad6cb36bfa741d774e62e5cd695a865ab1ccb139c20",
+        "predictions.tsv.gz": "2924644dfd299676d2da2c8d98e8d429ade2bb56b70eccf4852d5d13fd704485",
+        "read_map.tsv": "8f6f1a4ba80796754812791eecae90891d44b4df8ddb42a90d603d8ffaa23b98",
+        "reference.fa": "b635fa1993531e77537ad1080d59f49473ffbf92b1d30da7041920ff41dae48b",
+        "truth.tsv": "a0e9b5f65b91f4a2922442f8f6881cf34ea64bd123e1e5940f91dfd35ed651a4"
+      },
+      "evidence_sha256": "b7765d4030c9c87dc9939beccf2efb50ff3489f3b149a88a5d8d472fa4193c7a",
+      "postvalidation_status": "ACCEPT",
+      "rules": [
+        "IDENTITY"
+      ],
+      "status": "RECOVERED_SOURCE_DETERMINED",
+      "written": true
+    },
+    "reported_detects_error": "True",
+    "reported_legal_false_rejection": "",
+    "role": "DEVELOPMENT",
+    "source_check": "execution/RMT-EXEC-001/results/development_test_final/checks/05_read_index_reuse_across_runs_B2.json",
+    "source_check_sha256": "3226cef64a12f5e7f1ea3aa7954ebeb36e476cc1cd9d5cde4c953f283beaaead",
+    "status": "REJECT"
+  },
+  {
+    "case_id": "05_read_index_reuse_across_runs",
+    "method": "RMT",
+    "new_v2_issue_identity": "UNCHANGED",
+    "new_v2_status": "REJECT",
+    "recovery": {
+      "after_sha256": {
+        "contract.json": "a0352b93f69ccd983498fad6cb36bfa741d774e62e5cd695a865ab1ccb139c20",
+        "predictions.tsv.gz": "88c31a2b0943155500f6affb0651dd115787ad89315dbc073fe1749e3129ccac",
+        "read_map.tsv": "8f6f1a4ba80796754812791eecae90891d44b4df8ddb42a90d603d8ffaa23b98",
+        "reference.fa": "b635fa1993531e77537ad1080d59f49473ffbf92b1d30da7041920ff41dae48b",
+        "truth.tsv": "a0e9b5f65b91f4a2922442f8f6881cf34ea64bd123e1e5940f91dfd35ed651a4"
+      },
+      "before_sha256": {
+        "contract.json": "a0352b93f69ccd983498fad6cb36bfa741d774e62e5cd695a865ab1ccb139c20",
+        "predictions.tsv.gz": "2924644dfd299676d2da2c8d98e8d429ade2bb56b70eccf4852d5d13fd704485",
+        "read_map.tsv": "8f6f1a4ba80796754812791eecae90891d44b4df8ddb42a90d603d8ffaa23b98",
+        "reference.fa": "b635fa1993531e77537ad1080d59f49473ffbf92b1d30da7041920ff41dae48b",
+        "truth.tsv": "a0e9b5f65b91f4a2922442f8f6881cf34ea64bd123e1e5940f91dfd35ed651a4"
+      },
+      "evidence_sha256": "b7765d4030c9c87dc9939beccf2efb50ff3489f3b149a88a5d8d472fa4193c7a",
+      "postvalidation_status": "ACCEPT",
+      "rules": [
+        "READ_IDENTITY_CONFLICT"
+      ],
+      "status": "RECOVERED_SOURCE_DETERMINED",
+      "written": true
+    },
+    "reported_detects_error": "True",
+    "reported_legal_false_rejection": "",
+    "role": "DEVELOPMENT",
+    "source_check": "execution/RMT-EXEC-001/results/development_test_final/checks/05_read_index_reuse_across_runs_RMT.json",
+    "source_check_sha256": "6374661b4e6a26268408a5926bd03d24d437e1b7684d68e1cca8f60c971064ff",
+    "status": "REJECT"
+  },
+  {
+    "case_id": "06_duplicate_read_site_counting",
+    "method": "B0",
+    "recovery": {},
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "",
+    "role": "DEVELOPMENT",
+    "source_check": "execution/RMT-EXEC-001/results/development_test_final/checks/06_duplicate_read_site_counting_B0.json",
+    "source_check_sha256": "4b60ecb4cf37e268ad4cd3c99e03a5d2833abb8bb7fee9e64f33fa33d74cc7c3",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "06_duplicate_read_site_counting",
+    "method": "B1",
+    "recovery": {},
+    "reported_detects_error": "True",
+    "reported_legal_false_rejection": "",
+    "role": "DEVELOPMENT",
+    "source_check": "execution/RMT-EXEC-001/results/development_test_final/checks/06_duplicate_read_site_counting_B1.json",
+    "source_check_sha256": "f153bd54a9ba548735502be2a91c04a6b36ef6785f1c6b80503b52ffe4f50098",
+    "status": "REJECT"
+  },
+  {
+    "case_id": "06_duplicate_read_site_counting",
+    "method": "B2",
+    "new_v2_issue_identity": "UNCHANGED",
+    "new_v2_status": "REJECT",
+    "recovery": {
+      "after_sha256": {
+        "contract.json": "a0352b93f69ccd983498fad6cb36bfa741d774e62e5cd695a865ab1ccb139c20",
+        "predictions.tsv.gz": "88c31a2b0943155500f6affb0651dd115787ad89315dbc073fe1749e3129ccac",
+        "read_map.tsv": "8f6f1a4ba80796754812791eecae90891d44b4df8ddb42a90d603d8ffaa23b98",
+        "reference.fa": "b635fa1993531e77537ad1080d59f49473ffbf92b1d30da7041920ff41dae48b",
+        "truth.tsv": "a0e9b5f65b91f4a2922442f8f6881cf34ea64bd123e1e5940f91dfd35ed651a4"
+      },
+      "before_sha256": {
+        "contract.json": "a0352b93f69ccd983498fad6cb36bfa741d774e62e5cd695a865ab1ccb139c20",
+        "predictions.tsv.gz": "0f4931166ff2887b60e91bca99c38bd7f92beb3aaa3d77ab1650e1df434aec1d",
+        "read_map.tsv": "8f6f1a4ba80796754812791eecae90891d44b4df8ddb42a90d603d8ffaa23b98",
+        "reference.fa": "b635fa1993531e77537ad1080d59f49473ffbf92b1d30da7041920ff41dae48b",
+        "truth.tsv": "a0e9b5f65b91f4a2922442f8f6881cf34ea64bd123e1e5940f91dfd35ed651a4"
+      },
+      "evidence_sha256": "b7765d4030c9c87dc9939beccf2efb50ff3489f3b149a88a5d8d472fa4193c7a",
+      "postvalidation_status": "ACCEPT",
+      "rules": [
+        "EXACT_REPEAT"
+      ],
+      "status": "RECOVERED_SOURCE_DETERMINED",
+      "written": true
+    },
+    "reported_detects_error": "True",
+    "reported_legal_false_rejection": "",
+    "role": "DEVELOPMENT",
+    "source_check": "execution/RMT-EXEC-001/results/development_test_final/checks/06_duplicate_read_site_counting_B2.json",
+    "source_check_sha256": "a471f87385ee5ce2de60884875398e4453fef0b116fa4db80d4178e304aeb728",
+    "status": "REJECT"
+  },
+  {
+    "case_id": "06_duplicate_read_site_counting",
+    "method": "RMT",
+    "new_v2_issue_identity": "UNCHANGED",
+    "new_v2_status": "REJECT",
+    "recovery": {
+      "after_sha256": {
+        "contract.json": "a0352b93f69ccd983498fad6cb36bfa741d774e62e5cd695a865ab1ccb139c20",
+        "predictions.tsv.gz": "88c31a2b0943155500f6affb0651dd115787ad89315dbc073fe1749e3129ccac",
+        "read_map.tsv": "8f6f1a4ba80796754812791eecae90891d44b4df8ddb42a90d603d8ffaa23b98",
+        "reference.fa": "b635fa1993531e77537ad1080d59f49473ffbf92b1d30da7041920ff41dae48b",
+        "truth.tsv": "a0e9b5f65b91f4a2922442f8f6881cf34ea64bd123e1e5940f91dfd35ed651a4"
+      },
+      "before_sha256": {
+        "contract.json": "a0352b93f69ccd983498fad6cb36bfa741d774e62e5cd695a865ab1ccb139c20",
+        "predictions.tsv.gz": "0f4931166ff2887b60e91bca99c38bd7f92beb3aaa3d77ab1650e1df434aec1d",
+        "read_map.tsv": "8f6f1a4ba80796754812791eecae90891d44b4df8ddb42a90d603d8ffaa23b98",
+        "reference.fa": "b635fa1993531e77537ad1080d59f49473ffbf92b1d30da7041920ff41dae48b",
+        "truth.tsv": "a0e9b5f65b91f4a2922442f8f6881cf34ea64bd123e1e5940f91dfd35ed651a4"
+      },
+      "evidence_sha256": "b7765d4030c9c87dc9939beccf2efb50ff3489f3b149a88a5d8d472fa4193c7a",
+      "postvalidation_status": "ACCEPT",
+      "rules": [
+        "EXACT_DUPLICATE"
+      ],
+      "status": "RECOVERED_SOURCE_DETERMINED",
+      "written": true
+    },
+    "reported_detects_error": "True",
+    "reported_legal_false_rejection": "",
+    "role": "DEVELOPMENT",
+    "source_check": "execution/RMT-EXEC-001/results/development_test_final/checks/06_duplicate_read_site_counting_RMT.json",
+    "source_check_sha256": "5801c63b7a9cc220721e07d8e2041b1df787a538f0dd16a90a0e40ee07d1e126",
+    "status": "REJECT"
+  },
+  {
+    "case_id": "07_site_score_as_read_probability",
+    "method": "B0",
+    "recovery": {},
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "",
+    "role": "DEVELOPMENT",
+    "source_check": "execution/RMT-EXEC-001/results/development_test_final/checks/07_site_score_as_read_probability_B0.json",
+    "source_check_sha256": "7fabb06569b4eeb94dcc8e514455743d35dbd4b7e17c83cd4026d64207e6978d",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "07_site_score_as_read_probability",
+    "method": "B1",
+    "recovery": {},
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "",
+    "role": "DEVELOPMENT",
+    "source_check": "execution/RMT-EXEC-001/results/development_test_final/checks/07_site_score_as_read_probability_B1.json",
+    "source_check_sha256": "b06bd540a1b70b5d84f3bf9c1ecef689d87f2363ffafee4d02bfd3f5f8dd10e2",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "07_site_score_as_read_probability",
+    "method": "B2",
+    "new_v2_issue_identity": "UNCHANGED",
+    "new_v2_status": "REJECT",
+    "recovery": {
+      "rules": [
+        "SCORE_KIND",
+        "SCORE_VALUE"
+      ],
+      "status": "REFUSED_NOT_IDENTIFIABLE_OR_OUTSIDE_WHITELIST",
+      "written": false
+    },
+    "reported_detects_error": "True",
+    "reported_legal_false_rejection": "",
+    "role": "DEVELOPMENT",
+    "source_check": "execution/RMT-EXEC-001/results/development_test_final/checks/07_site_score_as_read_probability_B2.json",
+    "source_check_sha256": "821263f76800f2167b4c1f0e62627707abfad5584f7e63e4c8a68f3c8e253002",
+    "status": "REJECT"
+  },
+  {
+    "case_id": "07_site_score_as_read_probability",
+    "method": "RMT",
+    "new_v2_issue_identity": "UNCHANGED",
+    "new_v2_status": "REJECT",
+    "recovery": {
+      "rules": [
+        "SCORE_RESOLUTION_CONFLICT",
+        "SOURCE_SCORE_CONFLICT"
+      ],
+      "status": "REFUSED_NOT_IDENTIFIABLE_OR_OUTSIDE_WHITELIST",
+      "written": false
+    },
+    "reported_detects_error": "True",
+    "reported_legal_false_rejection": "",
+    "role": "DEVELOPMENT",
+    "source_check": "execution/RMT-EXEC-001/results/development_test_final/checks/07_site_score_as_read_probability_RMT.json",
+    "source_check_sha256": "dbfcc9772c07008d27b0320299aaf6943ed8368de4a4b5f364c2781a0ef91d23",
+    "status": "REJECT"
+  },
+  {
+    "case_id": "08_filtered_output_claimed_all_records",
+    "method": "B0",
+    "recovery": {},
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "",
+    "role": "DEVELOPMENT",
+    "source_check": "execution/RMT-EXEC-001/results/development_test_final/checks/08_filtered_output_claimed_all_records_B0.json",
+    "source_check_sha256": "3f41eff715ac4600cb60274a788cc3120338f833e9d96185053a39aed38d0bea",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "08_filtered_output_claimed_all_records",
+    "method": "B1",
+    "recovery": {},
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "",
+    "role": "DEVELOPMENT",
+    "source_check": "execution/RMT-EXEC-001/results/development_test_final/checks/08_filtered_output_claimed_all_records_B1.json",
+    "source_check_sha256": "31c855ab813819dad96e33205816365ffca00ce3c1a946c460032e80756240cd",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "08_filtered_output_claimed_all_records",
+    "method": "B2",
+    "new_v2_issue_identity": "UNCHANGED",
+    "new_v2_status": "REJECT",
+    "recovery": {
+      "rules": [
+        "DENOMINATOR"
+      ],
+      "status": "REFUSED_NOT_IDENTIFIABLE_OR_OUTSIDE_WHITELIST",
+      "written": false
+    },
+    "reported_detects_error": "True",
+    "reported_legal_false_rejection": "",
+    "role": "DEVELOPMENT",
+    "source_check": "execution/RMT-EXEC-001/results/development_test_final/checks/08_filtered_output_claimed_all_records_B2.json",
+    "source_check_sha256": "3ba176511bfd16dab77551e8cde37951700daafe902d6b06ca467560dbd0b8b6",
+    "status": "REJECT"
+  },
+  {
+    "case_id": "08_filtered_output_claimed_all_records",
+    "method": "RMT",
+    "new_v2_issue_identity": "UNCHANGED",
+    "new_v2_status": "REJECT",
+    "recovery": {
+      "rules": [
+        "POPULATION_SCOPE_CONFLICT"
+      ],
+      "status": "REFUSED_NOT_IDENTIFIABLE_OR_OUTSIDE_WHITELIST",
+      "written": false
+    },
+    "reported_detects_error": "True",
+    "reported_legal_false_rejection": "",
+    "role": "DEVELOPMENT",
+    "source_check": "execution/RMT-EXEC-001/results/development_test_final/checks/08_filtered_output_claimed_all_records_RMT.json",
+    "source_check_sha256": "e0419b3f55986fe642d2c21b72628d657500588b576df3d527e9ec7c4644ab7d",
+    "status": "REJECT"
+  },
+  {
+    "case_id": "09_missing_probability_imputed_zero",
+    "method": "B0",
+    "recovery": {},
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "",
+    "role": "DEVELOPMENT",
+    "source_check": "execution/RMT-EXEC-001/results/development_test_final/checks/09_missing_probability_imputed_zero_B0.json",
+    "source_check_sha256": "7fabb06569b4eeb94dcc8e514455743d35dbd4b7e17c83cd4026d64207e6978d",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "09_missing_probability_imputed_zero",
+    "method": "B1",
+    "recovery": {},
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "",
+    "role": "DEVELOPMENT",
+    "source_check": "execution/RMT-EXEC-001/results/development_test_final/checks/09_missing_probability_imputed_zero_B1.json",
+    "source_check_sha256": "b06bd540a1b70b5d84f3bf9c1ecef689d87f2363ffafee4d02bfd3f5f8dd10e2",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "09_missing_probability_imputed_zero",
+    "method": "B2",
+    "new_v2_issue_identity": "UNCHANGED",
+    "new_v2_status": "REJECT",
+    "recovery": {
+      "rules": [
+        "MISSING_IMPUTED"
+      ],
+      "status": "REFUSED_NOT_IDENTIFIABLE_OR_OUTSIDE_WHITELIST",
+      "written": false
+    },
+    "reported_detects_error": "True",
+    "reported_legal_false_rejection": "",
+    "role": "DEVELOPMENT",
+    "source_check": "execution/RMT-EXEC-001/results/development_test_final/checks/09_missing_probability_imputed_zero_B2.json",
+    "source_check_sha256": "4c4be3e4ce991c9f344d3b0e0a4cf8e97637c34aecd056fa20291d0f2bd38adc",
+    "status": "REJECT"
+  },
+  {
+    "case_id": "09_missing_probability_imputed_zero",
+    "method": "RMT",
+    "new_v2_issue_identity": "UNCHANGED",
+    "new_v2_status": "REJECT",
+    "recovery": {
+      "rules": [
+        "MISSING_SCORE_IMPUTED"
+      ],
+      "status": "REFUSED_NOT_IDENTIFIABLE_OR_OUTSIDE_WHITELIST",
+      "written": false
+    },
+    "reported_detects_error": "True",
+    "reported_legal_false_rejection": "",
+    "role": "DEVELOPMENT",
+    "source_check": "execution/RMT-EXEC-001/results/development_test_final/checks/09_missing_probability_imputed_zero_RMT.json",
+    "source_check_sha256": "84ce2aca0e74238329393b3e6b495ec76a2ab2be29ffab3bf88736707862c0dd",
+    "status": "REJECT"
+  },
+  {
+    "case_id": "10_modification_code_confusion",
+    "method": "B0",
+    "recovery": {},
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "",
+    "role": "DEVELOPMENT",
+    "source_check": "execution/RMT-EXEC-001/results/development_test_final/checks/10_modification_code_confusion_B0.json",
+    "source_check_sha256": "7fabb06569b4eeb94dcc8e514455743d35dbd4b7e17c83cd4026d64207e6978d",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "10_modification_code_confusion",
+    "method": "B1",
+    "recovery": {},
+    "reported_detects_error": "True",
+    "reported_legal_false_rejection": "",
+    "role": "DEVELOPMENT",
+    "source_check": "execution/RMT-EXEC-001/results/development_test_final/checks/10_modification_code_confusion_B1.json",
+    "source_check_sha256": "b88308ffd012a470ba8d0032fbb40d3114ebf32014dd75d3349982945e8c12ea",
+    "status": "REJECT"
+  },
+  {
+    "case_id": "10_modification_code_confusion",
+    "method": "B2",
+    "new_v2_issue_identity": "UNCHANGED",
+    "new_v2_status": "REJECT",
+    "recovery": {
+      "rules": [
+        "MOD_CODE"
+      ],
+      "status": "REFUSED_NOT_IDENTIFIABLE_OR_OUTSIDE_WHITELIST",
+      "written": false
+    },
+    "reported_detects_error": "True",
+    "reported_legal_false_rejection": "",
+    "role": "DEVELOPMENT",
+    "source_check": "execution/RMT-EXEC-001/results/development_test_final/checks/10_modification_code_confusion_B2.json",
+    "source_check_sha256": "5c0a0cbc326295c6f4b92f74af132a1c3a1d293a699d28b2d8536477aa644784",
+    "status": "REJECT"
+  },
+  {
+    "case_id": "10_modification_code_confusion",
+    "method": "RMT",
+    "new_v2_issue_identity": "UNCHANGED",
+    "new_v2_status": "REJECT",
+    "recovery": {
+      "rules": [
+        "MODIFICATION_CODE_CONFLICT"
+      ],
+      "status": "REFUSED_NOT_IDENTIFIABLE_OR_OUTSIDE_WHITELIST",
+      "written": false
+    },
+    "reported_detects_error": "True",
+    "reported_legal_false_rejection": "",
+    "role": "DEVELOPMENT",
+    "source_check": "execution/RMT-EXEC-001/results/development_test_final/checks/10_modification_code_confusion_RMT.json",
+    "source_check_sha256": "c122a9185d67a5a99d4ebe1a7f0b1168e5afe4f8cd97dd139c74fd86a0e51624",
+    "status": "REJECT"
+  },
+  {
+    "case_id": "11_row_order",
+    "method": "B0",
+    "recovery": {},
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "False",
+    "role": "DEVELOPMENT",
+    "source_check": "execution/RMT-EXEC-001/results/development_test_final/checks/11_row_order_B0.json",
+    "source_check_sha256": "7fabb06569b4eeb94dcc8e514455743d35dbd4b7e17c83cd4026d64207e6978d",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "11_row_order",
+    "method": "B1",
+    "recovery": {},
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "False",
+    "role": "DEVELOPMENT",
+    "source_check": "execution/RMT-EXEC-001/results/development_test_final/checks/11_row_order_B1.json",
+    "source_check_sha256": "b06bd540a1b70b5d84f3bf9c1ecef689d87f2363ffafee4d02bfd3f5f8dd10e2",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "11_row_order",
+    "method": "B2",
+    "new_v2_issue_identity": "UNCHANGED",
+    "new_v2_status": "ACCEPT",
+    "recovery": {
+      "rules": [],
+      "status": "NOT_NEEDED",
+      "written": false
+    },
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "False",
+    "role": "DEVELOPMENT",
+    "source_check": "execution/RMT-EXEC-001/results/development_test_final/checks/11_row_order_B2.json",
+    "source_check_sha256": "1724210df6d1ec8f94812adcf807882a8a369f25bd155ea91a269f7c7d02f165",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "11_row_order",
+    "method": "RMT",
+    "new_v2_issue_identity": "UNCHANGED",
+    "new_v2_status": "ACCEPT",
+    "recovery": {
+      "rules": [],
+      "status": "NOT_NEEDED",
+      "written": false
+    },
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "False",
+    "role": "DEVELOPMENT",
+    "source_check": "execution/RMT-EXEC-001/results/development_test_final/checks/11_row_order_RMT.json",
+    "source_check_sha256": "5e94d2ea089860cb8d059439e4b2a808e2093804e09345349ec2b25f7fe0c922",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "12_compression",
+    "method": "B0",
+    "recovery": {},
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "False",
+    "role": "DEVELOPMENT",
+    "source_check": "execution/RMT-EXEC-001/results/development_test_final/checks/12_compression_B0.json",
+    "source_check_sha256": "7fabb06569b4eeb94dcc8e514455743d35dbd4b7e17c83cd4026d64207e6978d",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "12_compression",
+    "method": "B1",
+    "recovery": {},
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "False",
+    "role": "DEVELOPMENT",
+    "source_check": "execution/RMT-EXEC-001/results/development_test_final/checks/12_compression_B1.json",
+    "source_check_sha256": "b06bd540a1b70b5d84f3bf9c1ecef689d87f2363ffafee4d02bfd3f5f8dd10e2",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "12_compression",
+    "method": "B2",
+    "new_v2_issue_identity": "UNCHANGED",
+    "new_v2_status": "ACCEPT",
+    "recovery": {
+      "rules": [],
+      "status": "NOT_NEEDED",
+      "written": false
+    },
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "False",
+    "role": "DEVELOPMENT",
+    "source_check": "execution/RMT-EXEC-001/results/development_test_final/checks/12_compression_B2.json",
+    "source_check_sha256": "1724210df6d1ec8f94812adcf807882a8a369f25bd155ea91a269f7c7d02f165",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "12_compression",
+    "method": "RMT",
+    "new_v2_issue_identity": "UNCHANGED",
+    "new_v2_status": "ACCEPT",
+    "recovery": {
+      "rules": [],
+      "status": "NOT_NEEDED",
+      "written": false
+    },
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "False",
+    "role": "DEVELOPMENT",
+    "source_check": "execution/RMT-EXEC-001/results/development_test_final/checks/12_compression_RMT.json",
+    "source_check_sha256": "5e94d2ea089860cb8d059439e4b2a808e2093804e09345349ec2b25f7fe0c922",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "13_irrelevant_column",
+    "method": "B0",
+    "recovery": {},
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "False",
+    "role": "DEVELOPMENT",
+    "source_check": "execution/RMT-EXEC-001/results/development_test_final/checks/13_irrelevant_column_B0.json",
+    "source_check_sha256": "7fabb06569b4eeb94dcc8e514455743d35dbd4b7e17c83cd4026d64207e6978d",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "13_irrelevant_column",
+    "method": "B1",
+    "recovery": {},
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "False",
+    "role": "DEVELOPMENT",
+    "source_check": "execution/RMT-EXEC-001/results/development_test_final/checks/13_irrelevant_column_B1.json",
+    "source_check_sha256": "b06bd540a1b70b5d84f3bf9c1ecef689d87f2363ffafee4d02bfd3f5f8dd10e2",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "13_irrelevant_column",
+    "method": "B2",
+    "new_v2_issue_identity": "UNCHANGED",
+    "new_v2_status": "ACCEPT",
+    "recovery": {
+      "rules": [],
+      "status": "NOT_NEEDED",
+      "written": false
+    },
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "False",
+    "role": "DEVELOPMENT",
+    "source_check": "execution/RMT-EXEC-001/results/development_test_final/checks/13_irrelevant_column_B2.json",
+    "source_check_sha256": "1724210df6d1ec8f94812adcf807882a8a369f25bd155ea91a269f7c7d02f165",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "13_irrelevant_column",
+    "method": "RMT",
+    "new_v2_issue_identity": "UNCHANGED",
+    "new_v2_status": "ACCEPT",
+    "recovery": {
+      "rules": [],
+      "status": "NOT_NEEDED",
+      "written": false
+    },
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "False",
+    "role": "DEVELOPMENT",
+    "source_check": "execution/RMT-EXEC-001/results/development_test_final/checks/13_irrelevant_column_RMT.json",
+    "source_check_sha256": "5e94d2ea089860cb8d059439e4b2a808e2093804e09345349ec2b25f7fe0c922",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "14_documented_bijective_rename",
+    "method": "B0",
+    "recovery": {},
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "False",
+    "role": "DEVELOPMENT",
+    "source_check": "execution/RMT-EXEC-001/results/development_test_final/checks/14_documented_bijective_rename_B0.json",
+    "source_check_sha256": "7fabb06569b4eeb94dcc8e514455743d35dbd4b7e17c83cd4026d64207e6978d",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "14_documented_bijective_rename",
+    "method": "B1",
+    "recovery": {},
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "False",
+    "role": "DEVELOPMENT",
+    "source_check": "execution/RMT-EXEC-001/results/development_test_final/checks/14_documented_bijective_rename_B1.json",
+    "source_check_sha256": "b06bd540a1b70b5d84f3bf9c1ecef689d87f2363ffafee4d02bfd3f5f8dd10e2",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "14_documented_bijective_rename",
+    "method": "B2",
+    "new_v2_issue_identity": "UNCHANGED",
+    "new_v2_status": "ACCEPT",
+    "recovery": {
+      "rules": [],
+      "status": "NOT_NEEDED",
+      "written": false
+    },
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "False",
+    "role": "DEVELOPMENT",
+    "source_check": "execution/RMT-EXEC-001/results/development_test_final/checks/14_documented_bijective_rename_B2.json",
+    "source_check_sha256": "1724210df6d1ec8f94812adcf807882a8a369f25bd155ea91a269f7c7d02f165",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "14_documented_bijective_rename",
+    "method": "RMT",
+    "new_v2_issue_identity": "UNCHANGED",
+    "new_v2_status": "ACCEPT",
+    "recovery": {
+      "rules": [],
+      "status": "NOT_NEEDED",
+      "written": false
+    },
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "False",
+    "role": "DEVELOPMENT",
+    "source_check": "execution/RMT-EXEC-001/results/development_test_final/checks/14_documented_bijective_rename_RMT.json",
+    "source_check_sha256": "5e94d2ea089860cb8d059439e4b2a808e2093804e09345349ec2b25f7fe0c922",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "15_disjoint_merge",
+    "method": "B0",
+    "recovery": {},
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "False",
+    "role": "DEVELOPMENT",
+    "source_check": "execution/RMT-EXEC-001/results/development_test_final/checks/15_disjoint_merge_B0.json",
+    "source_check_sha256": "7fabb06569b4eeb94dcc8e514455743d35dbd4b7e17c83cd4026d64207e6978d",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "15_disjoint_merge",
+    "method": "B1",
+    "recovery": {},
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "False",
+    "role": "DEVELOPMENT",
+    "source_check": "execution/RMT-EXEC-001/results/development_test_final/checks/15_disjoint_merge_B1.json",
+    "source_check_sha256": "b06bd540a1b70b5d84f3bf9c1ecef689d87f2363ffafee4d02bfd3f5f8dd10e2",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "15_disjoint_merge",
+    "method": "B2",
+    "new_v2_issue_identity": "UNCHANGED",
+    "new_v2_status": "ACCEPT",
+    "recovery": {
+      "rules": [],
+      "status": "NOT_NEEDED",
+      "written": false
+    },
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "False",
+    "role": "DEVELOPMENT",
+    "source_check": "execution/RMT-EXEC-001/results/development_test_final/checks/15_disjoint_merge_B2.json",
+    "source_check_sha256": "1724210df6d1ec8f94812adcf807882a8a369f25bd155ea91a269f7c7d02f165",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "15_disjoint_merge",
+    "method": "RMT",
+    "new_v2_issue_identity": "UNCHANGED",
+    "new_v2_status": "ACCEPT",
+    "recovery": {
+      "rules": [],
+      "status": "NOT_NEEDED",
+      "written": false
+    },
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "False",
+    "role": "DEVELOPMENT",
+    "source_check": "execution/RMT-EXEC-001/results/development_test_final/checks/15_disjoint_merge_RMT.json",
+    "source_check_sha256": "5e94d2ea089860cb8d059439e4b2a808e2093804e09345349ec2b25f7fe0c922",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "16_documented_coordinate_conversion",
+    "method": "B0",
+    "recovery": {},
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "False",
+    "role": "DEVELOPMENT",
+    "source_check": "execution/RMT-EXEC-001/results/development_test_final/checks/16_documented_coordinate_conversion_B0.json",
+    "source_check_sha256": "7fabb06569b4eeb94dcc8e514455743d35dbd4b7e17c83cd4026d64207e6978d",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "16_documented_coordinate_conversion",
+    "method": "B1",
+    "recovery": {},
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "False",
+    "role": "DEVELOPMENT",
+    "source_check": "execution/RMT-EXEC-001/results/development_test_final/checks/16_documented_coordinate_conversion_B1.json",
+    "source_check_sha256": "b06bd540a1b70b5d84f3bf9c1ecef689d87f2363ffafee4d02bfd3f5f8dd10e2",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "16_documented_coordinate_conversion",
+    "method": "B2",
+    "new_v2_issue_identity": "UNCHANGED",
+    "new_v2_status": "ACCEPT",
+    "recovery": {
+      "rules": [],
+      "status": "NOT_NEEDED",
+      "written": false
+    },
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "False",
+    "role": "DEVELOPMENT",
+    "source_check": "execution/RMT-EXEC-001/results/development_test_final/checks/16_documented_coordinate_conversion_B2.json",
+    "source_check_sha256": "1724210df6d1ec8f94812adcf807882a8a369f25bd155ea91a269f7c7d02f165",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "16_documented_coordinate_conversion",
+    "method": "RMT",
+    "new_v2_issue_identity": "UNCHANGED",
+    "new_v2_status": "ACCEPT",
+    "recovery": {
+      "rules": [],
+      "status": "NOT_NEEDED",
+      "written": false
+    },
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "False",
+    "role": "DEVELOPMENT",
+    "source_check": "execution/RMT-EXEC-001/results/development_test_final/checks/16_documented_coordinate_conversion_RMT.json",
+    "source_check_sha256": "5e94d2ea089860cb8d059439e4b2a808e2093804e09345349ec2b25f7fe0c922",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "00_canonical",
+    "method": "B0",
+    "recovery": {},
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "False",
+    "role": "EVALUATION",
+    "source_check": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/checks/00_canonical_B0.json",
+    "source_check_sha256": "94c2edfd89846e4e74d5585441134eb84fe612924cbdfbf720f6bb692e504e9e",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "00_canonical",
+    "method": "B1",
+    "recovery": {},
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "False",
+    "role": "EVALUATION",
+    "source_check": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/checks/00_canonical_B1.json",
+    "source_check_sha256": "9c501bcc5759d1fb2223dcfad45d4e8d65adc12aa5114b7c5f819eac6dbd37c6",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "00_canonical",
+    "method": "B2",
+    "new_v2_issue_identity": "UNCHANGED",
+    "new_v2_status": "ACCEPT",
+    "recovery": {
+      "rules": [],
+      "status": "NOT_NEEDED",
+      "written": false
+    },
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "False",
+    "role": "EVALUATION",
+    "source_check": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/checks/00_canonical_B2.json",
+    "source_check_sha256": "3c655f448b5a45dc1564bab776c892ca2648033848091d0b49e8165a3c36d00d",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "00_canonical",
+    "method": "RMT",
+    "new_v2_issue_identity": "UNCHANGED",
+    "new_v2_status": "ACCEPT",
+    "recovery": {
+      "rules": [],
+      "status": "NOT_NEEDED",
+      "written": false
+    },
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "False",
+    "role": "EVALUATION",
+    "source_check": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/checks/00_canonical_RMT.json",
+    "source_check_sha256": "5af72d3d8a536839da5016d6cc715d1ab7fa2029a74a6d62160f2cc8e9c54a23",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "01_sample_reference_BED_mismatch",
+    "method": "B0",
+    "recovery": {},
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "",
+    "role": "EVALUATION",
+    "source_check": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/checks/01_sample_reference_BED_mismatch_B0.json",
+    "source_check_sha256": "94c2edfd89846e4e74d5585441134eb84fe612924cbdfbf720f6bb692e504e9e",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "01_sample_reference_BED_mismatch",
+    "method": "B1",
+    "recovery": {},
+    "reported_detects_error": "True",
+    "reported_legal_false_rejection": "",
+    "role": "EVALUATION",
+    "source_check": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/checks/01_sample_reference_BED_mismatch_B1.json",
+    "source_check_sha256": "3c6ded64e9f907aa7192c5985027f17d731dbcd248cbbf5f37d04e4be69d0add",
+    "status": "REJECT"
+  },
+  {
+    "case_id": "01_sample_reference_BED_mismatch",
+    "method": "B2",
+    "new_v2_issue_identity": "UNCHANGED",
+    "new_v2_status": "REJECT",
+    "recovery": {
+      "after_sha256": {
+        "contract.json": "0764629c329b08cd8cf7144f038d1b5185eb487e367e8834108c738a43af94b6",
+        "predictions.tsv.gz": "41289a47f5d197c664799c454a71f36afff2496431a40db86b7e96de5c7facd5",
+        "read_map.tsv": "8e29c44f4304a2fa08d3617d719837d22960171063325003f46432a33f39dab7",
+        "reference.fa": "c1170a99fafadbd0aac6d64d7842588bbcdb8c163780b86aa71dfa836a161700",
+        "truth.tsv": "9b9a396749eee78f26286e856c0bc44c66c78e07ccdb333e935a0c3934839540"
+      },
+      "before_sha256": {
+        "contract.json": "0764629c329b08cd8cf7144f038d1b5185eb487e367e8834108c738a43af94b6",
+        "predictions.tsv.gz": "41289a47f5d197c664799c454a71f36afff2496431a40db86b7e96de5c7facd5",
+        "read_map.tsv": "8e29c44f4304a2fa08d3617d719837d22960171063325003f46432a33f39dab7",
+        "reference.fa": "c1170a99fafadbd0aac6d64d7842588bbcdb8c163780b86aa71dfa836a161700",
+        "truth.tsv": "46478fc23e9c8dcdd55dce9d63024874789d438f95afc13b0f882afed74edce7"
+      },
+      "evidence_sha256": "2fe47479e5234f999f14dfd4651f3a33dcab4596e3786d18997670408e3ce389",
+      "postvalidation_status": "ACCEPT",
+      "rules": [
+        "SAMPLE_BED_MAPPING"
+      ],
+      "status": "RECOVERED_SOURCE_DETERMINED",
+      "written": true
+    },
+    "reported_detects_error": "True",
+    "reported_legal_false_rejection": "",
+    "role": "EVALUATION",
+    "source_check": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/checks/01_sample_reference_BED_mismatch_B2.json",
+    "source_check_sha256": "ab40bbc3583b9b9bfb0bd42620d21707abbcd5173e0615f02fd8151e013a7aa2",
+    "status": "REJECT"
+  },
+  {
+    "case_id": "01_sample_reference_BED_mismatch",
+    "method": "RMT",
+    "new_v2_issue_identity": "UNCHANGED",
+    "new_v2_status": "REJECT",
+    "recovery": {
+      "after_sha256": {
+        "contract.json": "0764629c329b08cd8cf7144f038d1b5185eb487e367e8834108c738a43af94b6",
+        "predictions.tsv.gz": "41289a47f5d197c664799c454a71f36afff2496431a40db86b7e96de5c7facd5",
+        "read_map.tsv": "8e29c44f4304a2fa08d3617d719837d22960171063325003f46432a33f39dab7",
+        "reference.fa": "c1170a99fafadbd0aac6d64d7842588bbcdb8c163780b86aa71dfa836a161700",
+        "truth.tsv": "9b9a396749eee78f26286e856c0bc44c66c78e07ccdb333e935a0c3934839540"
+      },
+      "before_sha256": {
+        "contract.json": "0764629c329b08cd8cf7144f038d1b5185eb487e367e8834108c738a43af94b6",
+        "predictions.tsv.gz": "41289a47f5d197c664799c454a71f36afff2496431a40db86b7e96de5c7facd5",
+        "read_map.tsv": "8e29c44f4304a2fa08d3617d719837d22960171063325003f46432a33f39dab7",
+        "reference.fa": "c1170a99fafadbd0aac6d64d7842588bbcdb8c163780b86aa71dfa836a161700",
+        "truth.tsv": "46478fc23e9c8dcdd55dce9d63024874789d438f95afc13b0f882afed74edce7"
+      },
+      "evidence_sha256": "2fe47479e5234f999f14dfd4651f3a33dcab4596e3786d18997670408e3ce389",
+      "postvalidation_status": "ACCEPT",
+      "rules": [
+        "OFFICIAL_TRUTH_MAPPING"
+      ],
+      "status": "RECOVERED_SOURCE_DETERMINED",
+      "written": true
+    },
+    "reported_detects_error": "True",
+    "reported_legal_false_rejection": "",
+    "role": "EVALUATION",
+    "source_check": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/checks/01_sample_reference_BED_mismatch_RMT.json",
+    "source_check_sha256": "8c3a7d249e465f7f2b4fff5d4604a7123808de71632162d16226e5e6f17d3171",
+    "status": "REJECT"
+  },
+  {
+    "case_id": "02_declared_zero_one_based_coordinate_error",
+    "method": "B0",
+    "recovery": {},
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "",
+    "role": "EVALUATION",
+    "source_check": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/checks/02_declared_zero_one_based_coordinate_error_B0.json",
+    "source_check_sha256": "94c2edfd89846e4e74d5585441134eb84fe612924cbdfbf720f6bb692e504e9e",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "02_declared_zero_one_based_coordinate_error",
+    "method": "B1",
+    "recovery": {},
+    "reported_detects_error": "True",
+    "reported_legal_false_rejection": "",
+    "role": "EVALUATION",
+    "source_check": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/checks/02_declared_zero_one_based_coordinate_error_B1.json",
+    "source_check_sha256": "cce46a27dda66f331cf19d1a8331b64f8155feca7d3dd27eb5b5184a97b7f20d",
+    "status": "REJECT"
+  },
+  {
+    "case_id": "02_declared_zero_one_based_coordinate_error",
+    "method": "B2",
+    "new_v2_issue_identity": "UNCHANGED",
+    "new_v2_status": "REJECT",
+    "recovery": {
+      "after_sha256": {
+        "contract.json": "b9fb7085d8830ee0edf5773a579fecd9ac3a196d0c1dc3f682a615a99e11e6d5",
+        "predictions.tsv.gz": "b001d9e87dad7c93be7bca6da14a076f2de9014925890f0c82e4719adc8d7831",
+        "read_map.tsv": "8e29c44f4304a2fa08d3617d719837d22960171063325003f46432a33f39dab7",
+        "reference.fa": "c1170a99fafadbd0aac6d64d7842588bbcdb8c163780b86aa71dfa836a161700",
+        "truth.tsv": "9b9a396749eee78f26286e856c0bc44c66c78e07ccdb333e935a0c3934839540"
+      },
+      "before_sha256": {
+        "contract.json": "52185d5821fe65caa1d418c42b39d247f1f52d6ea16245f519b482616550a4b1",
+        "predictions.tsv.gz": "b001d9e87dad7c93be7bca6da14a076f2de9014925890f0c82e4719adc8d7831",
+        "read_map.tsv": "8e29c44f4304a2fa08d3617d719837d22960171063325003f46432a33f39dab7",
+        "reference.fa": "c1170a99fafadbd0aac6d64d7842588bbcdb8c163780b86aa71dfa836a161700",
+        "truth.tsv": "9b9a396749eee78f26286e856c0bc44c66c78e07ccdb333e935a0c3934839540"
+      },
+      "evidence_sha256": "2fe47479e5234f999f14dfd4651f3a33dcab4596e3786d18997670408e3ce389",
+      "postvalidation_status": "ACCEPT",
+      "rules": [
+        "COORDINATE_DECLARATION"
+      ],
+      "status": "RECOVERED_SOURCE_DETERMINED",
+      "written": true
+    },
+    "reported_detects_error": "True",
+    "reported_legal_false_rejection": "",
+    "role": "EVALUATION",
+    "source_check": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/checks/02_declared_zero_one_based_coordinate_error_B2.json",
+    "source_check_sha256": "e84b5404348384d34bb65489dc1aefcd42d0f399af50194ca1312a82cd22511b",
+    "status": "REJECT"
+  },
+  {
+    "case_id": "02_declared_zero_one_based_coordinate_error",
+    "method": "RMT",
+    "new_v2_issue_identity": "UNCHANGED",
+    "new_v2_status": "REJECT",
+    "recovery": {
+      "after_sha256": {
+        "contract.json": "b9fb7085d8830ee0edf5773a579fecd9ac3a196d0c1dc3f682a615a99e11e6d5",
+        "predictions.tsv.gz": "b001d9e87dad7c93be7bca6da14a076f2de9014925890f0c82e4719adc8d7831",
+        "read_map.tsv": "8e29c44f4304a2fa08d3617d719837d22960171063325003f46432a33f39dab7",
+        "reference.fa": "c1170a99fafadbd0aac6d64d7842588bbcdb8c163780b86aa71dfa836a161700",
+        "truth.tsv": "9b9a396749eee78f26286e856c0bc44c66c78e07ccdb333e935a0c3934839540"
+      },
+      "before_sha256": {
+        "contract.json": "52185d5821fe65caa1d418c42b39d247f1f52d6ea16245f519b482616550a4b1",
+        "predictions.tsv.gz": "b001d9e87dad7c93be7bca6da14a076f2de9014925890f0c82e4719adc8d7831",
+        "read_map.tsv": "8e29c44f4304a2fa08d3617d719837d22960171063325003f46432a33f39dab7",
+        "reference.fa": "c1170a99fafadbd0aac6d64d7842588bbcdb8c163780b86aa71dfa836a161700",
+        "truth.tsv": "9b9a396749eee78f26286e856c0bc44c66c78e07ccdb333e935a0c3934839540"
+      },
+      "evidence_sha256": "2fe47479e5234f999f14dfd4651f3a33dcab4596e3786d18997670408e3ce389",
+      "postvalidation_status": "ACCEPT",
+      "rules": [
+        "DECLARED_COORDINATE_CONFLICT"
+      ],
+      "status": "RECOVERED_SOURCE_DETERMINED",
+      "written": true
+    },
+    "reported_detects_error": "True",
+    "reported_legal_false_rejection": "",
+    "role": "EVALUATION",
+    "source_check": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/checks/02_declared_zero_one_based_coordinate_error_RMT.json",
+    "source_check_sha256": "932c9bf44388ea44970d56507228bc44a4e613237d0a09894b33b583ce247953",
+    "status": "REJECT"
+  },
+  {
+    "case_id": "03_strand_or_reference_version_conflict",
+    "method": "B0",
+    "recovery": {},
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "",
+    "role": "EVALUATION",
+    "source_check": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/checks/03_strand_or_reference_version_conflict_B0.json",
+    "source_check_sha256": "94c2edfd89846e4e74d5585441134eb84fe612924cbdfbf720f6bb692e504e9e",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "03_strand_or_reference_version_conflict",
+    "method": "B1",
+    "recovery": {},
+    "reported_detects_error": "True",
+    "reported_legal_false_rejection": "",
+    "role": "EVALUATION",
+    "source_check": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/checks/03_strand_or_reference_version_conflict_B1.json",
+    "source_check_sha256": "cb1aa8e02fe24a2aa28ba5a03382ec3c3e3847b1a5f502a0827271fc7db85df9",
+    "status": "REJECT"
+  },
+  {
+    "case_id": "03_strand_or_reference_version_conflict",
+    "method": "B2",
+    "new_v2_issue_identity": "UNCHANGED",
+    "new_v2_status": "REJECT",
+    "recovery": {
+      "rules": [
+        "ALIGNMENT"
+      ],
+      "status": "REFUSED_NOT_IDENTIFIABLE_OR_OUTSIDE_WHITELIST",
+      "written": false
+    },
+    "reported_detects_error": "True",
+    "reported_legal_false_rejection": "",
+    "role": "EVALUATION",
+    "source_check": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/checks/03_strand_or_reference_version_conflict_B2.json",
+    "source_check_sha256": "4e45acd60888fad494d190246f7d8409931382ecf9d9b9bf744e43711ae16488",
+    "status": "REJECT"
+  },
+  {
+    "case_id": "03_strand_or_reference_version_conflict",
+    "method": "RMT",
+    "new_v2_issue_identity": "UNCHANGED",
+    "new_v2_status": "REJECT",
+    "recovery": {
+      "rules": [
+        "SOURCE_ALIGNMENT_CONFLICT"
+      ],
+      "status": "REFUSED_NOT_IDENTIFIABLE_OR_OUTSIDE_WHITELIST",
+      "written": false
+    },
+    "reported_detects_error": "True",
+    "reported_legal_false_rejection": "",
+    "role": "EVALUATION",
+    "source_check": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/checks/03_strand_or_reference_version_conflict_RMT.json",
+    "source_check_sha256": "630ef6470443512fa0058995520a86bf0144979c90201d147dd70c3b93691d69",
+    "status": "REJECT"
+  },
+  {
+    "case_id": "04_lost_sample_join_key",
+    "method": "B0",
+    "recovery": {},
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "",
+    "role": "EVALUATION",
+    "source_check": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/checks/04_lost_sample_join_key_B0.json",
+    "source_check_sha256": "94c2edfd89846e4e74d5585441134eb84fe612924cbdfbf720f6bb692e504e9e",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "04_lost_sample_join_key",
+    "method": "B1",
+    "recovery": {},
+    "reported_detects_error": "True",
+    "reported_legal_false_rejection": "",
+    "role": "EVALUATION",
+    "source_check": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/checks/04_lost_sample_join_key_B1.json",
+    "source_check_sha256": "eb0e20f81b64737b6724c528d2f7623daf1ff18a23091b172804f73946e9d5af",
+    "status": "REJECT"
+  },
+  {
+    "case_id": "04_lost_sample_join_key",
+    "method": "B2",
+    "new_v2_issue_identity": "UNCHANGED",
+    "new_v2_status": "REJECT",
+    "recovery": {
+      "rules": [
+        "JOIN_KEYS"
+      ],
+      "status": "REFUSED_NOT_IDENTIFIABLE_OR_OUTSIDE_WHITELIST",
+      "written": false
+    },
+    "reported_detects_error": "True",
+    "reported_legal_false_rejection": "",
+    "role": "EVALUATION",
+    "source_check": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/checks/04_lost_sample_join_key_B2.json",
+    "source_check_sha256": "f9c68b6383b394176986ea863d5e2203cacbd8b77c12f3eea9abf390fae01285",
+    "status": "REJECT"
+  },
+  {
+    "case_id": "04_lost_sample_join_key",
+    "method": "RMT",
+    "new_v2_issue_identity": "UNCHANGED",
+    "new_v2_status": "REJECT",
+    "recovery": {
+      "rules": [
+        "INCOMPLETE_TRUTH_JOIN_KEY"
+      ],
+      "status": "REFUSED_NOT_IDENTIFIABLE_OR_OUTSIDE_WHITELIST",
+      "written": false
+    },
+    "reported_detects_error": "True",
+    "reported_legal_false_rejection": "",
+    "role": "EVALUATION",
+    "source_check": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/checks/04_lost_sample_join_key_RMT.json",
+    "source_check_sha256": "fdaaa2f190e5027f1905d163695daa9f1bdcec867fa8cd5e2200c1d426982c73",
+    "status": "REJECT"
+  },
+  {
+    "case_id": "05_read_index_reuse_across_runs",
+    "method": "B0",
+    "recovery": {},
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "",
+    "role": "EVALUATION",
+    "source_check": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/checks/05_read_index_reuse_across_runs_B0.json",
+    "source_check_sha256": "94c2edfd89846e4e74d5585441134eb84fe612924cbdfbf720f6bb692e504e9e",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "05_read_index_reuse_across_runs",
+    "method": "B1",
+    "recovery": {},
+    "reported_detects_error": "True",
+    "reported_legal_false_rejection": "",
+    "role": "EVALUATION",
+    "source_check": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/checks/05_read_index_reuse_across_runs_B1.json",
+    "source_check_sha256": "3b0496fa468273aa52633833ace84aa5e5e3fa4be45100c8638d2fe4ec8fa353",
+    "status": "REJECT"
+  },
+  {
+    "case_id": "05_read_index_reuse_across_runs",
+    "method": "B2",
+    "new_v2_issue_identity": "UNCHANGED",
+    "new_v2_status": "REJECT",
+    "recovery": {
+      "after_sha256": {
+        "contract.json": "0764629c329b08cd8cf7144f038d1b5185eb487e367e8834108c738a43af94b6",
+        "predictions.tsv.gz": "41289a47f5d197c664799c454a71f36afff2496431a40db86b7e96de5c7facd5",
+        "read_map.tsv": "8e29c44f4304a2fa08d3617d719837d22960171063325003f46432a33f39dab7",
+        "reference.fa": "c1170a99fafadbd0aac6d64d7842588bbcdb8c163780b86aa71dfa836a161700",
+        "truth.tsv": "9b9a396749eee78f26286e856c0bc44c66c78e07ccdb333e935a0c3934839540"
+      },
+      "before_sha256": {
+        "contract.json": "0764629c329b08cd8cf7144f038d1b5185eb487e367e8834108c738a43af94b6",
+        "predictions.tsv.gz": "fdbe901dacd8544723f590b1c830cf5ab645f9a8ec2917c885322743e0f9a0c2",
+        "read_map.tsv": "8e29c44f4304a2fa08d3617d719837d22960171063325003f46432a33f39dab7",
+        "reference.fa": "c1170a99fafadbd0aac6d64d7842588bbcdb8c163780b86aa71dfa836a161700",
+        "truth.tsv": "9b9a396749eee78f26286e856c0bc44c66c78e07ccdb333e935a0c3934839540"
+      },
+      "evidence_sha256": "2fe47479e5234f999f14dfd4651f3a33dcab4596e3786d18997670408e3ce389",
+      "postvalidation_status": "ACCEPT",
+      "rules": [
+        "IDENTITY"
+      ],
+      "status": "RECOVERED_SOURCE_DETERMINED",
+      "written": true
+    },
+    "reported_detects_error": "True",
+    "reported_legal_false_rejection": "",
+    "role": "EVALUATION",
+    "source_check": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/checks/05_read_index_reuse_across_runs_B2.json",
+    "source_check_sha256": "b331a35dca95403be21f532e86d7425ed29e28be7fb0472359ddfd395f27f131",
+    "status": "REJECT"
+  },
+  {
+    "case_id": "05_read_index_reuse_across_runs",
+    "method": "RMT",
+    "new_v2_issue_identity": "UNCHANGED",
+    "new_v2_status": "REJECT",
+    "recovery": {
+      "after_sha256": {
+        "contract.json": "0764629c329b08cd8cf7144f038d1b5185eb487e367e8834108c738a43af94b6",
+        "predictions.tsv.gz": "41289a47f5d197c664799c454a71f36afff2496431a40db86b7e96de5c7facd5",
+        "read_map.tsv": "8e29c44f4304a2fa08d3617d719837d22960171063325003f46432a33f39dab7",
+        "reference.fa": "c1170a99fafadbd0aac6d64d7842588bbcdb8c163780b86aa71dfa836a161700",
+        "truth.tsv": "9b9a396749eee78f26286e856c0bc44c66c78e07ccdb333e935a0c3934839540"
+      },
+      "before_sha256": {
+        "contract.json": "0764629c329b08cd8cf7144f038d1b5185eb487e367e8834108c738a43af94b6",
+        "predictions.tsv.gz": "fdbe901dacd8544723f590b1c830cf5ab645f9a8ec2917c885322743e0f9a0c2",
+        "read_map.tsv": "8e29c44f4304a2fa08d3617d719837d22960171063325003f46432a33f39dab7",
+        "reference.fa": "c1170a99fafadbd0aac6d64d7842588bbcdb8c163780b86aa71dfa836a161700",
+        "truth.tsv": "9b9a396749eee78f26286e856c0bc44c66c78e07ccdb333e935a0c3934839540"
+      },
+      "evidence_sha256": "2fe47479e5234f999f14dfd4651f3a33dcab4596e3786d18997670408e3ce389",
+      "postvalidation_status": "ACCEPT",
+      "rules": [
+        "READ_IDENTITY_CONFLICT"
+      ],
+      "status": "RECOVERED_SOURCE_DETERMINED",
+      "written": true
+    },
+    "reported_detects_error": "True",
+    "reported_legal_false_rejection": "",
+    "role": "EVALUATION",
+    "source_check": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/checks/05_read_index_reuse_across_runs_RMT.json",
+    "source_check_sha256": "23f71972e096452d0296c9f88c9211b8dffa20dea65630df1d3363bde3f52d92",
+    "status": "REJECT"
+  },
+  {
+    "case_id": "06_duplicate_read_site_counting",
+    "method": "B0",
+    "recovery": {},
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "",
+    "role": "EVALUATION",
+    "source_check": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/checks/06_duplicate_read_site_counting_B0.json",
+    "source_check_sha256": "4a8d0bc081d9f40a365340268a5dd9246a581b1eece699f4e495a3282c98bb97",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "06_duplicate_read_site_counting",
+    "method": "B1",
+    "recovery": {},
+    "reported_detects_error": "True",
+    "reported_legal_false_rejection": "",
+    "role": "EVALUATION",
+    "source_check": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/checks/06_duplicate_read_site_counting_B1.json",
+    "source_check_sha256": "d82d8395dd33c3d6a9e88b353baf2e14a0351b32806b96bf13adb5cc3d1ca788",
+    "status": "REJECT"
+  },
+  {
+    "case_id": "06_duplicate_read_site_counting",
+    "method": "B2",
+    "new_v2_issue_identity": "UNCHANGED",
+    "new_v2_status": "REJECT",
+    "recovery": {
+      "after_sha256": {
+        "contract.json": "0764629c329b08cd8cf7144f038d1b5185eb487e367e8834108c738a43af94b6",
+        "predictions.tsv.gz": "41289a47f5d197c664799c454a71f36afff2496431a40db86b7e96de5c7facd5",
+        "read_map.tsv": "8e29c44f4304a2fa08d3617d719837d22960171063325003f46432a33f39dab7",
+        "reference.fa": "c1170a99fafadbd0aac6d64d7842588bbcdb8c163780b86aa71dfa836a161700",
+        "truth.tsv": "9b9a396749eee78f26286e856c0bc44c66c78e07ccdb333e935a0c3934839540"
+      },
+      "before_sha256": {
+        "contract.json": "0764629c329b08cd8cf7144f038d1b5185eb487e367e8834108c738a43af94b6",
+        "predictions.tsv.gz": "c7ab6a851e9911d1e0c2a32e75933d2b18fb2db3ebb8f318c2cc05c5d71e5f99",
+        "read_map.tsv": "8e29c44f4304a2fa08d3617d719837d22960171063325003f46432a33f39dab7",
+        "reference.fa": "c1170a99fafadbd0aac6d64d7842588bbcdb8c163780b86aa71dfa836a161700",
+        "truth.tsv": "9b9a396749eee78f26286e856c0bc44c66c78e07ccdb333e935a0c3934839540"
+      },
+      "evidence_sha256": "2fe47479e5234f999f14dfd4651f3a33dcab4596e3786d18997670408e3ce389",
+      "postvalidation_status": "ACCEPT",
+      "rules": [
+        "EXACT_REPEAT"
+      ],
+      "status": "RECOVERED_SOURCE_DETERMINED",
+      "written": true
+    },
+    "reported_detects_error": "True",
+    "reported_legal_false_rejection": "",
+    "role": "EVALUATION",
+    "source_check": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/checks/06_duplicate_read_site_counting_B2.json",
+    "source_check_sha256": "aa2d884eeff07b124aaf1850f7ca57c9ea818c541489a57e4d180ce2d01af28f",
+    "status": "REJECT"
+  },
+  {
+    "case_id": "06_duplicate_read_site_counting",
+    "method": "RMT",
+    "new_v2_issue_identity": "UNCHANGED",
+    "new_v2_status": "REJECT",
+    "recovery": {
+      "after_sha256": {
+        "contract.json": "0764629c329b08cd8cf7144f038d1b5185eb487e367e8834108c738a43af94b6",
+        "predictions.tsv.gz": "41289a47f5d197c664799c454a71f36afff2496431a40db86b7e96de5c7facd5",
+        "read_map.tsv": "8e29c44f4304a2fa08d3617d719837d22960171063325003f46432a33f39dab7",
+        "reference.fa": "c1170a99fafadbd0aac6d64d7842588bbcdb8c163780b86aa71dfa836a161700",
+        "truth.tsv": "9b9a396749eee78f26286e856c0bc44c66c78e07ccdb333e935a0c3934839540"
+      },
+      "before_sha256": {
+        "contract.json": "0764629c329b08cd8cf7144f038d1b5185eb487e367e8834108c738a43af94b6",
+        "predictions.tsv.gz": "c7ab6a851e9911d1e0c2a32e75933d2b18fb2db3ebb8f318c2cc05c5d71e5f99",
+        "read_map.tsv": "8e29c44f4304a2fa08d3617d719837d22960171063325003f46432a33f39dab7",
+        "reference.fa": "c1170a99fafadbd0aac6d64d7842588bbcdb8c163780b86aa71dfa836a161700",
+        "truth.tsv": "9b9a396749eee78f26286e856c0bc44c66c78e07ccdb333e935a0c3934839540"
+      },
+      "evidence_sha256": "2fe47479e5234f999f14dfd4651f3a33dcab4596e3786d18997670408e3ce389",
+      "postvalidation_status": "ACCEPT",
+      "rules": [
+        "EXACT_DUPLICATE"
+      ],
+      "status": "RECOVERED_SOURCE_DETERMINED",
+      "written": true
+    },
+    "reported_detects_error": "True",
+    "reported_legal_false_rejection": "",
+    "role": "EVALUATION",
+    "source_check": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/checks/06_duplicate_read_site_counting_RMT.json",
+    "source_check_sha256": "d09c42693fe35b7d6d3d5b05c925fe38c71b0d5ba463f9616ceb393c5630aa10",
+    "status": "REJECT"
+  },
+  {
+    "case_id": "07_site_score_as_read_probability",
+    "method": "B0",
+    "recovery": {},
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "",
+    "role": "EVALUATION",
+    "source_check": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/checks/07_site_score_as_read_probability_B0.json",
+    "source_check_sha256": "94c2edfd89846e4e74d5585441134eb84fe612924cbdfbf720f6bb692e504e9e",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "07_site_score_as_read_probability",
+    "method": "B1",
+    "recovery": {},
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "",
+    "role": "EVALUATION",
+    "source_check": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/checks/07_site_score_as_read_probability_B1.json",
+    "source_check_sha256": "9c501bcc5759d1fb2223dcfad45d4e8d65adc12aa5114b7c5f819eac6dbd37c6",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "07_site_score_as_read_probability",
+    "method": "B2",
+    "new_v2_issue_identity": "UNCHANGED",
+    "new_v2_status": "REJECT",
+    "recovery": {
+      "rules": [
+        "SCORE_KIND",
+        "SCORE_VALUE"
+      ],
+      "status": "REFUSED_NOT_IDENTIFIABLE_OR_OUTSIDE_WHITELIST",
+      "written": false
+    },
+    "reported_detects_error": "True",
+    "reported_legal_false_rejection": "",
+    "role": "EVALUATION",
+    "source_check": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/checks/07_site_score_as_read_probability_B2.json",
+    "source_check_sha256": "7a5fa85d544c00b735a3637b332a5038fe6050abb1bea6371d17197c7c88a021",
+    "status": "REJECT"
+  },
+  {
+    "case_id": "07_site_score_as_read_probability",
+    "method": "RMT",
+    "new_v2_issue_identity": "UNCHANGED",
+    "new_v2_status": "REJECT",
+    "recovery": {
+      "rules": [
+        "SCORE_RESOLUTION_CONFLICT",
+        "SOURCE_SCORE_CONFLICT"
+      ],
+      "status": "REFUSED_NOT_IDENTIFIABLE_OR_OUTSIDE_WHITELIST",
+      "written": false
+    },
+    "reported_detects_error": "True",
+    "reported_legal_false_rejection": "",
+    "role": "EVALUATION",
+    "source_check": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/checks/07_site_score_as_read_probability_RMT.json",
+    "source_check_sha256": "17590464313f3abba19c90cd0907697a70da8fe9578a6256a29547253c593ee5",
+    "status": "REJECT"
+  },
+  {
+    "case_id": "08_filtered_output_claimed_all_records",
+    "method": "B0",
+    "recovery": {},
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "",
+    "role": "EVALUATION",
+    "source_check": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/checks/08_filtered_output_claimed_all_records_B0.json",
+    "source_check_sha256": "7db3f4f738d8614e9beefc1b5990eec12d074a733885b7f0bb96ec6820921aa2",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "08_filtered_output_claimed_all_records",
+    "method": "B1",
+    "recovery": {},
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "",
+    "role": "EVALUATION",
+    "source_check": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/checks/08_filtered_output_claimed_all_records_B1.json",
+    "source_check_sha256": "d9e2197df23b71ab118843be48328877d5850b49f1fde2f5a5beb1d2532d176a",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "08_filtered_output_claimed_all_records",
+    "method": "B2",
+    "new_v2_issue_identity": "UNCHANGED",
+    "new_v2_status": "REJECT",
+    "recovery": {
+      "rules": [
+        "DENOMINATOR"
+      ],
+      "status": "REFUSED_NOT_IDENTIFIABLE_OR_OUTSIDE_WHITELIST",
+      "written": false
+    },
+    "reported_detects_error": "True",
+    "reported_legal_false_rejection": "",
+    "role": "EVALUATION",
+    "source_check": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/checks/08_filtered_output_claimed_all_records_B2.json",
+    "source_check_sha256": "1603df6a8ca9940e4e773e5dffe9ff8caf2b6623f0295075956e861de9bfb0db",
+    "status": "REJECT"
+  },
+  {
+    "case_id": "08_filtered_output_claimed_all_records",
+    "method": "RMT",
+    "new_v2_issue_identity": "UNCHANGED",
+    "new_v2_status": "REJECT",
+    "recovery": {
+      "rules": [
+        "POPULATION_SCOPE_CONFLICT"
+      ],
+      "status": "REFUSED_NOT_IDENTIFIABLE_OR_OUTSIDE_WHITELIST",
+      "written": false
+    },
+    "reported_detects_error": "True",
+    "reported_legal_false_rejection": "",
+    "role": "EVALUATION",
+    "source_check": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/checks/08_filtered_output_claimed_all_records_RMT.json",
+    "source_check_sha256": "21c2e379521e399d875ab0254a651250e56df2cfa1bbf3110736d5de29b77647",
+    "status": "REJECT"
+  },
+  {
+    "case_id": "09_missing_probability_imputed_zero",
+    "method": "B0",
+    "recovery": {},
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "",
+    "role": "EVALUATION",
+    "source_check": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/checks/09_missing_probability_imputed_zero_B0.json",
+    "source_check_sha256": "94c2edfd89846e4e74d5585441134eb84fe612924cbdfbf720f6bb692e504e9e",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "09_missing_probability_imputed_zero",
+    "method": "B1",
+    "recovery": {},
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "",
+    "role": "EVALUATION",
+    "source_check": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/checks/09_missing_probability_imputed_zero_B1.json",
+    "source_check_sha256": "9c501bcc5759d1fb2223dcfad45d4e8d65adc12aa5114b7c5f819eac6dbd37c6",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "09_missing_probability_imputed_zero",
+    "method": "B2",
+    "new_v2_issue_identity": "UNCHANGED",
+    "new_v2_status": "REJECT",
+    "recovery": {
+      "rules": [
+        "MISSING_IMPUTED"
+      ],
+      "status": "REFUSED_NOT_IDENTIFIABLE_OR_OUTSIDE_WHITELIST",
+      "written": false
+    },
+    "reported_detects_error": "True",
+    "reported_legal_false_rejection": "",
+    "role": "EVALUATION",
+    "source_check": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/checks/09_missing_probability_imputed_zero_B2.json",
+    "source_check_sha256": "b45d5f357061cff57c3c6cefc19ba9e992a1301e91ca15b7079b0a1036c274ff",
+    "status": "REJECT"
+  },
+  {
+    "case_id": "09_missing_probability_imputed_zero",
+    "method": "RMT",
+    "new_v2_issue_identity": "UNCHANGED",
+    "new_v2_status": "REJECT",
+    "recovery": {
+      "rules": [
+        "MISSING_SCORE_IMPUTED"
+      ],
+      "status": "REFUSED_NOT_IDENTIFIABLE_OR_OUTSIDE_WHITELIST",
+      "written": false
+    },
+    "reported_detects_error": "True",
+    "reported_legal_false_rejection": "",
+    "role": "EVALUATION",
+    "source_check": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/checks/09_missing_probability_imputed_zero_RMT.json",
+    "source_check_sha256": "7fce3f36f2593ea86818d1417eef43d42082300b867f96ee8f77869310a70a50",
+    "status": "REJECT"
+  },
+  {
+    "case_id": "10_modification_code_confusion",
+    "method": "B0",
+    "recovery": {},
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "",
+    "role": "EVALUATION",
+    "source_check": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/checks/10_modification_code_confusion_B0.json",
+    "source_check_sha256": "94c2edfd89846e4e74d5585441134eb84fe612924cbdfbf720f6bb692e504e9e",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "10_modification_code_confusion",
+    "method": "B1",
+    "recovery": {},
+    "reported_detects_error": "True",
+    "reported_legal_false_rejection": "",
+    "role": "EVALUATION",
+    "source_check": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/checks/10_modification_code_confusion_B1.json",
+    "source_check_sha256": "566ef28f63fbfe43f68bcc4e1cf86d51c896ac2a7b3b5e443fa4abd151a062ec",
+    "status": "REJECT"
+  },
+  {
+    "case_id": "10_modification_code_confusion",
+    "method": "B2",
+    "new_v2_issue_identity": "UNCHANGED",
+    "new_v2_status": "REJECT",
+    "recovery": {
+      "rules": [
+        "MOD_CODE"
+      ],
+      "status": "REFUSED_NOT_IDENTIFIABLE_OR_OUTSIDE_WHITELIST",
+      "written": false
+    },
+    "reported_detects_error": "True",
+    "reported_legal_false_rejection": "",
+    "role": "EVALUATION",
+    "source_check": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/checks/10_modification_code_confusion_B2.json",
+    "source_check_sha256": "f17bc4b814e5a862d50e4e81bd7e7b6404a17a431fe7c5139da512bf8861cb60",
+    "status": "REJECT"
+  },
+  {
+    "case_id": "10_modification_code_confusion",
+    "method": "RMT",
+    "new_v2_issue_identity": "UNCHANGED",
+    "new_v2_status": "REJECT",
+    "recovery": {
+      "rules": [
+        "MODIFICATION_CODE_CONFLICT"
+      ],
+      "status": "REFUSED_NOT_IDENTIFIABLE_OR_OUTSIDE_WHITELIST",
+      "written": false
+    },
+    "reported_detects_error": "True",
+    "reported_legal_false_rejection": "",
+    "role": "EVALUATION",
+    "source_check": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/checks/10_modification_code_confusion_RMT.json",
+    "source_check_sha256": "2b798d24e19a6e998ceb7c6a8583b31804089c8d2e2e42e2ccf87b11613208eb",
+    "status": "REJECT"
+  },
+  {
+    "case_id": "11_row_order",
+    "method": "B0",
+    "recovery": {},
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "False",
+    "role": "EVALUATION",
+    "source_check": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/checks/11_row_order_B0.json",
+    "source_check_sha256": "94c2edfd89846e4e74d5585441134eb84fe612924cbdfbf720f6bb692e504e9e",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "11_row_order",
+    "method": "B1",
+    "recovery": {},
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "False",
+    "role": "EVALUATION",
+    "source_check": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/checks/11_row_order_B1.json",
+    "source_check_sha256": "9c501bcc5759d1fb2223dcfad45d4e8d65adc12aa5114b7c5f819eac6dbd37c6",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "11_row_order",
+    "method": "B2",
+    "new_v2_issue_identity": "UNCHANGED",
+    "new_v2_status": "ACCEPT",
+    "recovery": {
+      "rules": [],
+      "status": "NOT_NEEDED",
+      "written": false
+    },
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "False",
+    "role": "EVALUATION",
+    "source_check": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/checks/11_row_order_B2.json",
+    "source_check_sha256": "3c655f448b5a45dc1564bab776c892ca2648033848091d0b49e8165a3c36d00d",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "11_row_order",
+    "method": "RMT",
+    "new_v2_issue_identity": "UNCHANGED",
+    "new_v2_status": "ACCEPT",
+    "recovery": {
+      "rules": [],
+      "status": "NOT_NEEDED",
+      "written": false
+    },
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "False",
+    "role": "EVALUATION",
+    "source_check": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/checks/11_row_order_RMT.json",
+    "source_check_sha256": "5af72d3d8a536839da5016d6cc715d1ab7fa2029a74a6d62160f2cc8e9c54a23",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "12_compression",
+    "method": "B0",
+    "recovery": {},
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "False",
+    "role": "EVALUATION",
+    "source_check": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/checks/12_compression_B0.json",
+    "source_check_sha256": "94c2edfd89846e4e74d5585441134eb84fe612924cbdfbf720f6bb692e504e9e",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "12_compression",
+    "method": "B1",
+    "recovery": {},
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "False",
+    "role": "EVALUATION",
+    "source_check": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/checks/12_compression_B1.json",
+    "source_check_sha256": "9c501bcc5759d1fb2223dcfad45d4e8d65adc12aa5114b7c5f819eac6dbd37c6",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "12_compression",
+    "method": "B2",
+    "new_v2_issue_identity": "UNCHANGED",
+    "new_v2_status": "ACCEPT",
+    "recovery": {
+      "rules": [],
+      "status": "NOT_NEEDED",
+      "written": false
+    },
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "False",
+    "role": "EVALUATION",
+    "source_check": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/checks/12_compression_B2.json",
+    "source_check_sha256": "3c655f448b5a45dc1564bab776c892ca2648033848091d0b49e8165a3c36d00d",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "12_compression",
+    "method": "RMT",
+    "new_v2_issue_identity": "UNCHANGED",
+    "new_v2_status": "ACCEPT",
+    "recovery": {
+      "rules": [],
+      "status": "NOT_NEEDED",
+      "written": false
+    },
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "False",
+    "role": "EVALUATION",
+    "source_check": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/checks/12_compression_RMT.json",
+    "source_check_sha256": "5af72d3d8a536839da5016d6cc715d1ab7fa2029a74a6d62160f2cc8e9c54a23",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "13_irrelevant_column",
+    "method": "B0",
+    "recovery": {},
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "False",
+    "role": "EVALUATION",
+    "source_check": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/checks/13_irrelevant_column_B0.json",
+    "source_check_sha256": "94c2edfd89846e4e74d5585441134eb84fe612924cbdfbf720f6bb692e504e9e",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "13_irrelevant_column",
+    "method": "B1",
+    "recovery": {},
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "False",
+    "role": "EVALUATION",
+    "source_check": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/checks/13_irrelevant_column_B1.json",
+    "source_check_sha256": "9c501bcc5759d1fb2223dcfad45d4e8d65adc12aa5114b7c5f819eac6dbd37c6",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "13_irrelevant_column",
+    "method": "B2",
+    "new_v2_issue_identity": "UNCHANGED",
+    "new_v2_status": "ACCEPT",
+    "recovery": {
+      "rules": [],
+      "status": "NOT_NEEDED",
+      "written": false
+    },
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "False",
+    "role": "EVALUATION",
+    "source_check": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/checks/13_irrelevant_column_B2.json",
+    "source_check_sha256": "3c655f448b5a45dc1564bab776c892ca2648033848091d0b49e8165a3c36d00d",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "13_irrelevant_column",
+    "method": "RMT",
+    "new_v2_issue_identity": "UNCHANGED",
+    "new_v2_status": "ACCEPT",
+    "recovery": {
+      "rules": [],
+      "status": "NOT_NEEDED",
+      "written": false
+    },
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "False",
+    "role": "EVALUATION",
+    "source_check": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/checks/13_irrelevant_column_RMT.json",
+    "source_check_sha256": "5af72d3d8a536839da5016d6cc715d1ab7fa2029a74a6d62160f2cc8e9c54a23",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "14_documented_bijective_rename",
+    "method": "B0",
+    "recovery": {},
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "False",
+    "role": "EVALUATION",
+    "source_check": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/checks/14_documented_bijective_rename_B0.json",
+    "source_check_sha256": "94c2edfd89846e4e74d5585441134eb84fe612924cbdfbf720f6bb692e504e9e",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "14_documented_bijective_rename",
+    "method": "B1",
+    "recovery": {},
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "False",
+    "role": "EVALUATION",
+    "source_check": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/checks/14_documented_bijective_rename_B1.json",
+    "source_check_sha256": "9c501bcc5759d1fb2223dcfad45d4e8d65adc12aa5114b7c5f819eac6dbd37c6",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "14_documented_bijective_rename",
+    "method": "B2",
+    "new_v2_issue_identity": "UNCHANGED",
+    "new_v2_status": "ACCEPT",
+    "recovery": {
+      "rules": [],
+      "status": "NOT_NEEDED",
+      "written": false
+    },
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "False",
+    "role": "EVALUATION",
+    "source_check": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/checks/14_documented_bijective_rename_B2.json",
+    "source_check_sha256": "3c655f448b5a45dc1564bab776c892ca2648033848091d0b49e8165a3c36d00d",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "14_documented_bijective_rename",
+    "method": "RMT",
+    "new_v2_issue_identity": "UNCHANGED",
+    "new_v2_status": "ACCEPT",
+    "recovery": {
+      "rules": [],
+      "status": "NOT_NEEDED",
+      "written": false
+    },
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "False",
+    "role": "EVALUATION",
+    "source_check": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/checks/14_documented_bijective_rename_RMT.json",
+    "source_check_sha256": "5af72d3d8a536839da5016d6cc715d1ab7fa2029a74a6d62160f2cc8e9c54a23",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "15_disjoint_merge",
+    "method": "B0",
+    "recovery": {},
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "False",
+    "role": "EVALUATION",
+    "source_check": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/checks/15_disjoint_merge_B0.json",
+    "source_check_sha256": "94c2edfd89846e4e74d5585441134eb84fe612924cbdfbf720f6bb692e504e9e",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "15_disjoint_merge",
+    "method": "B1",
+    "recovery": {},
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "False",
+    "role": "EVALUATION",
+    "source_check": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/checks/15_disjoint_merge_B1.json",
+    "source_check_sha256": "9c501bcc5759d1fb2223dcfad45d4e8d65adc12aa5114b7c5f819eac6dbd37c6",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "15_disjoint_merge",
+    "method": "B2",
+    "new_v2_issue_identity": "UNCHANGED",
+    "new_v2_status": "ACCEPT",
+    "recovery": {
+      "rules": [],
+      "status": "NOT_NEEDED",
+      "written": false
+    },
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "False",
+    "role": "EVALUATION",
+    "source_check": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/checks/15_disjoint_merge_B2.json",
+    "source_check_sha256": "3c655f448b5a45dc1564bab776c892ca2648033848091d0b49e8165a3c36d00d",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "15_disjoint_merge",
+    "method": "RMT",
+    "new_v2_issue_identity": "UNCHANGED",
+    "new_v2_status": "ACCEPT",
+    "recovery": {
+      "rules": [],
+      "status": "NOT_NEEDED",
+      "written": false
+    },
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "False",
+    "role": "EVALUATION",
+    "source_check": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/checks/15_disjoint_merge_RMT.json",
+    "source_check_sha256": "5af72d3d8a536839da5016d6cc715d1ab7fa2029a74a6d62160f2cc8e9c54a23",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "16_documented_coordinate_conversion",
+    "method": "B0",
+    "recovery": {},
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "False",
+    "role": "EVALUATION",
+    "source_check": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/checks/16_documented_coordinate_conversion_B0.json",
+    "source_check_sha256": "94c2edfd89846e4e74d5585441134eb84fe612924cbdfbf720f6bb692e504e9e",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "16_documented_coordinate_conversion",
+    "method": "B1",
+    "recovery": {},
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "False",
+    "role": "EVALUATION",
+    "source_check": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/checks/16_documented_coordinate_conversion_B1.json",
+    "source_check_sha256": "9c501bcc5759d1fb2223dcfad45d4e8d65adc12aa5114b7c5f819eac6dbd37c6",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "16_documented_coordinate_conversion",
+    "method": "B2",
+    "new_v2_issue_identity": "UNCHANGED",
+    "new_v2_status": "ACCEPT",
+    "recovery": {
+      "rules": [],
+      "status": "NOT_NEEDED",
+      "written": false
+    },
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "False",
+    "role": "EVALUATION",
+    "source_check": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/checks/16_documented_coordinate_conversion_B2.json",
+    "source_check_sha256": "3c655f448b5a45dc1564bab776c892ca2648033848091d0b49e8165a3c36d00d",
+    "status": "ACCEPT"
+  },
+  {
+    "case_id": "16_documented_coordinate_conversion",
+    "method": "RMT",
+    "new_v2_issue_identity": "UNCHANGED",
+    "new_v2_status": "ACCEPT",
+    "recovery": {
+      "rules": [],
+      "status": "NOT_NEEDED",
+      "written": false
+    },
+    "reported_detects_error": "",
+    "reported_legal_false_rejection": "False",
+    "role": "EVALUATION",
+    "source_check": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/checks/16_documented_coordinate_conversion_RMT.json",
+    "source_check_sha256": "5af72d3d8a536839da5016d6cc715d1ab7fa2029a74a6d62160f2cc8e9c54a23",
+    "status": "ACCEPT"
+  }
+]

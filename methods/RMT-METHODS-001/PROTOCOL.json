@@ -1,0 +1,95 @@
+{
+  "issue": "RMT-METHODS-001",
+  "frozen_before_supplementary_results_utc": "2026-09-07T14:05:50Z",
+  "state": "PROTOCOL_FROZEN_BEFORE_POSTHOC_COMPUTATION",
+  "historical_status_retained": "RMT_EXEC_001_NO_INCREMENTAL_UTILITY",
+  "input_root": "execution/RMT-EXEC-001",
+  "record_inputs": {
+    "development_control": "results/canary_dev_control_v2/read_sites.tsv.gz",
+    "development_modified": "results/canary_dev_m6A_v2/read_sites.tsv.gz",
+    "evaluation_control": "results/evaluation_run_v1/canaries/ONT2026_control_A/read_sites.tsv.gz",
+    "evaluation_modified": "results/evaluation_run_v1/canaries/ONT2026_m6A/read_sites.tsv.gz"
+  },
+  "analysis_class": "POSTHOC_ROBUSTNESS_ANALYSIS",
+  "original_analysis": "Use selected_for_variants=1 without changing the first-100 BAM-order subset; reproduce original metric definitions before claiming agreement.",
+  "full_population": "All saved truth-overlapping primary-read records in each provider-supplied processed bundle; not all originally sequenced molecules.",
+  "sampling": {
+    "seeds": [
+      11,
+      29,
+      47,
+      71,
+      101
+    ],
+    "reads_per_sample_construct": 100,
+    "key": [
+      "sample_id",
+      "run_id",
+      "contig",
+      "read_id"
+    ],
+    "rank": "SHA256 of UTF-8 canonical compact JSON [seed,sample_id,run_id,contig,read_id], lexicographically ascending digest then key; no scores or labels in rank.",
+    "selection_frame": "Unique reads represented in existing truth-overlap tables; no filtering by probability or alignment eligibility. If fewer than 100, include all and report count. Retain all target records for each selected read.",
+    "limitation": "Reads without any saved truth overlap cannot be sampled without BAM reprocessing and are outside this authorized supplementary frame. Fixed seeds are not independent biological replicates."
+  },
+  "conditions": {
+    "canonical": "Observed explicit m6A midpoint on MATCHED_READ_SITE records only; missing p remains missing.",
+    "site_mean_as_read": "Within each selected sample/contig/ref_pos0 site, average existing explicit p and repeat this mean on those explicit records, preserving the original controlled case definition; diagnostic invalid-unit copy, never a recovered read probability.",
+    "missing_zero": "Controlled error copy only: all missing point probabilities become exact zero; still exclude records not MATCHED_READ_SITE.",
+    "high_p_filter": "Retain explicit midpoint >=0.9 and evaluate eligible retained records; show original opportunity/eligible/explicit and retained denominators. This one-sided filter is not modkit default confidence filtering."
+  },
+  "metrics": {
+    "unit": "read-site, with provider-declared control/modified condition label; no claim of molecular purity or natural occupancy",
+    "denominators": [
+      "truth_overlapping_opportunities",
+      "alignment_base_eligible",
+      "native_explicit_probability",
+      "retained_records",
+      "scored_records",
+      "control_scored",
+      "modified_scored"
+    ],
+    "strata": [
+      "release",
+      "subset",
+      "condition",
+      "construct",
+      "truth_class"
+    ],
+    "brier": "Mean (p-y)^2 per class; observed-composition mean weighted by scored records; artificial equal-class mean 0.5*(Brier_control+Brier_modified) only if both exist. Missing class => NOT_ESTIMABLE, never zero.",
+    "secondary": [
+      "TP",
+      "TN",
+      "FP",
+      "FN",
+      "balanced_accuracy",
+      "FPR",
+      "log_loss"
+    ],
+    "ML": "N/256 <= p < (N+1)/256; midpoint (N+0.5)/256. Retain native bounds on eligible native points; no confidence-interval interpretation. Unbounded log loss remains INFINITE.",
+    "statistics": "Descriptive only. Full set, original subset, all five seeds and all constructs reported. No significance test, outcome selection, caller ranking or biological-replication claim."
+  },
+  "software_regression": {
+    "new_version_only": true,
+    "methods": [
+      "B2",
+      "RMT"
+    ],
+    "stable_key": [
+      "sample_id",
+      "run_id",
+      "read_index"
+    ],
+    "payload": "All remaining source-map fields must match; reject repeated keys even if identical, conflicting keys, missing/extra rows and sample/run/read identity changes. Do not silently deduplicate.",
+    "tests": [
+      "canonical",
+      "read_map_reverse",
+      "duplicate_identical_key",
+      "conflicting_key",
+      "missing_row",
+      "sample_identity_change",
+      "payload_change"
+    ],
+    "historical_boundary": "Regression tests are new, not part of original six legal transformations. No claimed RMT advantage; both receive semantically equivalent support."
+  }
+}

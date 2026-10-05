@@ -1,0 +1,27 @@
+{
+  "issue": "RMT-METHODS-TARGETED-001",
+  "module_reuse": [
+    {
+      "parent": "methods/RMT-METHODS-001/code/checkers_v2/rmt.py",
+      "parent_sha256": "2a6bdd583675031432956a3656ab8bff67bb238b1f652ef1eb324568809d25bd",
+      "candidate": "src/rmt_targeted/rmt_core.py",
+      "candidate_sha256": "ec7aa1f1b8b5a1fbede44df55283fd9a60b6c94081b4b1076e7b702f361493eb",
+      "extraction": "Exact parent prefix before newline def recover(; replace from bundle import with from .bundle import; prepend two provenance-comment lines. No decision logic edits."
+    },
+    {
+      "parent": "methods/RMT-METHODS-001/code/checkers_v2/simple_baseline.py",
+      "parent_sha256": "c03c0682fa558adcf6bc6ac1f371b49dbabafed338c1b5aa317f30ffd1bbfcbf",
+      "candidate": "src/rmt_targeted/b2_core.py",
+      "candidate_sha256": "4fb32f6686c8470339aea624e3a32f9aab2141cb772778d3b2cf728ca7ec8e2b",
+      "extraction": "Exact parent prefix before newline def fix(; replace from bundle import with from .bundle import; prepend two provenance-comment lines. No decision logic edits."
+    }
+  ],
+  "serialization_parent": {
+    "path": "methods/RMT-METHODS-001/code/checkers_v2/bundle.py",
+    "sha256": "b613af1eb3df8e08f7c6533a6e327b0e016665d7f9dfb5386dfe572a4d102dcf",
+    "adaptation": "Retain generic serialization/load functionality; remove path-bound ROOT, canonical builder and legacy CLI; explicitly UTF-8; strict duplicate JSON/TSV/FASTA keys; JSON rejects nonfinite numbers."
+  },
+  "shared_new_support": "guard.py is identical for B2 and RMT; validates source file closure, source uniqueness and explicit schema before either legacy checker.",
+  "metrics": "summary.py is new bounded conditional midpoint arithmetic, not importing path-bound robustness.py or recomputing model performance.",
+  "scope": "Engineering usability and source-schema hardening; historical results and no-incremental-utility interpretation unchanged."
+}

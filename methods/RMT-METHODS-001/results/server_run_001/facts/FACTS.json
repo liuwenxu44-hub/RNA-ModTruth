@@ -1,0 +1,3382 @@
+[
+  {
+    "Brier_control": 0.08808821455065573,
+    "Brier_equal_class": 0.07938115291837894,
+    "Brier_modified": 0.07067409128610215,
+    "case_id": "00_canonical",
+    "class_denominators": {
+      "0": {
+        "eligible": 1957,
+        "native_explicit": 389,
+        "scored": 389,
+        "truth_overlap": 1978
+      },
+      "1": {
+        "eligible": 1952,
+        "native_explicit": 1943,
+        "scored": 1943,
+        "truth_overlap": 1979
+      }
+    },
+    "evidence_class": "OBSERVED_NATIVE_INPUT",
+    "recalculated_metrics": {
+      "Brier": 0.07357893431779655,
+      "FPR": 0.06940874035989718,
+      "ML_interval_sensitivity": {
+        "Brier_infimum": 0.07305994573629128,
+        "Brier_supremum": 0.07410555229383309,
+        "log_loss_infimum": 0.21366742557424526,
+        "log_loss_supremum": 0.21955688128380807,
+        "meaning": "bounds within original ML intervals; not sampling confidence intervals",
+        "threshold_interval_ambiguous": 0
+      },
+      "balanced_accuracy": 0.9030207970871642,
+      "confusion": {
+        "FN": 242,
+        "FP": 27,
+        "TN": 362,
+        "TP": 1701
+      },
+      "counts": {
+        "alignment_ineligible": 48,
+        "ambiguous_truth_join": 0,
+        "declared_population_opportunities": 3957,
+        "eligible_aligned_A_sites": 3909,
+        "eligible_missing_probability": 1577,
+        "evaluable_control": 389,
+        "evaluable_modified": 1943,
+        "evaluable_points": 2332,
+        "input_records": 3957,
+        "input_unique_evidence_ids": 3957,
+        "no_truth_join": 0,
+        "points_without_valid_native_interval": 0,
+        "truth_join_candidates": 3957,
+        "unique_truth_join_records": 3957
+      },
+      "explicit_coverage_of_claimed_opportunities": 0.5893353550669699,
+      "filter_coverage_records": 1.0,
+      "fixed_threshold": 0.5,
+      "log_loss": 0.21659751617016476,
+      "normalized_source_join_sha256": "da0336457061e85622ac6858eae75f3d39fdc5d7698d4a18a008fc0f16710629",
+      "probability_metrics_status": "SCOPED_NATIVE_INTERVAL",
+      "scope": "within this provider-supplied selected construct bundle; not native occupancy or between-model comparison",
+      "truth_join_yield": 1.0,
+      "valid_probability_semantics": true
+    },
+    "role": "DEVELOPMENT",
+    "source_bundle": "execution/RMT-EXEC-001/controlled_cases/development_v2/00_canonical",
+    "source_metric": "execution/RMT-EXEC-001/results/development_test_final/metrics/00_canonical.json",
+    "source_metric_sha256": "4fd6a0f4505ee813eb5f82d8d83231745b2d540e2fcb900feaba19dd8ac401c3"
+  },
+  {
+    "Brier_control": 0.8480701122588248,
+    "Brier_equal_class": 0.7216791393044832,
+    "Brier_modified": 0.5952881663501416,
+    "case_id": "01_sample_reference_BED_mismatch",
+    "class_denominators": {
+      "0": {
+        "eligible": 1952,
+        "native_explicit": 1943,
+        "scored": 1943,
+        "truth_overlap": 1979
+      },
+      "1": {
+        "eligible": 1957,
+        "native_explicit": 389,
+        "scored": 389,
+        "truth_overlap": 1978
+      }
+    },
+    "evidence_class": "CONTROLLED_ERROR_INJECTION",
+    "recalculated_metrics": {
+      "Brier": 0.8059036555870933,
+      "FPR": 0.8754503345342254,
+      "ML_interval_sensitivity": {
+        "Brier_infimum": 0.8025240235631298,
+        "Brier_supremum": 0.809290917005588,
+        "log_loss_infimum": 3.8581100136650117,
+        "log_loss_supremum": "INFINITE_SUPREMUM",
+        "meaning": "bounds within original ML intervals; not sampling confidence intervals",
+        "threshold_interval_ambiguous": 0
+      },
+      "balanced_accuracy": 0.09697920291283585,
+      "confusion": {
+        "FN": 362,
+        "FP": 1701,
+        "TN": 242,
+        "TP": 27
+      },
+      "counts": {
+        "alignment_ineligible": 48,
+        "ambiguous_truth_join": 0,
+        "declared_population_opportunities": 3957,
+        "eligible_aligned_A_sites": 3909,
+        "eligible_missing_probability": 1577,
+        "evaluable_control": 1943,
+        "evaluable_modified": 389,
+        "evaluable_points": 2332,
+        "input_records": 3957,
+        "input_unique_evidence_ids": 3957,
+        "no_truth_join": 0,
+        "points_without_valid_native_interval": 0,
+        "truth_join_candidates": 3957,
+        "unique_truth_join_records": 3957
+      },
+      "explicit_coverage_of_claimed_opportunities": 0.5893353550669699,
+      "filter_coverage_records": 1.0,
+      "fixed_threshold": 0.5,
+      "log_loss": 4.2317330265391995,
+      "normalized_source_join_sha256": "9e0b733374b7e687bbd2890ad9dfc21f87878529745f12eab92752154026cddf",
+      "probability_metrics_status": "SCOPED_NATIVE_INTERVAL",
+      "scope": "within this provider-supplied selected construct bundle; not native occupancy or between-model comparison",
+      "truth_join_yield": 1.0,
+      "valid_probability_semantics": true
+    },
+    "role": "DEVELOPMENT",
+    "source_bundle": "execution/RMT-EXEC-001/controlled_cases/development_v2/01_sample_reference_BED_mismatch",
+    "source_metric": "execution/RMT-EXEC-001/results/development_test_final/metrics/01_sample_reference_BED_mismatch.json",
+    "source_metric_sha256": "751a37dc25f1135a0a42a786476f10405fc0eaabf72e79b524e1e41edbf417ab"
+  },
+  {
+    "Brier_control": 0.08808821455065573,
+    "Brier_equal_class": 0.07938115291837894,
+    "Brier_modified": 0.07067409128610215,
+    "case_id": "01_sample_reference_BED_mismatch_B2_recovered",
+    "class_denominators": {
+      "0": {
+        "eligible": 1957,
+        "native_explicit": 389,
+        "scored": 389,
+        "truth_overlap": 1978
+      },
+      "1": {
+        "eligible": 1952,
+        "native_explicit": 1943,
+        "scored": 1943,
+        "truth_overlap": 1979
+      }
+    },
+    "evidence_class": "SAFE_RECOVERY",
+    "recalculated_metrics": {
+      "Brier": 0.07357893431779655,
+      "FPR": 0.06940874035989718,
+      "ML_interval_sensitivity": {
+        "Brier_infimum": 0.07305994573629128,
+        "Brier_supremum": 0.07410555229383309,
+        "log_loss_infimum": 0.21366742557424526,
+        "log_loss_supremum": 0.21955688128380807,
+        "meaning": "bounds within original ML intervals; not sampling confidence intervals",
+        "threshold_interval_ambiguous": 0
+      },
+      "balanced_accuracy": 0.9030207970871642,
+      "confusion": {
+        "FN": 242,
+        "FP": 27,
+        "TN": 362,
+        "TP": 1701
+      },
+      "counts": {
+        "alignment_ineligible": 48,
+        "ambiguous_truth_join": 0,
+        "declared_population_opportunities": 3957,
+        "eligible_aligned_A_sites": 3909,
+        "eligible_missing_probability": 1577,
+        "evaluable_control": 389,
+        "evaluable_modified": 1943,
+        "evaluable_points": 2332,
+        "input_records": 3957,
+        "input_unique_evidence_ids": 3957,
+        "no_truth_join": 0,
+        "points_without_valid_native_interval": 0,
+        "truth_join_candidates": 3957,
+        "unique_truth_join_records": 3957
+      },
+      "explicit_coverage_of_claimed_opportunities": 0.5893353550669699,
+      "filter_coverage_records": 1.0,
+      "fixed_threshold": 0.5,
+      "log_loss": 0.21659751617016476,
+      "normalized_source_join_sha256": "da0336457061e85622ac6858eae75f3d39fdc5d7698d4a18a008fc0f16710629",
+      "probability_metrics_status": "SCOPED_NATIVE_INTERVAL",
+      "scope": "within this provider-supplied selected construct bundle; not native occupancy or between-model comparison",
+      "truth_join_yield": 1.0,
+      "valid_probability_semantics": true
+    },
+    "role": "DEVELOPMENT",
+    "source_bundle": "execution/RMT-EXEC-001/results/development_test_final/recovered/01_sample_reference_BED_mismatch_B2",
+    "source_metric": "execution/RMT-EXEC-001/results/development_test_final/metrics/01_sample_reference_BED_mismatch_B2_recovered.json",
+    "source_metric_sha256": "4fd6a0f4505ee813eb5f82d8d83231745b2d540e2fcb900feaba19dd8ac401c3"
+  },
+  {
+    "Brier_control": 0.08808821455065573,
+    "Brier_equal_class": 0.07938115291837894,
+    "Brier_modified": 0.07067409128610215,
+    "case_id": "01_sample_reference_BED_mismatch_RMT_recovered",
+    "class_denominators": {
+      "0": {
+        "eligible": 1957,
+        "native_explicit": 389,
+        "scored": 389,
+        "truth_overlap": 1978
+      },
+      "1": {
+        "eligible": 1952,
+        "native_explicit": 1943,
+        "scored": 1943,
+        "truth_overlap": 1979
+      }
+    },
+    "evidence_class": "SAFE_RECOVERY",
+    "recalculated_metrics": {
+      "Brier": 0.07357893431779655,
+      "FPR": 0.06940874035989718,
+      "ML_interval_sensitivity": {
+        "Brier_infimum": 0.07305994573629128,
+        "Brier_supremum": 0.07410555229383309,
+        "log_loss_infimum": 0.21366742557424526,
+        "log_loss_supremum": 0.21955688128380807,
+        "meaning": "bounds within original ML intervals; not sampling confidence intervals",
+        "threshold_interval_ambiguous": 0
+      },
+      "balanced_accuracy": 0.9030207970871642,
+      "confusion": {
+        "FN": 242,
+        "FP": 27,
+        "TN": 362,
+        "TP": 1701
+      },
+      "counts": {
+        "alignment_ineligible": 48,
+        "ambiguous_truth_join": 0,
+        "declared_population_opportunities": 3957,
+        "eligible_aligned_A_sites": 3909,
+        "eligible_missing_probability": 1577,
+        "evaluable_control": 389,
+        "evaluable_modified": 1943,
+        "evaluable_points": 2332,
+        "input_records": 3957,
+        "input_unique_evidence_ids": 3957,
+        "no_truth_join": 0,
+        "points_without_valid_native_interval": 0,
+        "truth_join_candidates": 3957,
+        "unique_truth_join_records": 3957
+      },
+      "explicit_coverage_of_claimed_opportunities": 0.5893353550669699,
+      "filter_coverage_records": 1.0,
+      "fixed_threshold": 0.5,
+      "log_loss": 0.21659751617016476,
+      "normalized_source_join_sha256": "da0336457061e85622ac6858eae75f3d39fdc5d7698d4a18a008fc0f16710629",
+      "probability_metrics_status": "SCOPED_NATIVE_INTERVAL",
+      "scope": "within this provider-supplied selected construct bundle; not native occupancy or between-model comparison",
+      "truth_join_yield": 1.0,
+      "valid_probability_semantics": true
+    },
+    "role": "DEVELOPMENT",
+    "source_bundle": "execution/RMT-EXEC-001/results/development_test_final/recovered/01_sample_reference_BED_mismatch_RMT",
+    "source_metric": "execution/RMT-EXEC-001/results/development_test_final/metrics/01_sample_reference_BED_mismatch_RMT_recovered.json",
+    "source_metric_sha256": "4fd6a0f4505ee813eb5f82d8d83231745b2d540e2fcb900feaba19dd8ac401c3"
+  },
+  {
+    "Brier_control": null,
+    "Brier_equal_class": null,
+    "Brier_modified": null,
+    "case_id": "02_declared_zero_one_based_coordinate_error",
+    "class_denominators": {
+      "0": {
+        "eligible": 0,
+        "native_explicit": 0,
+        "scored": 0,
+        "truth_overlap": 0
+      },
+      "1": {
+        "eligible": 0,
+        "native_explicit": 0,
+        "scored": 0,
+        "truth_overlap": 0
+      }
+    },
+    "evidence_class": "CONTROLLED_ERROR_INJECTION",
+    "recalculated_metrics": {
+      "Brier": null,
+      "FPR": null,
+      "ML_interval_sensitivity": null,
+      "balanced_accuracy": null,
+      "confusion": {
+        "FN": 0,
+        "FP": 0,
+        "TN": 0,
+        "TP": 0
+      },
+      "counts": {
+        "alignment_ineligible": 0,
+        "ambiguous_truth_join": 0,
+        "declared_population_opportunities": 3957,
+        "eligible_aligned_A_sites": 0,
+        "eligible_missing_probability": 0,
+        "evaluable_control": 0,
+        "evaluable_modified": 0,
+        "evaluable_points": 0,
+        "input_records": 3957,
+        "input_unique_evidence_ids": 3957,
+        "no_truth_join": 3957,
+        "points_without_valid_native_interval": 0,
+        "truth_join_candidates": 0,
+        "unique_truth_join_records": 0
+      },
+      "explicit_coverage_of_claimed_opportunities": 0.0,
+      "filter_coverage_records": 1.0,
+      "fixed_threshold": 0.5,
+      "log_loss": null,
+      "normalized_source_join_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "probability_metrics_status": "NO_EVALUABLE_RESULT",
+      "scope": "within this provider-supplied selected construct bundle; not native occupancy or between-model comparison",
+      "truth_join_yield": 0.0,
+      "valid_probability_semantics": true
+    },
+    "role": "DEVELOPMENT",
+    "source_bundle": "execution/RMT-EXEC-001/controlled_cases/development_v2/02_declared_zero_one_based_coordinate_error",
+    "source_metric": "execution/RMT-EXEC-001/results/development_test_final/metrics/02_declared_zero_one_based_coordinate_error.json",
+    "source_metric_sha256": "2621c291dd1b3a71a0bbf155ce91950d535966cdbd626e9e24438f209017e8f1"
+  },
+  {
+    "Brier_control": 0.08808821455065573,
+    "Brier_equal_class": 0.07938115291837894,
+    "Brier_modified": 0.07067409128610215,
+    "case_id": "02_declared_zero_one_based_coordinate_error_B2_recovered",
+    "class_denominators": {
+      "0": {
+        "eligible": 1957,
+        "native_explicit": 389,
+        "scored": 389,
+        "truth_overlap": 1978
+      },
+      "1": {
+        "eligible": 1952,
+        "native_explicit": 1943,
+        "scored": 1943,
+        "truth_overlap": 1979
+      }
+    },
+    "evidence_class": "SAFE_RECOVERY",
+    "recalculated_metrics": {
+      "Brier": 0.07357893431779655,
+      "FPR": 0.06940874035989718,
+      "ML_interval_sensitivity": {
+        "Brier_infimum": 0.07305994573629128,
+        "Brier_supremum": 0.07410555229383309,
+        "log_loss_infimum": 0.21366742557424526,
+        "log_loss_supremum": 0.21955688128380807,
+        "meaning": "bounds within original ML intervals; not sampling confidence intervals",
+        "threshold_interval_ambiguous": 0
+      },
+      "balanced_accuracy": 0.9030207970871642,
+      "confusion": {
+        "FN": 242,
+        "FP": 27,
+        "TN": 362,
+        "TP": 1701
+      },
+      "counts": {
+        "alignment_ineligible": 48,
+        "ambiguous_truth_join": 0,
+        "declared_population_opportunities": 3957,
+        "eligible_aligned_A_sites": 3909,
+        "eligible_missing_probability": 1577,
+        "evaluable_control": 389,
+        "evaluable_modified": 1943,
+        "evaluable_points": 2332,
+        "input_records": 3957,
+        "input_unique_evidence_ids": 3957,
+        "no_truth_join": 0,
+        "points_without_valid_native_interval": 0,
+        "truth_join_candidates": 3957,
+        "unique_truth_join_records": 3957
+      },
+      "explicit_coverage_of_claimed_opportunities": 0.5893353550669699,
+      "filter_coverage_records": 1.0,
+      "fixed_threshold": 0.5,
+      "log_loss": 0.21659751617016476,
+      "normalized_source_join_sha256": "da0336457061e85622ac6858eae75f3d39fdc5d7698d4a18a008fc0f16710629",
+      "probability_metrics_status": "SCOPED_NATIVE_INTERVAL",
+      "scope": "within this provider-supplied selected construct bundle; not native occupancy or between-model comparison",
+      "truth_join_yield": 1.0,
+      "valid_probability_semantics": true
+    },
+    "role": "DEVELOPMENT",
+    "source_bundle": "execution/RMT-EXEC-001/results/development_test_final/recovered/02_declared_zero_one_based_coordinate_error_B2",
+    "source_metric": "execution/RMT-EXEC-001/results/development_test_final/metrics/02_declared_zero_one_based_coordinate_error_B2_recovered.json",
+    "source_metric_sha256": "4fd6a0f4505ee813eb5f82d8d83231745b2d540e2fcb900feaba19dd8ac401c3"
+  },
+  {
+    "Brier_control": 0.08808821455065573,
+    "Brier_equal_class": 0.07938115291837894,
+    "Brier_modified": 0.07067409128610215,
+    "case_id": "02_declared_zero_one_based_coordinate_error_RMT_recovered",
+    "class_denominators": {
+      "0": {
+        "eligible": 1957,
+        "native_explicit": 389,
+        "scored": 389,
+        "truth_overlap": 1978
+      },
+      "1": {
+        "eligible": 1952,
+        "native_explicit": 1943,
+        "scored": 1943,
+        "truth_overlap": 1979
+      }
+    },
+    "evidence_class": "SAFE_RECOVERY",
+    "recalculated_metrics": {
+      "Brier": 0.07357893431779655,
+      "FPR": 0.06940874035989718,
+      "ML_interval_sensitivity": {
+        "Brier_infimum": 0.07305994573629128,
+        "Brier_supremum": 0.07410555229383309,
+        "log_loss_infimum": 0.21366742557424526,
+        "log_loss_supremum": 0.21955688128380807,
+        "meaning": "bounds within original ML intervals; not sampling confidence intervals",
+        "threshold_interval_ambiguous": 0
+      },
+      "balanced_accuracy": 0.9030207970871642,
+      "confusion": {
+        "FN": 242,
+        "FP": 27,
+        "TN": 362,
+        "TP": 1701
+      },
+      "counts": {
+        "alignment_ineligible": 48,
+        "ambiguous_truth_join": 0,
+        "declared_population_opportunities": 3957,
+        "eligible_aligned_A_sites": 3909,
+        "eligible_missing_probability": 1577,
+        "evaluable_control": 389,
+        "evaluable_modified": 1943,
+        "evaluable_points": 2332,
+        "input_records": 3957,
+        "input_unique_evidence_ids": 3957,
+        "no_truth_join": 0,
+        "points_without_valid_native_interval": 0,
+        "truth_join_candidates": 3957,
+        "unique_truth_join_records": 3957
+      },
+      "explicit_coverage_of_claimed_opportunities": 0.5893353550669699,
+      "filter_coverage_records": 1.0,
+      "fixed_threshold": 0.5,
+      "log_loss": 0.21659751617016476,
+      "normalized_source_join_sha256": "da0336457061e85622ac6858eae75f3d39fdc5d7698d4a18a008fc0f16710629",
+      "probability_metrics_status": "SCOPED_NATIVE_INTERVAL",
+      "scope": "within this provider-supplied selected construct bundle; not native occupancy or between-model comparison",
+      "truth_join_yield": 1.0,
+      "valid_probability_semantics": true
+    },
+    "role": "DEVELOPMENT",
+    "source_bundle": "execution/RMT-EXEC-001/results/development_test_final/recovered/02_declared_zero_one_based_coordinate_error_RMT",
+    "source_metric": "execution/RMT-EXEC-001/results/development_test_final/metrics/02_declared_zero_one_based_coordinate_error_RMT_recovered.json",
+    "source_metric_sha256": "4fd6a0f4505ee813eb5f82d8d83231745b2d540e2fcb900feaba19dd8ac401c3"
+  },
+  {
+    "Brier_control": 0.08817601941295505,
+    "Brier_equal_class": 0.0794250553495286,
+    "Brier_modified": 0.07067409128610215,
+    "case_id": "03_strand_or_reference_version_conflict",
+    "class_denominators": {
+      "0": {
+        "eligible": 1956,
+        "native_explicit": 388,
+        "scored": 388,
+        "truth_overlap": 1977
+      },
+      "1": {
+        "eligible": 1952,
+        "native_explicit": 1943,
+        "scored": 1943,
+        "truth_overlap": 1979
+      }
+    },
+    "evidence_class": "CONTROLLED_ERROR_INJECTION",
+    "recalculated_metrics": {
+      "Brier": 0.07358732513990693,
+      "FPR": 0.06958762886597938,
+      "ML_interval_sensitivity": {
+        "Brier_infimum": 0.07306850176418048,
+        "Brier_supremum": 0.07411377791016463,
+        "log_loss_infimum": 0.21364670215504006,
+        "log_loss_supremum": 0.2195365012306269,
+        "meaning": "bounds within original ML intervals; not sampling confidence intervals",
+        "threshold_interval_ambiguous": 0
+      },
+      "balanced_accuracy": 0.9029313528341231,
+      "confusion": {
+        "FN": 242,
+        "FP": 27,
+        "TN": 361,
+        "TP": 1701
+      },
+      "counts": {
+        "alignment_ineligible": 48,
+        "ambiguous_truth_join": 0,
+        "declared_population_opportunities": 3957,
+        "eligible_aligned_A_sites": 3908,
+        "eligible_missing_probability": 1577,
+        "evaluable_control": 388,
+        "evaluable_modified": 1943,
+        "evaluable_points": 2331,
+        "input_records": 3957,
+        "input_unique_evidence_ids": 3957,
+        "no_truth_join": 1,
+        "points_without_valid_native_interval": 0,
+        "truth_join_candidates": 3956,
+        "unique_truth_join_records": 3956
+      },
+      "explicit_coverage_of_claimed_opportunities": 0.5890826383623957,
+      "filter_coverage_records": 1.0,
+      "fixed_threshold": 0.5,
+      "log_loss": 0.2165769595433951,
+      "normalized_source_join_sha256": "9f573f2a497b2401dae4f297a89d6bdc89ec46f588c38cf6805cc7369fa1ef62",
+      "probability_metrics_status": "SCOPED_NATIVE_INTERVAL",
+      "scope": "within this provider-supplied selected construct bundle; not native occupancy or between-model comparison",
+      "truth_join_yield": 0.9997472832954258,
+      "valid_probability_semantics": true
+    },
+    "role": "DEVELOPMENT",
+    "source_bundle": "execution/RMT-EXEC-001/controlled_cases/development_v2/03_strand_or_reference_version_conflict",
+    "source_metric": "execution/RMT-EXEC-001/results/development_test_final/metrics/03_strand_or_reference_version_conflict.json",
+    "source_metric_sha256": "762cd1dbedbd53d0c4cf13063472cd55e575f63ff066ebffefb8558d1ecf30fe"
+  },
+  {
+    "Brier_control": null,
+    "Brier_equal_class": null,
+    "Brier_modified": null,
+    "case_id": "04_lost_sample_join_key",
+    "class_denominators": {
+      "0": {
+        "eligible": 0,
+        "native_explicit": 0,
+        "scored": 0,
+        "truth_overlap": 0
+      },
+      "1": {
+        "eligible": 0,
+        "native_explicit": 0,
+        "scored": 0,
+        "truth_overlap": 0
+      }
+    },
+    "evidence_class": "CONTROLLED_ERROR_INJECTION",
+    "recalculated_metrics": {
+      "Brier": null,
+      "FPR": null,
+      "ML_interval_sensitivity": null,
+      "balanced_accuracy": null,
+      "confusion": {
+        "FN": 0,
+        "FP": 0,
+        "TN": 0,
+        "TP": 0
+      },
+      "counts": {
+        "alignment_ineligible": 0,
+        "ambiguous_truth_join": 3957,
+        "declared_population_opportunities": 3957,
+        "eligible_aligned_A_sites": 0,
+        "eligible_missing_probability": 0,
+        "evaluable_control": 0,
+        "evaluable_modified": 0,
+        "evaluable_points": 0,
+        "input_records": 3957,
+        "input_unique_evidence_ids": 3957,
+        "no_truth_join": 0,
+        "points_without_valid_native_interval": 0,
+        "truth_join_candidates": 7914,
+        "unique_truth_join_records": 0
+      },
+      "explicit_coverage_of_claimed_opportunities": 0.0,
+      "filter_coverage_records": 1.0,
+      "fixed_threshold": 0.5,
+      "log_loss": null,
+      "normalized_source_join_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "probability_metrics_status": "NO_EVALUABLE_RESULT",
+      "scope": "within this provider-supplied selected construct bundle; not native occupancy or between-model comparison",
+      "truth_join_yield": 0.0,
+      "valid_probability_semantics": true
+    },
+    "role": "DEVELOPMENT",
+    "source_bundle": "execution/RMT-EXEC-001/controlled_cases/development_v2/04_lost_sample_join_key",
+    "source_metric": "execution/RMT-EXEC-001/results/development_test_final/metrics/04_lost_sample_join_key.json",
+    "source_metric_sha256": "702cd0e5221b51b4194c30e6563d88fd6013067c0ecead3b590df2ff44d2fbeb"
+  },
+  {
+    "Brier_control": 0.08817601941295505,
+    "Brier_equal_class": 0.07955841493972726,
+    "Brier_modified": 0.07094081046649948,
+    "case_id": "05_read_index_reuse_across_runs",
+    "class_denominators": {
+      "0": {
+        "eligible": 1956,
+        "native_explicit": 388,
+        "scored": 388,
+        "truth_overlap": 1977
+      },
+      "1": {
+        "eligible": 1953,
+        "native_explicit": 1944,
+        "scored": 1944,
+        "truth_overlap": 1980
+      }
+    },
+    "evidence_class": "CONTROLLED_ERROR_INJECTION",
+    "recalculated_metrics": {
+      "Brier": 0.07380841812997493,
+      "FPR": 0.06958762886597938,
+      "ML_interval_sensitivity": {
+        "Brier_infimum": 0.07328853312732835,
+        "Brier_supremum": 0.07433593252715279,
+        "log_loss_infimum": 0.21417722796125893,
+        "log_loss_supremum": 0.22007170856310684,
+        "meaning": "bounds within original ML intervals; not sampling confidence intervals",
+        "threshold_interval_ambiguous": 0
+      },
+      "balanced_accuracy": 0.9027061855670103,
+      "confusion": {
+        "FN": 243,
+        "FP": 27,
+        "TN": 361,
+        "TP": 1701
+      },
+      "counts": {
+        "alignment_ineligible": 48,
+        "ambiguous_truth_join": 0,
+        "declared_population_opportunities": 3957,
+        "eligible_aligned_A_sites": 3909,
+        "eligible_missing_probability": 1577,
+        "evaluable_control": 388,
+        "evaluable_modified": 1944,
+        "evaluable_points": 2332,
+        "input_records": 3957,
+        "input_unique_evidence_ids": 3957,
+        "no_truth_join": 0,
+        "points_without_valid_native_interval": 0,
+        "truth_join_candidates": 3957,
+        "unique_truth_join_records": 3957
+      },
+      "explicit_coverage_of_claimed_opportunities": 0.5893353550669699,
+      "filter_coverage_records": 1.0,
+      "fixed_threshold": 0.5,
+      "log_loss": 0.21710981725024953,
+      "normalized_source_join_sha256": "111538d37dcfd62280031768f4e620fa56a444bed5bb856c652f44d3817953fe",
+      "probability_metrics_status": "SCOPED_NATIVE_INTERVAL",
+      "scope": "within this provider-supplied selected construct bundle; not native occupancy or between-model comparison",
+      "truth_join_yield": 1.0,
+      "valid_probability_semantics": true
+    },
+    "role": "DEVELOPMENT",
+    "source_bundle": "execution/RMT-EXEC-001/controlled_cases/development_v2/05_read_index_reuse_across_runs",
+    "source_metric": "execution/RMT-EXEC-001/results/development_test_final/metrics/05_read_index_reuse_across_runs.json",
+    "source_metric_sha256": "f9d6cb5b74ebac121cfa291b2fb65c5b99f339d9077b5b9dd26c9a90c5f94c0b"
+  },
+  {
+    "Brier_control": 0.08808821455065573,
+    "Brier_equal_class": 0.07938115291837894,
+    "Brier_modified": 0.07067409128610215,
+    "case_id": "05_read_index_reuse_across_runs_B2_recovered",
+    "class_denominators": {
+      "0": {
+        "eligible": 1957,
+        "native_explicit": 389,
+        "scored": 389,
+        "truth_overlap": 1978
+      },
+      "1": {
+        "eligible": 1952,
+        "native_explicit": 1943,
+        "scored": 1943,
+        "truth_overlap": 1979
+      }
+    },
+    "evidence_class": "SAFE_RECOVERY",
+    "recalculated_metrics": {
+      "Brier": 0.07357893431779655,
+      "FPR": 0.06940874035989718,
+      "ML_interval_sensitivity": {
+        "Brier_infimum": 0.07305994573629128,
+        "Brier_supremum": 0.07410555229383309,
+        "log_loss_infimum": 0.21366742557424526,
+        "log_loss_supremum": 0.21955688128380807,
+        "meaning": "bounds within original ML intervals; not sampling confidence intervals",
+        "threshold_interval_ambiguous": 0
+      },
+      "balanced_accuracy": 0.9030207970871642,
+      "confusion": {
+        "FN": 242,
+        "FP": 27,
+        "TN": 362,
+        "TP": 1701
+      },
+      "counts": {
+        "alignment_ineligible": 48,
+        "ambiguous_truth_join": 0,
+        "declared_population_opportunities": 3957,
+        "eligible_aligned_A_sites": 3909,
+        "eligible_missing_probability": 1577,
+        "evaluable_control": 389,
+        "evaluable_modified": 1943,
+        "evaluable_points": 2332,
+        "input_records": 3957,
+        "input_unique_evidence_ids": 3957,
+        "no_truth_join": 0,
+        "points_without_valid_native_interval": 0,
+        "truth_join_candidates": 3957,
+        "unique_truth_join_records": 3957
+      },
+      "explicit_coverage_of_claimed_opportunities": 0.5893353550669699,
+      "filter_coverage_records": 1.0,
+      "fixed_threshold": 0.5,
+      "log_loss": 0.21659751617016476,
+      "normalized_source_join_sha256": "da0336457061e85622ac6858eae75f3d39fdc5d7698d4a18a008fc0f16710629",
+      "probability_metrics_status": "SCOPED_NATIVE_INTERVAL",
+      "scope": "within this provider-supplied selected construct bundle; not native occupancy or between-model comparison",
+      "truth_join_yield": 1.0,
+      "valid_probability_semantics": true
+    },
+    "role": "DEVELOPMENT",
+    "source_bundle": "execution/RMT-EXEC-001/results/development_test_final/recovered/05_read_index_reuse_across_runs_B2",
+    "source_metric": "execution/RMT-EXEC-001/results/development_test_final/metrics/05_read_index_reuse_across_runs_B2_recovered.json",
+    "source_metric_sha256": "4fd6a0f4505ee813eb5f82d8d83231745b2d540e2fcb900feaba19dd8ac401c3"
+  },
+  {
+    "Brier_control": 0.08808821455065573,
+    "Brier_equal_class": 0.07938115291837894,
+    "Brier_modified": 0.07067409128610215,
+    "case_id": "05_read_index_reuse_across_runs_RMT_recovered",
+    "class_denominators": {
+      "0": {
+        "eligible": 1957,
+        "native_explicit": 389,
+        "scored": 389,
+        "truth_overlap": 1978
+      },
+      "1": {
+        "eligible": 1952,
+        "native_explicit": 1943,
+        "scored": 1943,
+        "truth_overlap": 1979
+      }
+    },
+    "evidence_class": "SAFE_RECOVERY",
+    "recalculated_metrics": {
+      "Brier": 0.07357893431779655,
+      "FPR": 0.06940874035989718,
+      "ML_interval_sensitivity": {
+        "Brier_infimum": 0.07305994573629128,
+        "Brier_supremum": 0.07410555229383309,
+        "log_loss_infimum": 0.21366742557424526,
+        "log_loss_supremum": 0.21955688128380807,
+        "meaning": "bounds within original ML intervals; not sampling confidence intervals",
+        "threshold_interval_ambiguous": 0
+      },
+      "balanced_accuracy": 0.9030207970871642,
+      "confusion": {
+        "FN": 242,
+        "FP": 27,
+        "TN": 362,
+        "TP": 1701
+      },
+      "counts": {
+        "alignment_ineligible": 48,
+        "ambiguous_truth_join": 0,
+        "declared_population_opportunities": 3957,
+        "eligible_aligned_A_sites": 3909,
+        "eligible_missing_probability": 1577,
+        "evaluable_control": 389,
+        "evaluable_modified": 1943,
+        "evaluable_points": 2332,
+        "input_records": 3957,
+        "input_unique_evidence_ids": 3957,
+        "no_truth_join": 0,
+        "points_without_valid_native_interval": 0,
+        "truth_join_candidates": 3957,
+        "unique_truth_join_records": 3957
+      },
+      "explicit_coverage_of_claimed_opportunities": 0.5893353550669699,
+      "filter_coverage_records": 1.0,
+      "fixed_threshold": 0.5,
+      "log_loss": 0.21659751617016476,
+      "normalized_source_join_sha256": "da0336457061e85622ac6858eae75f3d39fdc5d7698d4a18a008fc0f16710629",
+      "probability_metrics_status": "SCOPED_NATIVE_INTERVAL",
+      "scope": "within this provider-supplied selected construct bundle; not native occupancy or between-model comparison",
+      "truth_join_yield": 1.0,
+      "valid_probability_semantics": true
+    },
+    "role": "DEVELOPMENT",
+    "source_bundle": "execution/RMT-EXEC-001/results/development_test_final/recovered/05_read_index_reuse_across_runs_RMT",
+    "source_metric": "execution/RMT-EXEC-001/results/development_test_final/metrics/05_read_index_reuse_across_runs_RMT_recovered.json",
+    "source_metric_sha256": "4fd6a0f4505ee813eb5f82d8d83231745b2d540e2fcb900feaba19dd8ac401c3"
+  },
+  {
+    "Brier_control": 0.08800085996970153,
+    "Brier_equal_class": 0.07933747562790183,
+    "Brier_modified": 0.07067409128610215,
+    "case_id": "06_duplicate_read_site_counting",
+    "class_denominators": {
+      "0": {
+        "eligible": 1958,
+        "native_explicit": 390,
+        "scored": 390,
+        "truth_overlap": 1979
+      },
+      "1": {
+        "eligible": 1952,
+        "native_explicit": 1943,
+        "scored": 1943,
+        "truth_overlap": 1979
+      }
+    },
+    "evidence_class": "CONTROLLED_ERROR_INJECTION",
+    "recalculated_metrics": {
+      "Brier": 0.073570550688847,
+      "FPR": 0.06923076923076923,
+      "ML_interval_sensitivity": {
+        "Brier_infimum": 0.0730513970431881,
+        "Brier_supremum": 0.07409733372903718,
+        "log_loss_infimum": 0.2136881312279818,
+        "log_loss_supremum": 0.2195772438658763,
+        "meaning": "bounds within original ML intervals; not sampling confidence intervals",
+        "threshold_interval_ambiguous": 0
+      },
+      "balanced_accuracy": 0.9031097826517281,
+      "confusion": {
+        "FN": 242,
+        "FP": 27,
+        "TN": 363,
+        "TP": 1701
+      },
+      "counts": {
+        "alignment_ineligible": 48,
+        "ambiguous_truth_join": 0,
+        "declared_population_opportunities": 3957,
+        "eligible_aligned_A_sites": 3910,
+        "eligible_missing_probability": 1577,
+        "evaluable_control": 390,
+        "evaluable_modified": 1943,
+        "evaluable_points": 2333,
+        "input_records": 3958,
+        "input_unique_evidence_ids": 3957,
+        "no_truth_join": 0,
+        "points_without_valid_native_interval": 0,
+        "truth_join_candidates": 3958,
+        "unique_truth_join_records": 3958
+      },
+      "explicit_coverage_of_claimed_opportunities": 0.5895880717715442,
+      "filter_coverage_records": 1.0002527167045743,
+      "fixed_threshold": 0.5,
+      "log_loss": 0.21661805517445112,
+      "normalized_source_join_sha256": "a9e46530b6c2ea4760030a440e829993a08f1dbfb683d0eea0d71056bc9284e7",
+      "probability_metrics_status": "SCOPED_NATIVE_INTERVAL",
+      "scope": "within this provider-supplied selected construct bundle; not native occupancy or between-model comparison",
+      "truth_join_yield": 1.0,
+      "valid_probability_semantics": true
+    },
+    "role": "DEVELOPMENT",
+    "source_bundle": "execution/RMT-EXEC-001/controlled_cases/development_v2/06_duplicate_read_site_counting",
+    "source_metric": "execution/RMT-EXEC-001/results/development_test_final/metrics/06_duplicate_read_site_counting.json",
+    "source_metric_sha256": "afdcd73be7ec86545641d0968977017e90a7ad360110342f84025682aa9f1ee3"
+  },
+  {
+    "Brier_control": 0.08808821455065573,
+    "Brier_equal_class": 0.07938115291837894,
+    "Brier_modified": 0.07067409128610215,
+    "case_id": "06_duplicate_read_site_counting_B2_recovered",
+    "class_denominators": {
+      "0": {
+        "eligible": 1957,
+        "native_explicit": 389,
+        "scored": 389,
+        "truth_overlap": 1978
+      },
+      "1": {
+        "eligible": 1952,
+        "native_explicit": 1943,
+        "scored": 1943,
+        "truth_overlap": 1979
+      }
+    },
+    "evidence_class": "SAFE_RECOVERY",
+    "recalculated_metrics": {
+      "Brier": 0.07357893431779655,
+      "FPR": 0.06940874035989718,
+      "ML_interval_sensitivity": {
+        "Brier_infimum": 0.07305994573629128,
+        "Brier_supremum": 0.07410555229383309,
+        "log_loss_infimum": 0.21366742557424526,
+        "log_loss_supremum": 0.21955688128380807,
+        "meaning": "bounds within original ML intervals; not sampling confidence intervals",
+        "threshold_interval_ambiguous": 0
+      },
+      "balanced_accuracy": 0.9030207970871642,
+      "confusion": {
+        "FN": 242,
+        "FP": 27,
+        "TN": 362,
+        "TP": 1701
+      },
+      "counts": {
+        "alignment_ineligible": 48,
+        "ambiguous_truth_join": 0,
+        "declared_population_opportunities": 3957,
+        "eligible_aligned_A_sites": 3909,
+        "eligible_missing_probability": 1577,
+        "evaluable_control": 389,
+        "evaluable_modified": 1943,
+        "evaluable_points": 2332,
+        "input_records": 3957,
+        "input_unique_evidence_ids": 3957,
+        "no_truth_join": 0,
+        "points_without_valid_native_interval": 0,
+        "truth_join_candidates": 3957,
+        "unique_truth_join_records": 3957
+      },
+      "explicit_coverage_of_claimed_opportunities": 0.5893353550669699,
+      "filter_coverage_records": 1.0,
+      "fixed_threshold": 0.5,
+      "log_loss": 0.21659751617016476,
+      "normalized_source_join_sha256": "da0336457061e85622ac6858eae75f3d39fdc5d7698d4a18a008fc0f16710629",
+      "probability_metrics_status": "SCOPED_NATIVE_INTERVAL",
+      "scope": "within this provider-supplied selected construct bundle; not native occupancy or between-model comparison",
+      "truth_join_yield": 1.0,
+      "valid_probability_semantics": true
+    },
+    "role": "DEVELOPMENT",
+    "source_bundle": "execution/RMT-EXEC-001/results/development_test_final/recovered/06_duplicate_read_site_counting_B2",
+    "source_metric": "execution/RMT-EXEC-001/results/development_test_final/metrics/06_duplicate_read_site_counting_B2_recovered.json",
+    "source_metric_sha256": "4fd6a0f4505ee813eb5f82d8d83231745b2d540e2fcb900feaba19dd8ac401c3"
+  },
+  {
+    "Brier_control": 0.08808821455065573,
+    "Brier_equal_class": 0.07938115291837894,
+    "Brier_modified": 0.07067409128610215,
+    "case_id": "06_duplicate_read_site_counting_RMT_recovered",
+    "class_denominators": {
+      "0": {
+        "eligible": 1957,
+        "native_explicit": 389,
+        "scored": 389,
+        "truth_overlap": 1978
+      },
+      "1": {
+        "eligible": 1952,
+        "native_explicit": 1943,
+        "scored": 1943,
+        "truth_overlap": 1979
+      }
+    },
+    "evidence_class": "SAFE_RECOVERY",
+    "recalculated_metrics": {
+      "Brier": 0.07357893431779655,
+      "FPR": 0.06940874035989718,
+      "ML_interval_sensitivity": {
+        "Brier_infimum": 0.07305994573629128,
+        "Brier_supremum": 0.07410555229383309,
+        "log_loss_infimum": 0.21366742557424526,
+        "log_loss_supremum": 0.21955688128380807,
+        "meaning": "bounds within original ML intervals; not sampling confidence intervals",
+        "threshold_interval_ambiguous": 0
+      },
+      "balanced_accuracy": 0.9030207970871642,
+      "confusion": {
+        "FN": 242,
+        "FP": 27,
+        "TN": 362,
+        "TP": 1701
+      },
+      "counts": {
+        "alignment_ineligible": 48,
+        "ambiguous_truth_join": 0,
+        "declared_population_opportunities": 3957,
+        "eligible_aligned_A_sites": 3909,
+        "eligible_missing_probability": 1577,
+        "evaluable_control": 389,
+        "evaluable_modified": 1943,
+        "evaluable_points": 2332,
+        "input_records": 3957,
+        "input_unique_evidence_ids": 3957,
+        "no_truth_join": 0,
+        "points_without_valid_native_interval": 0,
+        "truth_join_candidates": 3957,
+        "unique_truth_join_records": 3957
+      },
+      "explicit_coverage_of_claimed_opportunities": 0.5893353550669699,
+      "filter_coverage_records": 1.0,
+      "fixed_threshold": 0.5,
+      "log_loss": 0.21659751617016476,
+      "normalized_source_join_sha256": "da0336457061e85622ac6858eae75f3d39fdc5d7698d4a18a008fc0f16710629",
+      "probability_metrics_status": "SCOPED_NATIVE_INTERVAL",
+      "scope": "within this provider-supplied selected construct bundle; not native occupancy or between-model comparison",
+      "truth_join_yield": 1.0,
+      "valid_probability_semantics": true
+    },
+    "role": "DEVELOPMENT",
+    "source_bundle": "execution/RMT-EXEC-001/results/development_test_final/recovered/06_duplicate_read_site_counting_RMT",
+    "source_metric": "execution/RMT-EXEC-001/results/development_test_final/metrics/06_duplicate_read_site_counting_RMT_recovered.json",
+    "source_metric_sha256": "4fd6a0f4505ee813eb5f82d8d83231745b2d540e2fcb900feaba19dd8ac401c3"
+  },
+  {
+    "Brier_control": 0.06263842501475991,
+    "Brier_equal_class": 0.041683788593713786,
+    "Brier_modified": 0.020729152172667655,
+    "case_id": "07_site_score_as_read_probability",
+    "class_denominators": {
+      "0": {
+        "eligible": 1957,
+        "native_explicit": 389,
+        "scored": 389,
+        "truth_overlap": 1978
+      },
+      "1": {
+        "eligible": 1952,
+        "native_explicit": 1943,
+        "scored": 1943,
+        "truth_overlap": 1979
+      }
+    },
+    "evidence_class": "CONTROLLED_ERROR_INJECTION",
+    "recalculated_metrics": {
+      "Brier": 0.0277200214417816,
+      "FPR": 0.0,
+      "ML_interval_sensitivity": null,
+      "balanced_accuracy": 1.0,
+      "confusion": {
+        "FN": 0,
+        "FP": 0,
+        "TN": 389,
+        "TP": 1943
+      },
+      "counts": {
+        "alignment_ineligible": 48,
+        "ambiguous_truth_join": 0,
+        "declared_population_opportunities": 3957,
+        "eligible_aligned_A_sites": 3909,
+        "eligible_missing_probability": 1577,
+        "evaluable_control": 389,
+        "evaluable_modified": 1943,
+        "evaluable_points": 2332,
+        "input_records": 3957,
+        "input_unique_evidence_ids": 3957,
+        "no_truth_join": 0,
+        "points_without_valid_native_interval": 2332,
+        "truth_join_candidates": 3957,
+        "unique_truth_join_records": 3957
+      },
+      "explicit_coverage_of_claimed_opportunities": 0.5893353550669699,
+      "filter_coverage_records": 1.0,
+      "fixed_threshold": 0.5,
+      "log_loss": 0.15063576064615558,
+      "normalized_source_join_sha256": "6ac3ddd5e186535cdf2a6ba8344f278dcfaf44acb6c30df283984d228d89aee8",
+      "probability_metrics_status": "INVALID_INPUT_DIAGNOSTIC_ONLY",
+      "scope": "within this provider-supplied selected construct bundle; not native occupancy or between-model comparison",
+      "truth_join_yield": 1.0,
+      "valid_probability_semantics": false
+    },
+    "role": "DEVELOPMENT",
+    "source_bundle": "execution/RMT-EXEC-001/controlled_cases/development_v2/07_site_score_as_read_probability",
+    "source_metric": "execution/RMT-EXEC-001/results/development_test_final/metrics/07_site_score_as_read_probability.json",
+    "source_metric_sha256": "f1a8b120cecae5a9af1e265c6ed4287871353f7dce59519d8234b64d2e2a3f97"
+  },
+  {
+    "Brier_control": 0.9077898661295573,
+    "Brier_equal_class": 0.4540641951852341,
+    "Brier_modified": 0.0003385242409109316,
+    "case_id": "08_filtered_output_claimed_all_records",
+    "class_denominators": {
+      "0": {
+        "eligible": 3,
+        "native_explicit": 3,
+        "scored": 3,
+        "truth_overlap": 3
+      },
+      "1": {
+        "eligible": 1582,
+        "native_explicit": 1582,
+        "scored": 1582,
+        "truth_overlap": 1582
+      }
+    },
+    "evidence_class": "CONTROLLED_ERROR_INJECTION",
+    "recalculated_metrics": {
+      "Brier": 0.00205609775868124,
+      "FPR": 1.0,
+      "ML_interval_sensitivity": {
+        "Brier_infimum": 0.0020206872597101737,
+        "Brier_supremum": 0.0020991376521835568,
+        "log_loss_infimum": 0.012499642311219404,
+        "log_loss_supremum": 0.016690385869838984,
+        "meaning": "bounds within original ML intervals; not sampling confidence intervals",
+        "threshold_interval_ambiguous": 0
+      },
+      "balanced_accuracy": 0.5,
+      "confusion": {
+        "FN": 0,
+        "FP": 3,
+        "TN": 0,
+        "TP": 1582
+      },
+      "counts": {
+        "alignment_ineligible": 0,
+        "ambiguous_truth_join": 0,
+        "declared_population_opportunities": 3957,
+        "eligible_aligned_A_sites": 1585,
+        "eligible_missing_probability": 0,
+        "evaluable_control": 3,
+        "evaluable_modified": 1582,
+        "evaluable_points": 1585,
+        "input_records": 1585,
+        "input_unique_evidence_ids": 1585,
+        "no_truth_join": 0,
+        "points_without_valid_native_interval": 0,
+        "truth_join_candidates": 1585,
+        "unique_truth_join_records": 1585
+      },
+      "explicit_coverage_of_claimed_opportunities": 0.40055597675006316,
+      "filter_coverage_records": 0.40055597675006316,
+      "fixed_threshold": 0.5,
+      "log_loss": 0.014585986236148072,
+      "normalized_source_join_sha256": "0f8d976e65348eff48f764616e0ed613cd4e7d0e4dd90974633e48e95ad31000",
+      "probability_metrics_status": "SCOPED_NATIVE_INTERVAL",
+      "scope": "within this provider-supplied selected construct bundle; not native occupancy or between-model comparison",
+      "truth_join_yield": 1.0,
+      "valid_probability_semantics": true
+    },
+    "role": "DEVELOPMENT",
+    "source_bundle": "execution/RMT-EXEC-001/controlled_cases/development_v2/08_filtered_output_claimed_all_records",
+    "source_metric": "execution/RMT-EXEC-001/results/development_test_final/metrics/08_filtered_output_claimed_all_records.json",
+    "source_metric_sha256": "c1e3aa3c88585dbf47160e66ca50305c807bdb1e205fc0fad1a5fee991791ee9"
+  },
+  {
+    "Brier_control": 0.0175096144405749,
+    "Brier_equal_class": 0.046234253779943314,
+    "Brier_modified": 0.07495889311931173,
+    "case_id": "09_missing_probability_imputed_zero",
+    "class_denominators": {
+      "0": {
+        "eligible": 1957,
+        "native_explicit": 389,
+        "scored": 1957,
+        "truth_overlap": 1978
+      },
+      "1": {
+        "eligible": 1952,
+        "native_explicit": 1943,
+        "scored": 1952,
+        "truth_overlap": 1979
+      }
+    },
+    "evidence_class": "CONTROLLED_ERROR_INJECTION",
+    "recalculated_metrics": {
+      "Brier": 0.04619751210772616,
+      "FPR": 0.013796627491057742,
+      "ML_interval_sensitivity": null,
+      "balanced_accuracy": 0.9288086534675859,
+      "confusion": {
+        "FN": 251,
+        "FP": 27,
+        "TN": 1930,
+        "TP": 1701
+      },
+      "counts": {
+        "alignment_ineligible": 48,
+        "ambiguous_truth_join": 0,
+        "declared_population_opportunities": 3957,
+        "eligible_aligned_A_sites": 3909,
+        "eligible_missing_probability": 0,
+        "evaluable_control": 1957,
+        "evaluable_modified": 1952,
+        "evaluable_points": 3909,
+        "input_records": 3957,
+        "input_unique_evidence_ids": 3957,
+        "no_truth_join": 0,
+        "points_without_valid_native_interval": 1577,
+        "truth_join_candidates": 3957,
+        "unique_truth_join_records": 3957
+      },
+      "explicit_coverage_of_claimed_opportunities": 0.9878695981804397,
+      "filter_coverage_records": 1.0,
+      "fixed_threshold": 0.5,
+      "log_loss": "INFINITE",
+      "normalized_source_join_sha256": "50f2bee3118713536603814da2a9d4c1dad333c032f383f07c603e663e18bf14",
+      "probability_metrics_status": "INVALID_INPUT_DIAGNOSTIC_ONLY",
+      "scope": "within this provider-supplied selected construct bundle; not native occupancy or between-model comparison",
+      "truth_join_yield": 1.0,
+      "valid_probability_semantics": false
+    },
+    "role": "DEVELOPMENT",
+    "source_bundle": "execution/RMT-EXEC-001/controlled_cases/development_v2/09_missing_probability_imputed_zero",
+    "source_metric": "execution/RMT-EXEC-001/results/development_test_final/metrics/09_missing_probability_imputed_zero.json",
+    "source_metric_sha256": "6c37c7cfd663fd1ea988c360782fc456bc3783f73b5c95adcb9f47ac92813b25"
+  },
+  {
+    "Brier_control": 0.08808821455065573,
+    "Brier_equal_class": 0.07938115291837894,
+    "Brier_modified": 0.07067409128610215,
+    "case_id": "10_modification_code_confusion",
+    "class_denominators": {
+      "0": {
+        "eligible": 1957,
+        "native_explicit": 389,
+        "scored": 389,
+        "truth_overlap": 1978
+      },
+      "1": {
+        "eligible": 1952,
+        "native_explicit": 1943,
+        "scored": 1943,
+        "truth_overlap": 1979
+      }
+    },
+    "evidence_class": "CONTROLLED_ERROR_INJECTION",
+    "recalculated_metrics": {
+      "Brier": 0.07357893431779655,
+      "FPR": 0.06940874035989718,
+      "ML_interval_sensitivity": null,
+      "balanced_accuracy": 0.9030207970871642,
+      "confusion": {
+        "FN": 242,
+        "FP": 27,
+        "TN": 362,
+        "TP": 1701
+      },
+      "counts": {
+        "alignment_ineligible": 48,
+        "ambiguous_truth_join": 0,
+        "declared_population_opportunities": 3957,
+        "eligible_aligned_A_sites": 3909,
+        "eligible_missing_probability": 1577,
+        "evaluable_control": 389,
+        "evaluable_modified": 1943,
+        "evaluable_points": 2332,
+        "input_records": 3957,
+        "input_unique_evidence_ids": 3957,
+        "no_truth_join": 0,
+        "points_without_valid_native_interval": 2332,
+        "truth_join_candidates": 3957,
+        "unique_truth_join_records": 3957
+      },
+      "explicit_coverage_of_claimed_opportunities": 0.5893353550669699,
+      "filter_coverage_records": 1.0,
+      "fixed_threshold": 0.5,
+      "log_loss": 0.21659751617016476,
+      "normalized_source_join_sha256": "33eb632b7e2a2d7491ccd854119cdefcb9f22a1cc52b587c545f487c32813e75",
+      "probability_metrics_status": "INVALID_INPUT_DIAGNOSTIC_ONLY",
+      "scope": "within this provider-supplied selected construct bundle; not native occupancy or between-model comparison",
+      "truth_join_yield": 1.0,
+      "valid_probability_semantics": false
+    },
+    "role": "DEVELOPMENT",
+    "source_bundle": "execution/RMT-EXEC-001/controlled_cases/development_v2/10_modification_code_confusion",
+    "source_metric": "execution/RMT-EXEC-001/results/development_test_final/metrics/10_modification_code_confusion.json",
+    "source_metric_sha256": "2925c10f96fad8f597fb07675c5f9a8ed9f525337e8d04ab74038cf978a2ecd7"
+  },
+  {
+    "Brier_control": 0.08808821455065573,
+    "Brier_equal_class": 0.07938115291837894,
+    "Brier_modified": 0.07067409128610215,
+    "case_id": "11_row_order",
+    "class_denominators": {
+      "0": {
+        "eligible": 1957,
+        "native_explicit": 389,
+        "scored": 389,
+        "truth_overlap": 1978
+      },
+      "1": {
+        "eligible": 1952,
+        "native_explicit": 1943,
+        "scored": 1943,
+        "truth_overlap": 1979
+      }
+    },
+    "evidence_class": "LEGAL_TRANSFORMATION",
+    "recalculated_metrics": {
+      "Brier": 0.07357893431779655,
+      "FPR": 0.06940874035989718,
+      "ML_interval_sensitivity": {
+        "Brier_infimum": 0.07305994573629128,
+        "Brier_supremum": 0.07410555229383309,
+        "log_loss_infimum": 0.21366742557424526,
+        "log_loss_supremum": 0.21955688128380807,
+        "meaning": "bounds within original ML intervals; not sampling confidence intervals",
+        "threshold_interval_ambiguous": 0
+      },
+      "balanced_accuracy": 0.9030207970871642,
+      "confusion": {
+        "FN": 242,
+        "FP": 27,
+        "TN": 362,
+        "TP": 1701
+      },
+      "counts": {
+        "alignment_ineligible": 48,
+        "ambiguous_truth_join": 0,
+        "declared_population_opportunities": 3957,
+        "eligible_aligned_A_sites": 3909,
+        "eligible_missing_probability": 1577,
+        "evaluable_control": 389,
+        "evaluable_modified": 1943,
+        "evaluable_points": 2332,
+        "input_records": 3957,
+        "input_unique_evidence_ids": 3957,
+        "no_truth_join": 0,
+        "points_without_valid_native_interval": 0,
+        "truth_join_candidates": 3957,
+        "unique_truth_join_records": 3957
+      },
+      "explicit_coverage_of_claimed_opportunities": 0.5893353550669699,
+      "filter_coverage_records": 1.0,
+      "fixed_threshold": 0.5,
+      "log_loss": 0.21659751617016476,
+      "normalized_source_join_sha256": "da0336457061e85622ac6858eae75f3d39fdc5d7698d4a18a008fc0f16710629",
+      "probability_metrics_status": "SCOPED_NATIVE_INTERVAL",
+      "scope": "within this provider-supplied selected construct bundle; not native occupancy or between-model comparison",
+      "truth_join_yield": 1.0,
+      "valid_probability_semantics": true
+    },
+    "role": "DEVELOPMENT",
+    "source_bundle": "execution/RMT-EXEC-001/controlled_cases/development_v2/11_row_order",
+    "source_metric": "execution/RMT-EXEC-001/results/development_test_final/metrics/11_row_order.json",
+    "source_metric_sha256": "4fd6a0f4505ee813eb5f82d8d83231745b2d540e2fcb900feaba19dd8ac401c3"
+  },
+  {
+    "Brier_control": 0.08808821455065573,
+    "Brier_equal_class": 0.07938115291837894,
+    "Brier_modified": 0.07067409128610215,
+    "case_id": "12_compression",
+    "class_denominators": {
+      "0": {
+        "eligible": 1957,
+        "native_explicit": 389,
+        "scored": 389,
+        "truth_overlap": 1978
+      },
+      "1": {
+        "eligible": 1952,
+        "native_explicit": 1943,
+        "scored": 1943,
+        "truth_overlap": 1979
+      }
+    },
+    "evidence_class": "LEGAL_TRANSFORMATION",
+    "recalculated_metrics": {
+      "Brier": 0.07357893431779655,
+      "FPR": 0.06940874035989718,
+      "ML_interval_sensitivity": {
+        "Brier_infimum": 0.07305994573629128,
+        "Brier_supremum": 0.07410555229383309,
+        "log_loss_infimum": 0.21366742557424526,
+        "log_loss_supremum": 0.21955688128380807,
+        "meaning": "bounds within original ML intervals; not sampling confidence intervals",
+        "threshold_interval_ambiguous": 0
+      },
+      "balanced_accuracy": 0.9030207970871642,
+      "confusion": {
+        "FN": 242,
+        "FP": 27,
+        "TN": 362,
+        "TP": 1701
+      },
+      "counts": {
+        "alignment_ineligible": 48,
+        "ambiguous_truth_join": 0,
+        "declared_population_opportunities": 3957,
+        "eligible_aligned_A_sites": 3909,
+        "eligible_missing_probability": 1577,
+        "evaluable_control": 389,
+        "evaluable_modified": 1943,
+        "evaluable_points": 2332,
+        "input_records": 3957,
+        "input_unique_evidence_ids": 3957,
+        "no_truth_join": 0,
+        "points_without_valid_native_interval": 0,
+        "truth_join_candidates": 3957,
+        "unique_truth_join_records": 3957
+      },
+      "explicit_coverage_of_claimed_opportunities": 0.5893353550669699,
+      "filter_coverage_records": 1.0,
+      "fixed_threshold": 0.5,
+      "log_loss": 0.21659751617016476,
+      "normalized_source_join_sha256": "da0336457061e85622ac6858eae75f3d39fdc5d7698d4a18a008fc0f16710629",
+      "probability_metrics_status": "SCOPED_NATIVE_INTERVAL",
+      "scope": "within this provider-supplied selected construct bundle; not native occupancy or between-model comparison",
+      "truth_join_yield": 1.0,
+      "valid_probability_semantics": true
+    },
+    "role": "DEVELOPMENT",
+    "source_bundle": "execution/RMT-EXEC-001/controlled_cases/development_v2/12_compression",
+    "source_metric": "execution/RMT-EXEC-001/results/development_test_final/metrics/12_compression.json",
+    "source_metric_sha256": "4fd6a0f4505ee813eb5f82d8d83231745b2d540e2fcb900feaba19dd8ac401c3"
+  },
+  {
+    "Brier_control": 0.08808821455065573,
+    "Brier_equal_class": 0.07938115291837894,
+    "Brier_modified": 0.07067409128610215,
+    "case_id": "13_irrelevant_column",
+    "class_denominators": {
+      "0": {
+        "eligible": 1957,
+        "native_explicit": 389,
+        "scored": 389,
+        "truth_overlap": 1978
+      },
+      "1": {
+        "eligible": 1952,
+        "native_explicit": 1943,
+        "scored": 1943,
+        "truth_overlap": 1979
+      }
+    },
+    "evidence_class": "LEGAL_TRANSFORMATION",
+    "recalculated_metrics": {
+      "Brier": 0.07357893431779655,
+      "FPR": 0.06940874035989718,
+      "ML_interval_sensitivity": {
+        "Brier_infimum": 0.07305994573629128,
+        "Brier_supremum": 0.07410555229383309,
+        "log_loss_infimum": 0.21366742557424526,
+        "log_loss_supremum": 0.21955688128380807,
+        "meaning": "bounds within original ML intervals; not sampling confidence intervals",
+        "threshold_interval_ambiguous": 0
+      },
+      "balanced_accuracy": 0.9030207970871642,
+      "confusion": {
+        "FN": 242,
+        "FP": 27,
+        "TN": 362,
+        "TP": 1701
+      },
+      "counts": {
+        "alignment_ineligible": 48,
+        "ambiguous_truth_join": 0,
+        "declared_population_opportunities": 3957,
+        "eligible_aligned_A_sites": 3909,
+        "eligible_missing_probability": 1577,
+        "evaluable_control": 389,
+        "evaluable_modified": 1943,
+        "evaluable_points": 2332,
+        "input_records": 3957,
+        "input_unique_evidence_ids": 3957,
+        "no_truth_join": 0,
+        "points_without_valid_native_interval": 0,
+        "truth_join_candidates": 3957,
+        "unique_truth_join_records": 3957
+      },
+      "explicit_coverage_of_claimed_opportunities": 0.5893353550669699,
+      "filter_coverage_records": 1.0,
+      "fixed_threshold": 0.5,
+      "log_loss": 0.21659751617016476,
+      "normalized_source_join_sha256": "da0336457061e85622ac6858eae75f3d39fdc5d7698d4a18a008fc0f16710629",
+      "probability_metrics_status": "SCOPED_NATIVE_INTERVAL",
+      "scope": "within this provider-supplied selected construct bundle; not native occupancy or between-model comparison",
+      "truth_join_yield": 1.0,
+      "valid_probability_semantics": true
+    },
+    "role": "DEVELOPMENT",
+    "source_bundle": "execution/RMT-EXEC-001/controlled_cases/development_v2/13_irrelevant_column",
+    "source_metric": "execution/RMT-EXEC-001/results/development_test_final/metrics/13_irrelevant_column.json",
+    "source_metric_sha256": "4fd6a0f4505ee813eb5f82d8d83231745b2d540e2fcb900feaba19dd8ac401c3"
+  },
+  {
+    "Brier_control": 0.08808821455065573,
+    "Brier_equal_class": 0.07938115291837894,
+    "Brier_modified": 0.07067409128610215,
+    "case_id": "14_documented_bijective_rename",
+    "class_denominators": {
+      "0": {
+        "eligible": 1957,
+        "native_explicit": 389,
+        "scored": 389,
+        "truth_overlap": 1978
+      },
+      "1": {
+        "eligible": 1952,
+        "native_explicit": 1943,
+        "scored": 1943,
+        "truth_overlap": 1979
+      }
+    },
+    "evidence_class": "LEGAL_TRANSFORMATION",
+    "recalculated_metrics": {
+      "Brier": 0.07357893431779655,
+      "FPR": 0.06940874035989718,
+      "ML_interval_sensitivity": {
+        "Brier_infimum": 0.07305994573629128,
+        "Brier_supremum": 0.07410555229383309,
+        "log_loss_infimum": 0.21366742557424526,
+        "log_loss_supremum": 0.21955688128380807,
+        "meaning": "bounds within original ML intervals; not sampling confidence intervals",
+        "threshold_interval_ambiguous": 0
+      },
+      "balanced_accuracy": 0.9030207970871642,
+      "confusion": {
+        "FN": 242,
+        "FP": 27,
+        "TN": 362,
+        "TP": 1701
+      },
+      "counts": {
+        "alignment_ineligible": 48,
+        "ambiguous_truth_join": 0,
+        "declared_population_opportunities": 3957,
+        "eligible_aligned_A_sites": 3909,
+        "eligible_missing_probability": 1577,
+        "evaluable_control": 389,
+        "evaluable_modified": 1943,
+        "evaluable_points": 2332,
+        "input_records": 3957,
+        "input_unique_evidence_ids": 3957,
+        "no_truth_join": 0,
+        "points_without_valid_native_interval": 0,
+        "truth_join_candidates": 3957,
+        "unique_truth_join_records": 3957
+      },
+      "explicit_coverage_of_claimed_opportunities": 0.5893353550669699,
+      "filter_coverage_records": 1.0,
+      "fixed_threshold": 0.5,
+      "log_loss": 0.21659751617016476,
+      "normalized_source_join_sha256": "da0336457061e85622ac6858eae75f3d39fdc5d7698d4a18a008fc0f16710629",
+      "probability_metrics_status": "SCOPED_NATIVE_INTERVAL",
+      "scope": "within this provider-supplied selected construct bundle; not native occupancy or between-model comparison",
+      "truth_join_yield": 1.0,
+      "valid_probability_semantics": true
+    },
+    "role": "DEVELOPMENT",
+    "source_bundle": "execution/RMT-EXEC-001/controlled_cases/development_v2/14_documented_bijective_rename",
+    "source_metric": "execution/RMT-EXEC-001/results/development_test_final/metrics/14_documented_bijective_rename.json",
+    "source_metric_sha256": "4fd6a0f4505ee813eb5f82d8d83231745b2d540e2fcb900feaba19dd8ac401c3"
+  },
+  {
+    "Brier_control": 0.08808821455065573,
+    "Brier_equal_class": 0.07938115291837894,
+    "Brier_modified": 0.07067409128610215,
+    "case_id": "15_disjoint_merge",
+    "class_denominators": {
+      "0": {
+        "eligible": 1957,
+        "native_explicit": 389,
+        "scored": 389,
+        "truth_overlap": 1978
+      },
+      "1": {
+        "eligible": 1952,
+        "native_explicit": 1943,
+        "scored": 1943,
+        "truth_overlap": 1979
+      }
+    },
+    "evidence_class": "LEGAL_TRANSFORMATION",
+    "recalculated_metrics": {
+      "Brier": 0.07357893431779655,
+      "FPR": 0.06940874035989718,
+      "ML_interval_sensitivity": {
+        "Brier_infimum": 0.07305994573629128,
+        "Brier_supremum": 0.07410555229383309,
+        "log_loss_infimum": 0.21366742557424526,
+        "log_loss_supremum": 0.21955688128380807,
+        "meaning": "bounds within original ML intervals; not sampling confidence intervals",
+        "threshold_interval_ambiguous": 0
+      },
+      "balanced_accuracy": 0.9030207970871642,
+      "confusion": {
+        "FN": 242,
+        "FP": 27,
+        "TN": 362,
+        "TP": 1701
+      },
+      "counts": {
+        "alignment_ineligible": 48,
+        "ambiguous_truth_join": 0,
+        "declared_population_opportunities": 3957,
+        "eligible_aligned_A_sites": 3909,
+        "eligible_missing_probability": 1577,
+        "evaluable_control": 389,
+        "evaluable_modified": 1943,
+        "evaluable_points": 2332,
+        "input_records": 3957,
+        "input_unique_evidence_ids": 3957,
+        "no_truth_join": 0,
+        "points_without_valid_native_interval": 0,
+        "truth_join_candidates": 3957,
+        "unique_truth_join_records": 3957
+      },
+      "explicit_coverage_of_claimed_opportunities": 0.5893353550669699,
+      "filter_coverage_records": 1.0,
+      "fixed_threshold": 0.5,
+      "log_loss": 0.21659751617016476,
+      "normalized_source_join_sha256": "da0336457061e85622ac6858eae75f3d39fdc5d7698d4a18a008fc0f16710629",
+      "probability_metrics_status": "SCOPED_NATIVE_INTERVAL",
+      "scope": "within this provider-supplied selected construct bundle; not native occupancy or between-model comparison",
+      "truth_join_yield": 1.0,
+      "valid_probability_semantics": true
+    },
+    "role": "DEVELOPMENT",
+    "source_bundle": "execution/RMT-EXEC-001/controlled_cases/development_v2/15_disjoint_merge",
+    "source_metric": "execution/RMT-EXEC-001/results/development_test_final/metrics/15_disjoint_merge.json",
+    "source_metric_sha256": "4fd6a0f4505ee813eb5f82d8d83231745b2d540e2fcb900feaba19dd8ac401c3"
+  },
+  {
+    "Brier_control": 0.08808821455065573,
+    "Brier_equal_class": 0.07938115291837894,
+    "Brier_modified": 0.07067409128610215,
+    "case_id": "16_documented_coordinate_conversion",
+    "class_denominators": {
+      "0": {
+        "eligible": 1957,
+        "native_explicit": 389,
+        "scored": 389,
+        "truth_overlap": 1978
+      },
+      "1": {
+        "eligible": 1952,
+        "native_explicit": 1943,
+        "scored": 1943,
+        "truth_overlap": 1979
+      }
+    },
+    "evidence_class": "LEGAL_TRANSFORMATION",
+    "recalculated_metrics": {
+      "Brier": 0.07357893431779655,
+      "FPR": 0.06940874035989718,
+      "ML_interval_sensitivity": {
+        "Brier_infimum": 0.07305994573629128,
+        "Brier_supremum": 0.07410555229383309,
+        "log_loss_infimum": 0.21366742557424526,
+        "log_loss_supremum": 0.21955688128380807,
+        "meaning": "bounds within original ML intervals; not sampling confidence intervals",
+        "threshold_interval_ambiguous": 0
+      },
+      "balanced_accuracy": 0.9030207970871642,
+      "confusion": {
+        "FN": 242,
+        "FP": 27,
+        "TN": 362,
+        "TP": 1701
+      },
+      "counts": {
+        "alignment_ineligible": 48,
+        "ambiguous_truth_join": 0,
+        "declared_population_opportunities": 3957,
+        "eligible_aligned_A_sites": 3909,
+        "eligible_missing_probability": 1577,
+        "evaluable_control": 389,
+        "evaluable_modified": 1943,
+        "evaluable_points": 2332,
+        "input_records": 3957,
+        "input_unique_evidence_ids": 3957,
+        "no_truth_join": 0,
+        "points_without_valid_native_interval": 0,
+        "truth_join_candidates": 3957,
+        "unique_truth_join_records": 3957
+      },
+      "explicit_coverage_of_claimed_opportunities": 0.5893353550669699,
+      "filter_coverage_records": 1.0,
+      "fixed_threshold": 0.5,
+      "log_loss": 0.21659751617016476,
+      "normalized_source_join_sha256": "da0336457061e85622ac6858eae75f3d39fdc5d7698d4a18a008fc0f16710629",
+      "probability_metrics_status": "SCOPED_NATIVE_INTERVAL",
+      "scope": "within this provider-supplied selected construct bundle; not native occupancy or between-model comparison",
+      "truth_join_yield": 1.0,
+      "valid_probability_semantics": true
+    },
+    "role": "DEVELOPMENT",
+    "source_bundle": "execution/RMT-EXEC-001/controlled_cases/development_v2/16_documented_coordinate_conversion",
+    "source_metric": "execution/RMT-EXEC-001/results/development_test_final/metrics/16_documented_coordinate_conversion.json",
+    "source_metric_sha256": "4fd6a0f4505ee813eb5f82d8d83231745b2d540e2fcb900feaba19dd8ac401c3"
+  },
+  {
+    "Brier_control": 0.09440975485398488,
+    "Brier_equal_class": 0.0813083601327412,
+    "Brier_modified": 0.06820696541149752,
+    "case_id": "00_canonical",
+    "class_denominators": {
+      "0": {
+        "eligible": 23927,
+        "native_explicit": 6826,
+        "scored": 6826,
+        "truth_overlap": 24254
+      },
+      "1": {
+        "eligible": 23864,
+        "native_explicit": 23641,
+        "scored": 23641,
+        "truth_overlap": 24233
+      }
+    },
+    "evidence_class": "OBSERVED_NATIVE_INPUT",
+    "recalculated_metrics": {
+      "Brier": 0.07407758742004508,
+      "FPR": 0.1237913858775271,
+      "ML_interval_sensitivity": {
+        "Brier_infimum": 0.07350863860113376,
+        "Brier_supremum": 0.07465416563348767,
+        "log_loss_infimum": 0.23492562413182433,
+        "log_loss_supremum": "INFINITE_SUPREMUM",
+        "meaning": "bounds within original ML intervals; not sampling confidence intervals",
+        "threshold_interval_ambiguous": 0
+      },
+      "balanced_accuracy": 0.8894388529772299,
+      "confusion": {
+        "FN": 2301,
+        "FP": 845,
+        "TN": 5981,
+        "TP": 21340
+      },
+      "counts": {
+        "alignment_ineligible": 696,
+        "ambiguous_truth_join": 0,
+        "declared_population_opportunities": 48487,
+        "eligible_aligned_A_sites": 47791,
+        "eligible_missing_probability": 17324,
+        "evaluable_control": 6826,
+        "evaluable_modified": 23641,
+        "evaluable_points": 30467,
+        "input_records": 48487,
+        "input_unique_evidence_ids": 48487,
+        "no_truth_join": 0,
+        "points_without_valid_native_interval": 0,
+        "truth_join_candidates": 48487,
+        "unique_truth_join_records": 48487
+      },
+      "explicit_coverage_of_claimed_opportunities": 0.6283539917916142,
+      "filter_coverage_records": 1.0,
+      "fixed_threshold": 0.5,
+      "log_loss": 0.2383370449155335,
+      "normalized_source_join_sha256": "513cc6c10dd55babdf9184ea578bd78bd7da76cd5f0dc86c21f941381dd81404",
+      "probability_metrics_status": "SCOPED_NATIVE_INTERVAL",
+      "scope": "within this provider-supplied selected construct bundle; not native occupancy or between-model comparison",
+      "truth_join_yield": 1.0,
+      "valid_probability_semantics": true
+    },
+    "role": "EVALUATION",
+    "source_bundle": "execution/RMT-EXEC-001/results/evaluation_run_v1/controlled_cases/evaluation/00_canonical",
+    "source_metric": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/metrics/00_canonical.json",
+    "source_metric_sha256": "74a1917052e663e374956e445a747f098d7c2ac3ba7b22a2e419c5f471ea3536"
+  },
+  {
+    "Brier_control": 0.8127333245439369,
+    "Brier_equal_class": 0.7415187040338569,
+    "Brier_modified": 0.6703040835237769,
+    "case_id": "01_sample_reference_BED_mismatch",
+    "class_denominators": {
+      "0": {
+        "eligible": 23864,
+        "native_explicit": 23641,
+        "scored": 23641,
+        "truth_overlap": 24233
+      },
+      "1": {
+        "eligible": 23927,
+        "native_explicit": 6826,
+        "scored": 6826,
+        "truth_overlap": 24254
+      }
+    },
+    "evidence_class": "CONTROLLED_ERROR_INJECTION",
+    "recalculated_metrics": {
+      "Brier": 0.7808226671374442,
+      "FPR": 0.9026690918319868,
+      "ML_interval_sensitivity": {
+        "Brier_infimum": 0.7774929953508868,
+        "Brier_supremum": 0.784159968318533,
+        "log_loss_infimum": 3.2743189070779213,
+        "log_loss_supremum": "INFINITE_SUPREMUM",
+        "meaning": "bounds within original ML intervals; not sampling confidence intervals",
+        "threshold_interval_ambiguous": 0
+      },
+      "balanced_accuracy": 0.11056114702277009,
+      "confusion": {
+        "FN": 5981,
+        "FP": 21340,
+        "TN": 2301,
+        "TP": 845
+      },
+      "counts": {
+        "alignment_ineligible": 696,
+        "ambiguous_truth_join": 0,
+        "declared_population_opportunities": 48487,
+        "eligible_aligned_A_sites": 47791,
+        "eligible_missing_probability": 17324,
+        "evaluable_control": 23641,
+        "evaluable_modified": 6826,
+        "evaluable_points": 30467,
+        "input_records": 48487,
+        "input_unique_evidence_ids": 48487,
+        "no_truth_join": 0,
+        "points_without_valid_native_interval": 0,
+        "truth_join_candidates": 48487,
+        "unique_truth_join_records": 48487
+      },
+      "explicit_coverage_of_claimed_opportunities": 0.6283539917916142,
+      "filter_coverage_records": 1.0,
+      "fixed_threshold": 0.5,
+      "log_loss": 3.489007475192854,
+      "normalized_source_join_sha256": "b7720ec24811d41e750ccf94b5c6f7de047210c2e25a1b30eab8199cc2b18870",
+      "probability_metrics_status": "SCOPED_NATIVE_INTERVAL",
+      "scope": "within this provider-supplied selected construct bundle; not native occupancy or between-model comparison",
+      "truth_join_yield": 1.0,
+      "valid_probability_semantics": true
+    },
+    "role": "EVALUATION",
+    "source_bundle": "execution/RMT-EXEC-001/results/evaluation_run_v1/controlled_cases/evaluation/01_sample_reference_BED_mismatch",
+    "source_metric": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/metrics/01_sample_reference_BED_mismatch.json",
+    "source_metric_sha256": "fac34e633f2acff7361564ebed48e7b03a8aa4107d9cd33ba0e0c5554cf57655"
+  },
+  {
+    "Brier_control": 0.09440975485398488,
+    "Brier_equal_class": 0.0813083601327412,
+    "Brier_modified": 0.06820696541149752,
+    "case_id": "01_sample_reference_BED_mismatch_B2_recovered",
+    "class_denominators": {
+      "0": {
+        "eligible": 23927,
+        "native_explicit": 6826,
+        "scored": 6826,
+        "truth_overlap": 24254
+      },
+      "1": {
+        "eligible": 23864,
+        "native_explicit": 23641,
+        "scored": 23641,
+        "truth_overlap": 24233
+      }
+    },
+    "evidence_class": "SAFE_RECOVERY",
+    "recalculated_metrics": {
+      "Brier": 0.07407758742004508,
+      "FPR": 0.1237913858775271,
+      "ML_interval_sensitivity": {
+        "Brier_infimum": 0.07350863860113376,
+        "Brier_supremum": 0.07465416563348767,
+        "log_loss_infimum": 0.23492562413182433,
+        "log_loss_supremum": "INFINITE_SUPREMUM",
+        "meaning": "bounds within original ML intervals; not sampling confidence intervals",
+        "threshold_interval_ambiguous": 0
+      },
+      "balanced_accuracy": 0.8894388529772299,
+      "confusion": {
+        "FN": 2301,
+        "FP": 845,
+        "TN": 5981,
+        "TP": 21340
+      },
+      "counts": {
+        "alignment_ineligible": 696,
+        "ambiguous_truth_join": 0,
+        "declared_population_opportunities": 48487,
+        "eligible_aligned_A_sites": 47791,
+        "eligible_missing_probability": 17324,
+        "evaluable_control": 6826,
+        "evaluable_modified": 23641,
+        "evaluable_points": 30467,
+        "input_records": 48487,
+        "input_unique_evidence_ids": 48487,
+        "no_truth_join": 0,
+        "points_without_valid_native_interval": 0,
+        "truth_join_candidates": 48487,
+        "unique_truth_join_records": 48487
+      },
+      "explicit_coverage_of_claimed_opportunities": 0.6283539917916142,
+      "filter_coverage_records": 1.0,
+      "fixed_threshold": 0.5,
+      "log_loss": 0.2383370449155335,
+      "normalized_source_join_sha256": "513cc6c10dd55babdf9184ea578bd78bd7da76cd5f0dc86c21f941381dd81404",
+      "probability_metrics_status": "SCOPED_NATIVE_INTERVAL",
+      "scope": "within this provider-supplied selected construct bundle; not native occupancy or between-model comparison",
+      "truth_join_yield": 1.0,
+      "valid_probability_semantics": true
+    },
+    "role": "EVALUATION",
+    "source_bundle": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/recovered/01_sample_reference_BED_mismatch_B2",
+    "source_metric": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/metrics/01_sample_reference_BED_mismatch_B2_recovered.json",
+    "source_metric_sha256": "74a1917052e663e374956e445a747f098d7c2ac3ba7b22a2e419c5f471ea3536"
+  },
+  {
+    "Brier_control": 0.09440975485398488,
+    "Brier_equal_class": 0.0813083601327412,
+    "Brier_modified": 0.06820696541149752,
+    "case_id": "01_sample_reference_BED_mismatch_RMT_recovered",
+    "class_denominators": {
+      "0": {
+        "eligible": 23927,
+        "native_explicit": 6826,
+        "scored": 6826,
+        "truth_overlap": 24254
+      },
+      "1": {
+        "eligible": 23864,
+        "native_explicit": 23641,
+        "scored": 23641,
+        "truth_overlap": 24233
+      }
+    },
+    "evidence_class": "SAFE_RECOVERY",
+    "recalculated_metrics": {
+      "Brier": 0.07407758742004508,
+      "FPR": 0.1237913858775271,
+      "ML_interval_sensitivity": {
+        "Brier_infimum": 0.07350863860113376,
+        "Brier_supremum": 0.07465416563348767,
+        "log_loss_infimum": 0.23492562413182433,
+        "log_loss_supremum": "INFINITE_SUPREMUM",
+        "meaning": "bounds within original ML intervals; not sampling confidence intervals",
+        "threshold_interval_ambiguous": 0
+      },
+      "balanced_accuracy": 0.8894388529772299,
+      "confusion": {
+        "FN": 2301,
+        "FP": 845,
+        "TN": 5981,
+        "TP": 21340
+      },
+      "counts": {
+        "alignment_ineligible": 696,
+        "ambiguous_truth_join": 0,
+        "declared_population_opportunities": 48487,
+        "eligible_aligned_A_sites": 47791,
+        "eligible_missing_probability": 17324,
+        "evaluable_control": 6826,
+        "evaluable_modified": 23641,
+        "evaluable_points": 30467,
+        "input_records": 48487,
+        "input_unique_evidence_ids": 48487,
+        "no_truth_join": 0,
+        "points_without_valid_native_interval": 0,
+        "truth_join_candidates": 48487,
+        "unique_truth_join_records": 48487
+      },
+      "explicit_coverage_of_claimed_opportunities": 0.6283539917916142,
+      "filter_coverage_records": 1.0,
+      "fixed_threshold": 0.5,
+      "log_loss": 0.2383370449155335,
+      "normalized_source_join_sha256": "513cc6c10dd55babdf9184ea578bd78bd7da76cd5f0dc86c21f941381dd81404",
+      "probability_metrics_status": "SCOPED_NATIVE_INTERVAL",
+      "scope": "within this provider-supplied selected construct bundle; not native occupancy or between-model comparison",
+      "truth_join_yield": 1.0,
+      "valid_probability_semantics": true
+    },
+    "role": "EVALUATION",
+    "source_bundle": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/recovered/01_sample_reference_BED_mismatch_RMT",
+    "source_metric": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/metrics/01_sample_reference_BED_mismatch_RMT_recovered.json",
+    "source_metric_sha256": "74a1917052e663e374956e445a747f098d7c2ac3ba7b22a2e419c5f471ea3536"
+  },
+  {
+    "Brier_control": null,
+    "Brier_equal_class": null,
+    "Brier_modified": null,
+    "case_id": "02_declared_zero_one_based_coordinate_error",
+    "class_denominators": {
+      "0": {
+        "eligible": 0,
+        "native_explicit": 0,
+        "scored": 0,
+        "truth_overlap": 0
+      },
+      "1": {
+        "eligible": 0,
+        "native_explicit": 0,
+        "scored": 0,
+        "truth_overlap": 0
+      }
+    },
+    "evidence_class": "CONTROLLED_ERROR_INJECTION",
+    "recalculated_metrics": {
+      "Brier": null,
+      "FPR": null,
+      "ML_interval_sensitivity": null,
+      "balanced_accuracy": null,
+      "confusion": {
+        "FN": 0,
+        "FP": 0,
+        "TN": 0,
+        "TP": 0
+      },
+      "counts": {
+        "alignment_ineligible": 0,
+        "ambiguous_truth_join": 0,
+        "declared_population_opportunities": 48487,
+        "eligible_aligned_A_sites": 0,
+        "eligible_missing_probability": 0,
+        "evaluable_control": 0,
+        "evaluable_modified": 0,
+        "evaluable_points": 0,
+        "input_records": 48487,
+        "input_unique_evidence_ids": 48487,
+        "no_truth_join": 48487,
+        "points_without_valid_native_interval": 0,
+        "truth_join_candidates": 0,
+        "unique_truth_join_records": 0
+      },
+      "explicit_coverage_of_claimed_opportunities": 0.0,
+      "filter_coverage_records": 1.0,
+      "fixed_threshold": 0.5,
+      "log_loss": null,
+      "normalized_source_join_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "probability_metrics_status": "NO_EVALUABLE_RESULT",
+      "scope": "within this provider-supplied selected construct bundle; not native occupancy or between-model comparison",
+      "truth_join_yield": 0.0,
+      "valid_probability_semantics": true
+    },
+    "role": "EVALUATION",
+    "source_bundle": "execution/RMT-EXEC-001/results/evaluation_run_v1/controlled_cases/evaluation/02_declared_zero_one_based_coordinate_error",
+    "source_metric": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/metrics/02_declared_zero_one_based_coordinate_error.json",
+    "source_metric_sha256": "ffe2f0645d20e00db739df93647cd26f5d6dad295120b36edd20c5bdd6dbc13b"
+  },
+  {
+    "Brier_control": 0.09440975485398488,
+    "Brier_equal_class": 0.0813083601327412,
+    "Brier_modified": 0.06820696541149752,
+    "case_id": "02_declared_zero_one_based_coordinate_error_B2_recovered",
+    "class_denominators": {
+      "0": {
+        "eligible": 23927,
+        "native_explicit": 6826,
+        "scored": 6826,
+        "truth_overlap": 24254
+      },
+      "1": {
+        "eligible": 23864,
+        "native_explicit": 23641,
+        "scored": 23641,
+        "truth_overlap": 24233
+      }
+    },
+    "evidence_class": "SAFE_RECOVERY",
+    "recalculated_metrics": {
+      "Brier": 0.07407758742004508,
+      "FPR": 0.1237913858775271,
+      "ML_interval_sensitivity": {
+        "Brier_infimum": 0.07350863860113376,
+        "Brier_supremum": 0.07465416563348767,
+        "log_loss_infimum": 0.23492562413182433,
+        "log_loss_supremum": "INFINITE_SUPREMUM",
+        "meaning": "bounds within original ML intervals; not sampling confidence intervals",
+        "threshold_interval_ambiguous": 0
+      },
+      "balanced_accuracy": 0.8894388529772299,
+      "confusion": {
+        "FN": 2301,
+        "FP": 845,
+        "TN": 5981,
+        "TP": 21340
+      },
+      "counts": {
+        "alignment_ineligible": 696,
+        "ambiguous_truth_join": 0,
+        "declared_population_opportunities": 48487,
+        "eligible_aligned_A_sites": 47791,
+        "eligible_missing_probability": 17324,
+        "evaluable_control": 6826,
+        "evaluable_modified": 23641,
+        "evaluable_points": 30467,
+        "input_records": 48487,
+        "input_unique_evidence_ids": 48487,
+        "no_truth_join": 0,
+        "points_without_valid_native_interval": 0,
+        "truth_join_candidates": 48487,
+        "unique_truth_join_records": 48487
+      },
+      "explicit_coverage_of_claimed_opportunities": 0.6283539917916142,
+      "filter_coverage_records": 1.0,
+      "fixed_threshold": 0.5,
+      "log_loss": 0.2383370449155335,
+      "normalized_source_join_sha256": "513cc6c10dd55babdf9184ea578bd78bd7da76cd5f0dc86c21f941381dd81404",
+      "probability_metrics_status": "SCOPED_NATIVE_INTERVAL",
+      "scope": "within this provider-supplied selected construct bundle; not native occupancy or between-model comparison",
+      "truth_join_yield": 1.0,
+      "valid_probability_semantics": true
+    },
+    "role": "EVALUATION",
+    "source_bundle": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/recovered/02_declared_zero_one_based_coordinate_error_B2",
+    "source_metric": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/metrics/02_declared_zero_one_based_coordinate_error_B2_recovered.json",
+    "source_metric_sha256": "74a1917052e663e374956e445a747f098d7c2ac3ba7b22a2e419c5f471ea3536"
+  },
+  {
+    "Brier_control": 0.09440975485398488,
+    "Brier_equal_class": 0.0813083601327412,
+    "Brier_modified": 0.06820696541149752,
+    "case_id": "02_declared_zero_one_based_coordinate_error_RMT_recovered",
+    "class_denominators": {
+      "0": {
+        "eligible": 23927,
+        "native_explicit": 6826,
+        "scored": 6826,
+        "truth_overlap": 24254
+      },
+      "1": {
+        "eligible": 23864,
+        "native_explicit": 23641,
+        "scored": 23641,
+        "truth_overlap": 24233
+      }
+    },
+    "evidence_class": "SAFE_RECOVERY",
+    "recalculated_metrics": {
+      "Brier": 0.07407758742004508,
+      "FPR": 0.1237913858775271,
+      "ML_interval_sensitivity": {
+        "Brier_infimum": 0.07350863860113376,
+        "Brier_supremum": 0.07465416563348767,
+        "log_loss_infimum": 0.23492562413182433,
+        "log_loss_supremum": "INFINITE_SUPREMUM",
+        "meaning": "bounds within original ML intervals; not sampling confidence intervals",
+        "threshold_interval_ambiguous": 0
+      },
+      "balanced_accuracy": 0.8894388529772299,
+      "confusion": {
+        "FN": 2301,
+        "FP": 845,
+        "TN": 5981,
+        "TP": 21340
+      },
+      "counts": {
+        "alignment_ineligible": 696,
+        "ambiguous_truth_join": 0,
+        "declared_population_opportunities": 48487,
+        "eligible_aligned_A_sites": 47791,
+        "eligible_missing_probability": 17324,
+        "evaluable_control": 6826,
+        "evaluable_modified": 23641,
+        "evaluable_points": 30467,
+        "input_records": 48487,
+        "input_unique_evidence_ids": 48487,
+        "no_truth_join": 0,
+        "points_without_valid_native_interval": 0,
+        "truth_join_candidates": 48487,
+        "unique_truth_join_records": 48487
+      },
+      "explicit_coverage_of_claimed_opportunities": 0.6283539917916142,
+      "filter_coverage_records": 1.0,
+      "fixed_threshold": 0.5,
+      "log_loss": 0.2383370449155335,
+      "normalized_source_join_sha256": "513cc6c10dd55babdf9184ea578bd78bd7da76cd5f0dc86c21f941381dd81404",
+      "probability_metrics_status": "SCOPED_NATIVE_INTERVAL",
+      "scope": "within this provider-supplied selected construct bundle; not native occupancy or between-model comparison",
+      "truth_join_yield": 1.0,
+      "valid_probability_semantics": true
+    },
+    "role": "EVALUATION",
+    "source_bundle": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/recovered/02_declared_zero_one_based_coordinate_error_RMT",
+    "source_metric": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/metrics/02_declared_zero_one_based_coordinate_error_RMT_recovered.json",
+    "source_metric_sha256": "74a1917052e663e374956e445a747f098d7c2ac3ba7b22a2e419c5f471ea3536"
+  },
+  {
+    "Brier_control": 0.09440975485398488,
+    "Brier_equal_class": 0.0813083601327412,
+    "Brier_modified": 0.06820696541149752,
+    "case_id": "03_strand_or_reference_version_conflict",
+    "class_denominators": {
+      "0": {
+        "eligible": 23926,
+        "native_explicit": 6826,
+        "scored": 6826,
+        "truth_overlap": 24253
+      },
+      "1": {
+        "eligible": 23864,
+        "native_explicit": 23641,
+        "scored": 23641,
+        "truth_overlap": 24233
+      }
+    },
+    "evidence_class": "CONTROLLED_ERROR_INJECTION",
+    "recalculated_metrics": {
+      "Brier": 0.07407758742004508,
+      "FPR": 0.1237913858775271,
+      "ML_interval_sensitivity": {
+        "Brier_infimum": 0.07350863860113376,
+        "Brier_supremum": 0.07465416563348767,
+        "log_loss_infimum": 0.23492562413182433,
+        "log_loss_supremum": "INFINITE_SUPREMUM",
+        "meaning": "bounds within original ML intervals; not sampling confidence intervals",
+        "threshold_interval_ambiguous": 0
+      },
+      "balanced_accuracy": 0.8894388529772299,
+      "confusion": {
+        "FN": 2301,
+        "FP": 845,
+        "TN": 5981,
+        "TP": 21340
+      },
+      "counts": {
+        "alignment_ineligible": 696,
+        "ambiguous_truth_join": 0,
+        "declared_population_opportunities": 48487,
+        "eligible_aligned_A_sites": 47790,
+        "eligible_missing_probability": 17323,
+        "evaluable_control": 6826,
+        "evaluable_modified": 23641,
+        "evaluable_points": 30467,
+        "input_records": 48487,
+        "input_unique_evidence_ids": 48487,
+        "no_truth_join": 1,
+        "points_without_valid_native_interval": 0,
+        "truth_join_candidates": 48486,
+        "unique_truth_join_records": 48486
+      },
+      "explicit_coverage_of_claimed_opportunities": 0.6283539917916142,
+      "filter_coverage_records": 1.0,
+      "fixed_threshold": 0.5,
+      "log_loss": 0.2383370449155335,
+      "normalized_source_join_sha256": "64239234a3bb19894d1fb1d93d8979ab9465ccc11069a61d5f52b35fa943343e",
+      "probability_metrics_status": "SCOPED_NATIVE_INTERVAL",
+      "scope": "within this provider-supplied selected construct bundle; not native occupancy or between-model comparison",
+      "truth_join_yield": 0.9999793759151938,
+      "valid_probability_semantics": true
+    },
+    "role": "EVALUATION",
+    "source_bundle": "execution/RMT-EXEC-001/results/evaluation_run_v1/controlled_cases/evaluation/03_strand_or_reference_version_conflict",
+    "source_metric": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/metrics/03_strand_or_reference_version_conflict.json",
+    "source_metric_sha256": "911c80774b95791ddb9ec0bc814dbbf761189603c1dd8f40d46541382b36e06a"
+  },
+  {
+    "Brier_control": null,
+    "Brier_equal_class": null,
+    "Brier_modified": null,
+    "case_id": "04_lost_sample_join_key",
+    "class_denominators": {
+      "0": {
+        "eligible": 0,
+        "native_explicit": 0,
+        "scored": 0,
+        "truth_overlap": 0
+      },
+      "1": {
+        "eligible": 0,
+        "native_explicit": 0,
+        "scored": 0,
+        "truth_overlap": 0
+      }
+    },
+    "evidence_class": "CONTROLLED_ERROR_INJECTION",
+    "recalculated_metrics": {
+      "Brier": null,
+      "FPR": null,
+      "ML_interval_sensitivity": null,
+      "balanced_accuracy": null,
+      "confusion": {
+        "FN": 0,
+        "FP": 0,
+        "TN": 0,
+        "TP": 0
+      },
+      "counts": {
+        "alignment_ineligible": 0,
+        "ambiguous_truth_join": 48487,
+        "declared_population_opportunities": 48487,
+        "eligible_aligned_A_sites": 0,
+        "eligible_missing_probability": 0,
+        "evaluable_control": 0,
+        "evaluable_modified": 0,
+        "evaluable_points": 0,
+        "input_records": 48487,
+        "input_unique_evidence_ids": 48487,
+        "no_truth_join": 0,
+        "points_without_valid_native_interval": 0,
+        "truth_join_candidates": 96974,
+        "unique_truth_join_records": 0
+      },
+      "explicit_coverage_of_claimed_opportunities": 0.0,
+      "filter_coverage_records": 1.0,
+      "fixed_threshold": 0.5,
+      "log_loss": null,
+      "normalized_source_join_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "probability_metrics_status": "NO_EVALUABLE_RESULT",
+      "scope": "within this provider-supplied selected construct bundle; not native occupancy or between-model comparison",
+      "truth_join_yield": 0.0,
+      "valid_probability_semantics": true
+    },
+    "role": "EVALUATION",
+    "source_bundle": "execution/RMT-EXEC-001/results/evaluation_run_v1/controlled_cases/evaluation/04_lost_sample_join_key",
+    "source_metric": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/metrics/04_lost_sample_join_key.json",
+    "source_metric_sha256": "7da94a71d00820e5c96fb8be5512cccf66f5fbb6bfb08fd3e1c4a885cb04c04e"
+  },
+  {
+    "Brier_control": 0.09440975485398488,
+    "Brier_equal_class": 0.0813083601327412,
+    "Brier_modified": 0.06820696541149752,
+    "case_id": "05_read_index_reuse_across_runs",
+    "class_denominators": {
+      "0": {
+        "eligible": 23926,
+        "native_explicit": 6826,
+        "scored": 6826,
+        "truth_overlap": 24253
+      },
+      "1": {
+        "eligible": 23865,
+        "native_explicit": 23641,
+        "scored": 23641,
+        "truth_overlap": 24234
+      }
+    },
+    "evidence_class": "CONTROLLED_ERROR_INJECTION",
+    "recalculated_metrics": {
+      "Brier": 0.07407758742004508,
+      "FPR": 0.1237913858775271,
+      "ML_interval_sensitivity": {
+        "Brier_infimum": 0.07350863860113376,
+        "Brier_supremum": 0.07465416563348767,
+        "log_loss_infimum": 0.23492562413182433,
+        "log_loss_supremum": "INFINITE_SUPREMUM",
+        "meaning": "bounds within original ML intervals; not sampling confidence intervals",
+        "threshold_interval_ambiguous": 0
+      },
+      "balanced_accuracy": 0.8894388529772299,
+      "confusion": {
+        "FN": 2301,
+        "FP": 845,
+        "TN": 5981,
+        "TP": 21340
+      },
+      "counts": {
+        "alignment_ineligible": 696,
+        "ambiguous_truth_join": 0,
+        "declared_population_opportunities": 48487,
+        "eligible_aligned_A_sites": 47791,
+        "eligible_missing_probability": 17324,
+        "evaluable_control": 6826,
+        "evaluable_modified": 23641,
+        "evaluable_points": 30467,
+        "input_records": 48487,
+        "input_unique_evidence_ids": 48487,
+        "no_truth_join": 0,
+        "points_without_valid_native_interval": 0,
+        "truth_join_candidates": 48487,
+        "unique_truth_join_records": 48487
+      },
+      "explicit_coverage_of_claimed_opportunities": 0.6283539917916142,
+      "filter_coverage_records": 1.0,
+      "fixed_threshold": 0.5,
+      "log_loss": 0.2383370449155335,
+      "normalized_source_join_sha256": "d137862268c50d30cd28efc3fe5d649f0bf6f5e1d472c90016f79f71ed8ec542",
+      "probability_metrics_status": "SCOPED_NATIVE_INTERVAL",
+      "scope": "within this provider-supplied selected construct bundle; not native occupancy or between-model comparison",
+      "truth_join_yield": 1.0,
+      "valid_probability_semantics": true
+    },
+    "role": "EVALUATION",
+    "source_bundle": "execution/RMT-EXEC-001/results/evaluation_run_v1/controlled_cases/evaluation/05_read_index_reuse_across_runs",
+    "source_metric": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/metrics/05_read_index_reuse_across_runs.json",
+    "source_metric_sha256": "05fd5d4402396abdedbd043b65b7b52cac72abdeed80aa52953a7524769769fb"
+  },
+  {
+    "Brier_control": 0.09440975485398488,
+    "Brier_equal_class": 0.0813083601327412,
+    "Brier_modified": 0.06820696541149752,
+    "case_id": "05_read_index_reuse_across_runs_B2_recovered",
+    "class_denominators": {
+      "0": {
+        "eligible": 23927,
+        "native_explicit": 6826,
+        "scored": 6826,
+        "truth_overlap": 24254
+      },
+      "1": {
+        "eligible": 23864,
+        "native_explicit": 23641,
+        "scored": 23641,
+        "truth_overlap": 24233
+      }
+    },
+    "evidence_class": "SAFE_RECOVERY",
+    "recalculated_metrics": {
+      "Brier": 0.07407758742004508,
+      "FPR": 0.1237913858775271,
+      "ML_interval_sensitivity": {
+        "Brier_infimum": 0.07350863860113376,
+        "Brier_supremum": 0.07465416563348767,
+        "log_loss_infimum": 0.23492562413182433,
+        "log_loss_supremum": "INFINITE_SUPREMUM",
+        "meaning": "bounds within original ML intervals; not sampling confidence intervals",
+        "threshold_interval_ambiguous": 0
+      },
+      "balanced_accuracy": 0.8894388529772299,
+      "confusion": {
+        "FN": 2301,
+        "FP": 845,
+        "TN": 5981,
+        "TP": 21340
+      },
+      "counts": {
+        "alignment_ineligible": 696,
+        "ambiguous_truth_join": 0,
+        "declared_population_opportunities": 48487,
+        "eligible_aligned_A_sites": 47791,
+        "eligible_missing_probability": 17324,
+        "evaluable_control": 6826,
+        "evaluable_modified": 23641,
+        "evaluable_points": 30467,
+        "input_records": 48487,
+        "input_unique_evidence_ids": 48487,
+        "no_truth_join": 0,
+        "points_without_valid_native_interval": 0,
+        "truth_join_candidates": 48487,
+        "unique_truth_join_records": 48487
+      },
+      "explicit_coverage_of_claimed_opportunities": 0.6283539917916142,
+      "filter_coverage_records": 1.0,
+      "fixed_threshold": 0.5,
+      "log_loss": 0.2383370449155335,
+      "normalized_source_join_sha256": "513cc6c10dd55babdf9184ea578bd78bd7da76cd5f0dc86c21f941381dd81404",
+      "probability_metrics_status": "SCOPED_NATIVE_INTERVAL",
+      "scope": "within this provider-supplied selected construct bundle; not native occupancy or between-model comparison",
+      "truth_join_yield": 1.0,
+      "valid_probability_semantics": true
+    },
+    "role": "EVALUATION",
+    "source_bundle": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/recovered/05_read_index_reuse_across_runs_B2",
+    "source_metric": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/metrics/05_read_index_reuse_across_runs_B2_recovered.json",
+    "source_metric_sha256": "74a1917052e663e374956e445a747f098d7c2ac3ba7b22a2e419c5f471ea3536"
+  },
+  {
+    "Brier_control": 0.09440975485398488,
+    "Brier_equal_class": 0.0813083601327412,
+    "Brier_modified": 0.06820696541149752,
+    "case_id": "05_read_index_reuse_across_runs_RMT_recovered",
+    "class_denominators": {
+      "0": {
+        "eligible": 23927,
+        "native_explicit": 6826,
+        "scored": 6826,
+        "truth_overlap": 24254
+      },
+      "1": {
+        "eligible": 23864,
+        "native_explicit": 23641,
+        "scored": 23641,
+        "truth_overlap": 24233
+      }
+    },
+    "evidence_class": "SAFE_RECOVERY",
+    "recalculated_metrics": {
+      "Brier": 0.07407758742004508,
+      "FPR": 0.1237913858775271,
+      "ML_interval_sensitivity": {
+        "Brier_infimum": 0.07350863860113376,
+        "Brier_supremum": 0.07465416563348767,
+        "log_loss_infimum": 0.23492562413182433,
+        "log_loss_supremum": "INFINITE_SUPREMUM",
+        "meaning": "bounds within original ML intervals; not sampling confidence intervals",
+        "threshold_interval_ambiguous": 0
+      },
+      "balanced_accuracy": 0.8894388529772299,
+      "confusion": {
+        "FN": 2301,
+        "FP": 845,
+        "TN": 5981,
+        "TP": 21340
+      },
+      "counts": {
+        "alignment_ineligible": 696,
+        "ambiguous_truth_join": 0,
+        "declared_population_opportunities": 48487,
+        "eligible_aligned_A_sites": 47791,
+        "eligible_missing_probability": 17324,
+        "evaluable_control": 6826,
+        "evaluable_modified": 23641,
+        "evaluable_points": 30467,
+        "input_records": 48487,
+        "input_unique_evidence_ids": 48487,
+        "no_truth_join": 0,
+        "points_without_valid_native_interval": 0,
+        "truth_join_candidates": 48487,
+        "unique_truth_join_records": 48487
+      },
+      "explicit_coverage_of_claimed_opportunities": 0.6283539917916142,
+      "filter_coverage_records": 1.0,
+      "fixed_threshold": 0.5,
+      "log_loss": 0.2383370449155335,
+      "normalized_source_join_sha256": "513cc6c10dd55babdf9184ea578bd78bd7da76cd5f0dc86c21f941381dd81404",
+      "probability_metrics_status": "SCOPED_NATIVE_INTERVAL",
+      "scope": "within this provider-supplied selected construct bundle; not native occupancy or between-model comparison",
+      "truth_join_yield": 1.0,
+      "valid_probability_semantics": true
+    },
+    "role": "EVALUATION",
+    "source_bundle": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/recovered/05_read_index_reuse_across_runs_RMT",
+    "source_metric": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/metrics/05_read_index_reuse_across_runs_RMT_recovered.json",
+    "source_metric_sha256": "74a1917052e663e374956e445a747f098d7c2ac3ba7b22a2e419c5f471ea3536"
+  },
+  {
+    "Brier_control": 0.09440232329021457,
+    "Brier_equal_class": 0.08130464435085605,
+    "Brier_modified": 0.06820696541149752,
+    "case_id": "06_duplicate_read_site_counting",
+    "class_denominators": {
+      "0": {
+        "eligible": 23928,
+        "native_explicit": 6827,
+        "scored": 6827,
+        "truth_overlap": 24255
+      },
+      "1": {
+        "eligible": 23864,
+        "native_explicit": 23641,
+        "scored": 23641,
+        "truth_overlap": 24233
+      }
+    },
+    "evidence_class": "CONTROLLED_ERROR_INJECTION",
+    "recalculated_metrics": {
+      "Brier": 0.07407658954954403,
+      "FPR": 0.12377325325911821,
+      "ML_interval_sensitivity": {
+        "Brier_infimum": 0.07350763273595966,
+        "Brier_supremum": 0.07465317575765967,
+        "log_loss_infimum": 0.23492552717243434,
+        "log_loss_supremum": "INFINITE_SUPREMUM",
+        "meaning": "bounds within original ML intervals; not sampling confidence intervals",
+        "threshold_interval_ambiguous": 0
+      },
+      "balanced_accuracy": 0.8894479192864343,
+      "confusion": {
+        "FN": 2301,
+        "FP": 845,
+        "TN": 5982,
+        "TP": 21340
+      },
+      "counts": {
+        "alignment_ineligible": 696,
+        "ambiguous_truth_join": 0,
+        "declared_population_opportunities": 48487,
+        "eligible_aligned_A_sites": 47792,
+        "eligible_missing_probability": 17324,
+        "evaluable_control": 6827,
+        "evaluable_modified": 23641,
+        "evaluable_points": 30468,
+        "input_records": 48488,
+        "input_unique_evidence_ids": 48487,
+        "no_truth_join": 0,
+        "points_without_valid_native_interval": 0,
+        "truth_join_candidates": 48488,
+        "unique_truth_join_records": 48488
+      },
+      "explicit_coverage_of_claimed_opportunities": 0.6283746158764205,
+      "filter_coverage_records": 1.0000206240848062,
+      "fixed_threshold": 0.5,
+      "log_loss": 0.23833691692922057,
+      "normalized_source_join_sha256": "4927a1eef423bf8a184e548ed3e2e6cc7c83e940a15376d9c8eb60decfdc8b71",
+      "probability_metrics_status": "SCOPED_NATIVE_INTERVAL",
+      "scope": "within this provider-supplied selected construct bundle; not native occupancy or between-model comparison",
+      "truth_join_yield": 1.0,
+      "valid_probability_semantics": true
+    },
+    "role": "EVALUATION",
+    "source_bundle": "execution/RMT-EXEC-001/results/evaluation_run_v1/controlled_cases/evaluation/06_duplicate_read_site_counting",
+    "source_metric": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/metrics/06_duplicate_read_site_counting.json",
+    "source_metric_sha256": "811128298f3dc3f73dc456b51868e890db68715b0f0038c8cceab76aa81c5cae"
+  },
+  {
+    "Brier_control": 0.09440975485398488,
+    "Brier_equal_class": 0.0813083601327412,
+    "Brier_modified": 0.06820696541149752,
+    "case_id": "06_duplicate_read_site_counting_B2_recovered",
+    "class_denominators": {
+      "0": {
+        "eligible": 23927,
+        "native_explicit": 6826,
+        "scored": 6826,
+        "truth_overlap": 24254
+      },
+      "1": {
+        "eligible": 23864,
+        "native_explicit": 23641,
+        "scored": 23641,
+        "truth_overlap": 24233
+      }
+    },
+    "evidence_class": "SAFE_RECOVERY",
+    "recalculated_metrics": {
+      "Brier": 0.07407758742004508,
+      "FPR": 0.1237913858775271,
+      "ML_interval_sensitivity": {
+        "Brier_infimum": 0.07350863860113376,
+        "Brier_supremum": 0.07465416563348767,
+        "log_loss_infimum": 0.23492562413182433,
+        "log_loss_supremum": "INFINITE_SUPREMUM",
+        "meaning": "bounds within original ML intervals; not sampling confidence intervals",
+        "threshold_interval_ambiguous": 0
+      },
+      "balanced_accuracy": 0.8894388529772299,
+      "confusion": {
+        "FN": 2301,
+        "FP": 845,
+        "TN": 5981,
+        "TP": 21340
+      },
+      "counts": {
+        "alignment_ineligible": 696,
+        "ambiguous_truth_join": 0,
+        "declared_population_opportunities": 48487,
+        "eligible_aligned_A_sites": 47791,
+        "eligible_missing_probability": 17324,
+        "evaluable_control": 6826,
+        "evaluable_modified": 23641,
+        "evaluable_points": 30467,
+        "input_records": 48487,
+        "input_unique_evidence_ids": 48487,
+        "no_truth_join": 0,
+        "points_without_valid_native_interval": 0,
+        "truth_join_candidates": 48487,
+        "unique_truth_join_records": 48487
+      },
+      "explicit_coverage_of_claimed_opportunities": 0.6283539917916142,
+      "filter_coverage_records": 1.0,
+      "fixed_threshold": 0.5,
+      "log_loss": 0.2383370449155335,
+      "normalized_source_join_sha256": "513cc6c10dd55babdf9184ea578bd78bd7da76cd5f0dc86c21f941381dd81404",
+      "probability_metrics_status": "SCOPED_NATIVE_INTERVAL",
+      "scope": "within this provider-supplied selected construct bundle; not native occupancy or between-model comparison",
+      "truth_join_yield": 1.0,
+      "valid_probability_semantics": true
+    },
+    "role": "EVALUATION",
+    "source_bundle": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/recovered/06_duplicate_read_site_counting_B2",
+    "source_metric": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/metrics/06_duplicate_read_site_counting_B2_recovered.json",
+    "source_metric_sha256": "74a1917052e663e374956e445a747f098d7c2ac3ba7b22a2e419c5f471ea3536"
+  },
+  {
+    "Brier_control": 0.09440975485398488,
+    "Brier_equal_class": 0.0813083601327412,
+    "Brier_modified": 0.06820696541149752,
+    "case_id": "06_duplicate_read_site_counting_RMT_recovered",
+    "class_denominators": {
+      "0": {
+        "eligible": 23927,
+        "native_explicit": 6826,
+        "scored": 6826,
+        "truth_overlap": 24254
+      },
+      "1": {
+        "eligible": 23864,
+        "native_explicit": 23641,
+        "scored": 23641,
+        "truth_overlap": 24233
+      }
+    },
+    "evidence_class": "SAFE_RECOVERY",
+    "recalculated_metrics": {
+      "Brier": 0.07407758742004508,
+      "FPR": 0.1237913858775271,
+      "ML_interval_sensitivity": {
+        "Brier_infimum": 0.07350863860113376,
+        "Brier_supremum": 0.07465416563348767,
+        "log_loss_infimum": 0.23492562413182433,
+        "log_loss_supremum": "INFINITE_SUPREMUM",
+        "meaning": "bounds within original ML intervals; not sampling confidence intervals",
+        "threshold_interval_ambiguous": 0
+      },
+      "balanced_accuracy": 0.8894388529772299,
+      "confusion": {
+        "FN": 2301,
+        "FP": 845,
+        "TN": 5981,
+        "TP": 21340
+      },
+      "counts": {
+        "alignment_ineligible": 696,
+        "ambiguous_truth_join": 0,
+        "declared_population_opportunities": 48487,
+        "eligible_aligned_A_sites": 47791,
+        "eligible_missing_probability": 17324,
+        "evaluable_control": 6826,
+        "evaluable_modified": 23641,
+        "evaluable_points": 30467,
+        "input_records": 48487,
+        "input_unique_evidence_ids": 48487,
+        "no_truth_join": 0,
+        "points_without_valid_native_interval": 0,
+        "truth_join_candidates": 48487,
+        "unique_truth_join_records": 48487
+      },
+      "explicit_coverage_of_claimed_opportunities": 0.6283539917916142,
+      "filter_coverage_records": 1.0,
+      "fixed_threshold": 0.5,
+      "log_loss": 0.2383370449155335,
+      "normalized_source_join_sha256": "513cc6c10dd55babdf9184ea578bd78bd7da76cd5f0dc86c21f941381dd81404",
+      "probability_metrics_status": "SCOPED_NATIVE_INTERVAL",
+      "scope": "within this provider-supplied selected construct bundle; not native occupancy or between-model comparison",
+      "truth_join_yield": 1.0,
+      "valid_probability_semantics": true
+    },
+    "role": "EVALUATION",
+    "source_bundle": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/recovered/06_duplicate_read_site_counting_RMT",
+    "source_metric": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/metrics/06_duplicate_read_site_counting_RMT_recovered.json",
+    "source_metric_sha256": "74a1917052e663e374956e445a747f098d7c2ac3ba7b22a2e419c5f471ea3536"
+  },
+  {
+    "Brier_control": 0.05026287679980614,
+    "Brier_equal_class": 0.036666501575339995,
+    "Brier_modified": 0.023070126350873847,
+    "case_id": "07_site_score_as_read_probability",
+    "class_denominators": {
+      "0": {
+        "eligible": 23927,
+        "native_explicit": 6826,
+        "scored": 6826,
+        "truth_overlap": 24254
+      },
+      "1": {
+        "eligible": 23864,
+        "native_explicit": 23641,
+        "scored": 23641,
+        "truth_overlap": 24233
+      }
+    },
+    "evidence_class": "CONTROLLED_ERROR_INJECTION",
+    "recalculated_metrics": {
+      "Brier": 0.029162544854973105,
+      "FPR": 0.0,
+      "ML_interval_sensitivity": null,
+      "balanced_accuracy": 0.9983503235903727,
+      "confusion": {
+        "FN": 78,
+        "FP": 0,
+        "TN": 6826,
+        "TP": 23563
+      },
+      "counts": {
+        "alignment_ineligible": 696,
+        "ambiguous_truth_join": 0,
+        "declared_population_opportunities": 48487,
+        "eligible_aligned_A_sites": 47791,
+        "eligible_missing_probability": 17324,
+        "evaluable_control": 6826,
+        "evaluable_modified": 23641,
+        "evaluable_points": 30467,
+        "input_records": 48487,
+        "input_unique_evidence_ids": 48487,
+        "no_truth_join": 0,
+        "points_without_valid_native_interval": 30467,
+        "truth_join_candidates": 48487,
+        "unique_truth_join_records": 48487
+      },
+      "explicit_coverage_of_claimed_opportunities": 0.6283539917916142,
+      "filter_coverage_records": 1.0,
+      "fixed_threshold": 0.5,
+      "log_loss": 0.16420922262611876,
+      "normalized_source_join_sha256": "3976f54378779d330b78b917468e94109d7f821b525eb2595fe2c81df8bfa811",
+      "probability_metrics_status": "INVALID_INPUT_DIAGNOSTIC_ONLY",
+      "scope": "within this provider-supplied selected construct bundle; not native occupancy or between-model comparison",
+      "truth_join_yield": 1.0,
+      "valid_probability_semantics": false
+    },
+    "role": "EVALUATION",
+    "source_bundle": "execution/RMT-EXEC-001/results/evaluation_run_v1/controlled_cases/evaluation/07_site_score_as_read_probability",
+    "source_metric": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/metrics/07_site_score_as_read_probability.json",
+    "source_metric_sha256": "93e0db84fc1426b4535d36b71460a27e0cdaa691a448592292a0e52daab5f931"
+  },
+  {
+    "Brier_control": 0.8985192435128349,
+    "Brier_equal_class": 0.4496669827355237,
+    "Brier_modified": 0.0008147219582125355,
+    "case_id": "08_filtered_output_claimed_all_records",
+    "class_denominators": {
+      "0": {
+        "eligible": 112,
+        "native_explicit": 112,
+        "scored": 112,
+        "truth_overlap": 112
+      },
+      "1": {
+        "eligible": 17268,
+        "native_explicit": 17268,
+        "scored": 17268,
+        "truth_overlap": 17268
+      }
+    },
+    "evidence_class": "CONTROLLED_ERROR_INJECTION",
+    "recalculated_metrics": {
+      "Brier": 0.006599699312304462,
+      "FPR": 1.0,
+      "ML_interval_sensitivity": {
+        "Brier_infimum": 0.006513301028481013,
+        "Brier_supremum": 0.006693726990659163,
+        "log_loss_infimum": 0.035572865526868995,
+        "log_loss_supremum": "INFINITE_SUPREMUM",
+        "meaning": "bounds within original ML intervals; not sampling confidence intervals",
+        "threshold_interval_ambiguous": 0
+      },
+      "balanced_accuracy": 0.5,
+      "confusion": {
+        "FN": 0,
+        "FP": 112,
+        "TN": 0,
+        "TP": 17268
+      },
+      "counts": {
+        "alignment_ineligible": 0,
+        "ambiguous_truth_join": 0,
+        "declared_population_opportunities": 48487,
+        "eligible_aligned_A_sites": 17380,
+        "eligible_missing_probability": 0,
+        "evaluable_control": 112,
+        "evaluable_modified": 17268,
+        "evaluable_points": 17380,
+        "input_records": 17380,
+        "input_unique_evidence_ids": 17380,
+        "no_truth_join": 0,
+        "points_without_valid_native_interval": 0,
+        "truth_join_candidates": 17380,
+        "unique_truth_join_records": 17380
+      },
+      "explicit_coverage_of_claimed_opportunities": 0.35844659393239425,
+      "filter_coverage_records": 0.35844659393239425,
+      "fixed_threshold": 0.5,
+      "log_loss": 0.03802063473299284,
+      "normalized_source_join_sha256": "04f615436d4f7ae36669cc5b97f5b8ffa573412cfe40cfccc22387e1762b6ad5",
+      "probability_metrics_status": "SCOPED_NATIVE_INTERVAL",
+      "scope": "within this provider-supplied selected construct bundle; not native occupancy or between-model comparison",
+      "truth_join_yield": 1.0,
+      "valid_probability_semantics": true
+    },
+    "role": "EVALUATION",
+    "source_bundle": "execution/RMT-EXEC-001/results/evaluation_run_v1/controlled_cases/evaluation/08_filtered_output_claimed_all_records",
+    "source_metric": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/metrics/08_filtered_output_claimed_all_records.json",
+    "source_metric_sha256": "0fc938f0afed554e516dc76abbfe519b6e573d47d2a67edaccc831413abfaadc"
+  },
+  {
+    "Brier_control": 0.02693363090371968,
+    "Brier_equal_class": 0.05192392384301834,
+    "Brier_modified": 0.076914216782317,
+    "case_id": "09_missing_probability_imputed_zero",
+    "class_denominators": {
+      "0": {
+        "eligible": 23927,
+        "native_explicit": 6826,
+        "scored": 23927,
+        "truth_overlap": 24254
+      },
+      "1": {
+        "eligible": 23864,
+        "native_explicit": 23641,
+        "scored": 23864,
+        "truth_overlap": 24233
+      }
+    },
+    "evidence_class": "CONTROLLED_ERROR_INJECTION",
+    "recalculated_metrics": {
+      "Brier": 0.05189098064335364,
+      "FPR": 0.03531575207924102,
+      "ML_interval_sensitivity": null,
+      "balanced_accuracy": 0.9294591202728165,
+      "confusion": {
+        "FN": 2524,
+        "FP": 845,
+        "TN": 23082,
+        "TP": 21340
+      },
+      "counts": {
+        "alignment_ineligible": 696,
+        "ambiguous_truth_join": 0,
+        "declared_population_opportunities": 48487,
+        "eligible_aligned_A_sites": 47791,
+        "eligible_missing_probability": 0,
+        "evaluable_control": 23927,
+        "evaluable_modified": 23864,
+        "evaluable_points": 47791,
+        "input_records": 48487,
+        "input_unique_evidence_ids": 48487,
+        "no_truth_join": 0,
+        "points_without_valid_native_interval": 17324,
+        "truth_join_candidates": 48487,
+        "unique_truth_join_records": 48487
+      },
+      "explicit_coverage_of_claimed_opportunities": 0.9856456369748593,
+      "filter_coverage_records": 1.0,
+      "fixed_threshold": 0.5,
+      "log_loss": "INFINITE",
+      "normalized_source_join_sha256": "07cb43b822f5f059e26b827c7809c9e5b14824063c9fc8cc83bd5189ddeebeaa",
+      "probability_metrics_status": "INVALID_INPUT_DIAGNOSTIC_ONLY",
+      "scope": "within this provider-supplied selected construct bundle; not native occupancy or between-model comparison",
+      "truth_join_yield": 1.0,
+      "valid_probability_semantics": false
+    },
+    "role": "EVALUATION",
+    "source_bundle": "execution/RMT-EXEC-001/results/evaluation_run_v1/controlled_cases/evaluation/09_missing_probability_imputed_zero",
+    "source_metric": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/metrics/09_missing_probability_imputed_zero.json",
+    "source_metric_sha256": "83fbe72ffc5c5a6ea2e230638243dc69b8398f74b652da5979c0c25325ccd3ed"
+  },
+  {
+    "Brier_control": 0.09440975485398488,
+    "Brier_equal_class": 0.0813083601327412,
+    "Brier_modified": 0.06820696541149752,
+    "case_id": "10_modification_code_confusion",
+    "class_denominators": {
+      "0": {
+        "eligible": 23927,
+        "native_explicit": 6826,
+        "scored": 6826,
+        "truth_overlap": 24254
+      },
+      "1": {
+        "eligible": 23864,
+        "native_explicit": 23641,
+        "scored": 23641,
+        "truth_overlap": 24233
+      }
+    },
+    "evidence_class": "CONTROLLED_ERROR_INJECTION",
+    "recalculated_metrics": {
+      "Brier": 0.07407758742004508,
+      "FPR": 0.1237913858775271,
+      "ML_interval_sensitivity": null,
+      "balanced_accuracy": 0.8894388529772299,
+      "confusion": {
+        "FN": 2301,
+        "FP": 845,
+        "TN": 5981,
+        "TP": 21340
+      },
+      "counts": {
+        "alignment_ineligible": 696,
+        "ambiguous_truth_join": 0,
+        "declared_population_opportunities": 48487,
+        "eligible_aligned_A_sites": 47791,
+        "eligible_missing_probability": 17324,
+        "evaluable_control": 6826,
+        "evaluable_modified": 23641,
+        "evaluable_points": 30467,
+        "input_records": 48487,
+        "input_unique_evidence_ids": 48487,
+        "no_truth_join": 0,
+        "points_without_valid_native_interval": 30467,
+        "truth_join_candidates": 48487,
+        "unique_truth_join_records": 48487
+      },
+      "explicit_coverage_of_claimed_opportunities": 0.6283539917916142,
+      "filter_coverage_records": 1.0,
+      "fixed_threshold": 0.5,
+      "log_loss": 0.2383370449155335,
+      "normalized_source_join_sha256": "e4cf21bcdc5a80d554adad1d2a7b4653ecb24a94cce08b0960eaf74fd2c7bb61",
+      "probability_metrics_status": "INVALID_INPUT_DIAGNOSTIC_ONLY",
+      "scope": "within this provider-supplied selected construct bundle; not native occupancy or between-model comparison",
+      "truth_join_yield": 1.0,
+      "valid_probability_semantics": false
+    },
+    "role": "EVALUATION",
+    "source_bundle": "execution/RMT-EXEC-001/results/evaluation_run_v1/controlled_cases/evaluation/10_modification_code_confusion",
+    "source_metric": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/metrics/10_modification_code_confusion.json",
+    "source_metric_sha256": "dda33509ebd04c5ba14ab24a845b9f756e2bda9affdd873f74f14f0c9271383b"
+  },
+  {
+    "Brier_control": 0.09440975485398488,
+    "Brier_equal_class": 0.0813083601327412,
+    "Brier_modified": 0.06820696541149752,
+    "case_id": "11_row_order",
+    "class_denominators": {
+      "0": {
+        "eligible": 23927,
+        "native_explicit": 6826,
+        "scored": 6826,
+        "truth_overlap": 24254
+      },
+      "1": {
+        "eligible": 23864,
+        "native_explicit": 23641,
+        "scored": 23641,
+        "truth_overlap": 24233
+      }
+    },
+    "evidence_class": "LEGAL_TRANSFORMATION",
+    "recalculated_metrics": {
+      "Brier": 0.07407758742004508,
+      "FPR": 0.1237913858775271,
+      "ML_interval_sensitivity": {
+        "Brier_infimum": 0.07350863860113376,
+        "Brier_supremum": 0.07465416563348767,
+        "log_loss_infimum": 0.23492562413182433,
+        "log_loss_supremum": "INFINITE_SUPREMUM",
+        "meaning": "bounds within original ML intervals; not sampling confidence intervals",
+        "threshold_interval_ambiguous": 0
+      },
+      "balanced_accuracy": 0.8894388529772299,
+      "confusion": {
+        "FN": 2301,
+        "FP": 845,
+        "TN": 5981,
+        "TP": 21340
+      },
+      "counts": {
+        "alignment_ineligible": 696,
+        "ambiguous_truth_join": 0,
+        "declared_population_opportunities": 48487,
+        "eligible_aligned_A_sites": 47791,
+        "eligible_missing_probability": 17324,
+        "evaluable_control": 6826,
+        "evaluable_modified": 23641,
+        "evaluable_points": 30467,
+        "input_records": 48487,
+        "input_unique_evidence_ids": 48487,
+        "no_truth_join": 0,
+        "points_without_valid_native_interval": 0,
+        "truth_join_candidates": 48487,
+        "unique_truth_join_records": 48487
+      },
+      "explicit_coverage_of_claimed_opportunities": 0.6283539917916142,
+      "filter_coverage_records": 1.0,
+      "fixed_threshold": 0.5,
+      "log_loss": 0.2383370449155335,
+      "normalized_source_join_sha256": "513cc6c10dd55babdf9184ea578bd78bd7da76cd5f0dc86c21f941381dd81404",
+      "probability_metrics_status": "SCOPED_NATIVE_INTERVAL",
+      "scope": "within this provider-supplied selected construct bundle; not native occupancy or between-model comparison",
+      "truth_join_yield": 1.0,
+      "valid_probability_semantics": true
+    },
+    "role": "EVALUATION",
+    "source_bundle": "execution/RMT-EXEC-001/results/evaluation_run_v1/controlled_cases/evaluation/11_row_order",
+    "source_metric": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/metrics/11_row_order.json",
+    "source_metric_sha256": "74a1917052e663e374956e445a747f098d7c2ac3ba7b22a2e419c5f471ea3536"
+  },
+  {
+    "Brier_control": 0.09440975485398488,
+    "Brier_equal_class": 0.0813083601327412,
+    "Brier_modified": 0.06820696541149752,
+    "case_id": "12_compression",
+    "class_denominators": {
+      "0": {
+        "eligible": 23927,
+        "native_explicit": 6826,
+        "scored": 6826,
+        "truth_overlap": 24254
+      },
+      "1": {
+        "eligible": 23864,
+        "native_explicit": 23641,
+        "scored": 23641,
+        "truth_overlap": 24233
+      }
+    },
+    "evidence_class": "LEGAL_TRANSFORMATION",
+    "recalculated_metrics": {
+      "Brier": 0.07407758742004508,
+      "FPR": 0.1237913858775271,
+      "ML_interval_sensitivity": {
+        "Brier_infimum": 0.07350863860113376,
+        "Brier_supremum": 0.07465416563348767,
+        "log_loss_infimum": 0.23492562413182433,
+        "log_loss_supremum": "INFINITE_SUPREMUM",
+        "meaning": "bounds within original ML intervals; not sampling confidence intervals",
+        "threshold_interval_ambiguous": 0
+      },
+      "balanced_accuracy": 0.8894388529772299,
+      "confusion": {
+        "FN": 2301,
+        "FP": 845,
+        "TN": 5981,
+        "TP": 21340
+      },
+      "counts": {
+        "alignment_ineligible": 696,
+        "ambiguous_truth_join": 0,
+        "declared_population_opportunities": 48487,
+        "eligible_aligned_A_sites": 47791,
+        "eligible_missing_probability": 17324,
+        "evaluable_control": 6826,
+        "evaluable_modified": 23641,
+        "evaluable_points": 30467,
+        "input_records": 48487,
+        "input_unique_evidence_ids": 48487,
+        "no_truth_join": 0,
+        "points_without_valid_native_interval": 0,
+        "truth_join_candidates": 48487,
+        "unique_truth_join_records": 48487
+      },
+      "explicit_coverage_of_claimed_opportunities": 0.6283539917916142,
+      "filter_coverage_records": 1.0,
+      "fixed_threshold": 0.5,
+      "log_loss": 0.2383370449155335,
+      "normalized_source_join_sha256": "513cc6c10dd55babdf9184ea578bd78bd7da76cd5f0dc86c21f941381dd81404",
+      "probability_metrics_status": "SCOPED_NATIVE_INTERVAL",
+      "scope": "within this provider-supplied selected construct bundle; not native occupancy or between-model comparison",
+      "truth_join_yield": 1.0,
+      "valid_probability_semantics": true
+    },
+    "role": "EVALUATION",
+    "source_bundle": "execution/RMT-EXEC-001/results/evaluation_run_v1/controlled_cases/evaluation/12_compression",
+    "source_metric": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/metrics/12_compression.json",
+    "source_metric_sha256": "74a1917052e663e374956e445a747f098d7c2ac3ba7b22a2e419c5f471ea3536"
+  },
+  {
+    "Brier_control": 0.09440975485398488,
+    "Brier_equal_class": 0.0813083601327412,
+    "Brier_modified": 0.06820696541149752,
+    "case_id": "13_irrelevant_column",
+    "class_denominators": {
+      "0": {
+        "eligible": 23927,
+        "native_explicit": 6826,
+        "scored": 6826,
+        "truth_overlap": 24254
+      },
+      "1": {
+        "eligible": 23864,
+        "native_explicit": 23641,
+        "scored": 23641,
+        "truth_overlap": 24233
+      }
+    },
+    "evidence_class": "LEGAL_TRANSFORMATION",
+    "recalculated_metrics": {
+      "Brier": 0.07407758742004508,
+      "FPR": 0.1237913858775271,
+      "ML_interval_sensitivity": {
+        "Brier_infimum": 0.07350863860113376,
+        "Brier_supremum": 0.07465416563348767,
+        "log_loss_infimum": 0.23492562413182433,
+        "log_loss_supremum": "INFINITE_SUPREMUM",
+        "meaning": "bounds within original ML intervals; not sampling confidence intervals",
+        "threshold_interval_ambiguous": 0
+      },
+      "balanced_accuracy": 0.8894388529772299,
+      "confusion": {
+        "FN": 2301,
+        "FP": 845,
+        "TN": 5981,
+        "TP": 21340
+      },
+      "counts": {
+        "alignment_ineligible": 696,
+        "ambiguous_truth_join": 0,
+        "declared_population_opportunities": 48487,
+        "eligible_aligned_A_sites": 47791,
+        "eligible_missing_probability": 17324,
+        "evaluable_control": 6826,
+        "evaluable_modified": 23641,
+        "evaluable_points": 30467,
+        "input_records": 48487,
+        "input_unique_evidence_ids": 48487,
+        "no_truth_join": 0,
+        "points_without_valid_native_interval": 0,
+        "truth_join_candidates": 48487,
+        "unique_truth_join_records": 48487
+      },
+      "explicit_coverage_of_claimed_opportunities": 0.6283539917916142,
+      "filter_coverage_records": 1.0,
+      "fixed_threshold": 0.5,
+      "log_loss": 0.2383370449155335,
+      "normalized_source_join_sha256": "513cc6c10dd55babdf9184ea578bd78bd7da76cd5f0dc86c21f941381dd81404",
+      "probability_metrics_status": "SCOPED_NATIVE_INTERVAL",
+      "scope": "within this provider-supplied selected construct bundle; not native occupancy or between-model comparison",
+      "truth_join_yield": 1.0,
+      "valid_probability_semantics": true
+    },
+    "role": "EVALUATION",
+    "source_bundle": "execution/RMT-EXEC-001/results/evaluation_run_v1/controlled_cases/evaluation/13_irrelevant_column",
+    "source_metric": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/metrics/13_irrelevant_column.json",
+    "source_metric_sha256": "74a1917052e663e374956e445a747f098d7c2ac3ba7b22a2e419c5f471ea3536"
+  },
+  {
+    "Brier_control": 0.09440975485398488,
+    "Brier_equal_class": 0.0813083601327412,
+    "Brier_modified": 0.06820696541149752,
+    "case_id": "14_documented_bijective_rename",
+    "class_denominators": {
+      "0": {
+        "eligible": 23927,
+        "native_explicit": 6826,
+        "scored": 6826,
+        "truth_overlap": 24254
+      },
+      "1": {
+        "eligible": 23864,
+        "native_explicit": 23641,
+        "scored": 23641,
+        "truth_overlap": 24233
+      }
+    },
+    "evidence_class": "LEGAL_TRANSFORMATION",
+    "recalculated_metrics": {
+      "Brier": 0.07407758742004508,
+      "FPR": 0.1237913858775271,
+      "ML_interval_sensitivity": {
+        "Brier_infimum": 0.07350863860113376,
+        "Brier_supremum": 0.07465416563348767,
+        "log_loss_infimum": 0.23492562413182433,
+        "log_loss_supremum": "INFINITE_SUPREMUM",
+        "meaning": "bounds within original ML intervals; not sampling confidence intervals",
+        "threshold_interval_ambiguous": 0
+      },
+      "balanced_accuracy": 0.8894388529772299,
+      "confusion": {
+        "FN": 2301,
+        "FP": 845,
+        "TN": 5981,
+        "TP": 21340
+      },
+      "counts": {
+        "alignment_ineligible": 696,
+        "ambiguous_truth_join": 0,
+        "declared_population_opportunities": 48487,
+        "eligible_aligned_A_sites": 47791,
+        "eligible_missing_probability": 17324,
+        "evaluable_control": 6826,
+        "evaluable_modified": 23641,
+        "evaluable_points": 30467,
+        "input_records": 48487,
+        "input_unique_evidence_ids": 48487,
+        "no_truth_join": 0,
+        "points_without_valid_native_interval": 0,
+        "truth_join_candidates": 48487,
+        "unique_truth_join_records": 48487
+      },
+      "explicit_coverage_of_claimed_opportunities": 0.6283539917916142,
+      "filter_coverage_records": 1.0,
+      "fixed_threshold": 0.5,
+      "log_loss": 0.2383370449155335,
+      "normalized_source_join_sha256": "513cc6c10dd55babdf9184ea578bd78bd7da76cd5f0dc86c21f941381dd81404",
+      "probability_metrics_status": "SCOPED_NATIVE_INTERVAL",
+      "scope": "within this provider-supplied selected construct bundle; not native occupancy or between-model comparison",
+      "truth_join_yield": 1.0,
+      "valid_probability_semantics": true
+    },
+    "role": "EVALUATION",
+    "source_bundle": "execution/RMT-EXEC-001/results/evaluation_run_v1/controlled_cases/evaluation/14_documented_bijective_rename",
+    "source_metric": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/metrics/14_documented_bijective_rename.json",
+    "source_metric_sha256": "74a1917052e663e374956e445a747f098d7c2ac3ba7b22a2e419c5f471ea3536"
+  },
+  {
+    "Brier_control": 0.09440975485398488,
+    "Brier_equal_class": 0.0813083601327412,
+    "Brier_modified": 0.06820696541149752,
+    "case_id": "15_disjoint_merge",
+    "class_denominators": {
+      "0": {
+        "eligible": 23927,
+        "native_explicit": 6826,
+        "scored": 6826,
+        "truth_overlap": 24254
+      },
+      "1": {
+        "eligible": 23864,
+        "native_explicit": 23641,
+        "scored": 23641,
+        "truth_overlap": 24233
+      }
+    },
+    "evidence_class": "LEGAL_TRANSFORMATION",
+    "recalculated_metrics": {
+      "Brier": 0.07407758742004508,
+      "FPR": 0.1237913858775271,
+      "ML_interval_sensitivity": {
+        "Brier_infimum": 0.07350863860113376,
+        "Brier_supremum": 0.07465416563348767,
+        "log_loss_infimum": 0.23492562413182433,
+        "log_loss_supremum": "INFINITE_SUPREMUM",
+        "meaning": "bounds within original ML intervals; not sampling confidence intervals",
+        "threshold_interval_ambiguous": 0
+      },
+      "balanced_accuracy": 0.8894388529772299,
+      "confusion": {
+        "FN": 2301,
+        "FP": 845,
+        "TN": 5981,
+        "TP": 21340
+      },
+      "counts": {
+        "alignment_ineligible": 696,
+        "ambiguous_truth_join": 0,
+        "declared_population_opportunities": 48487,
+        "eligible_aligned_A_sites": 47791,
+        "eligible_missing_probability": 17324,
+        "evaluable_control": 6826,
+        "evaluable_modified": 23641,
+        "evaluable_points": 30467,
+        "input_records": 48487,
+        "input_unique_evidence_ids": 48487,
+        "no_truth_join": 0,
+        "points_without_valid_native_interval": 0,
+        "truth_join_candidates": 48487,
+        "unique_truth_join_records": 48487
+      },
+      "explicit_coverage_of_claimed_opportunities": 0.6283539917916142,
+      "filter_coverage_records": 1.0,
+      "fixed_threshold": 0.5,
+      "log_loss": 0.2383370449155335,
+      "normalized_source_join_sha256": "513cc6c10dd55babdf9184ea578bd78bd7da76cd5f0dc86c21f941381dd81404",
+      "probability_metrics_status": "SCOPED_NATIVE_INTERVAL",
+      "scope": "within this provider-supplied selected construct bundle; not native occupancy or between-model comparison",
+      "truth_join_yield": 1.0,
+      "valid_probability_semantics": true
+    },
+    "role": "EVALUATION",
+    "source_bundle": "execution/RMT-EXEC-001/results/evaluation_run_v1/controlled_cases/evaluation/15_disjoint_merge",
+    "source_metric": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/metrics/15_disjoint_merge.json",
+    "source_metric_sha256": "74a1917052e663e374956e445a747f098d7c2ac3ba7b22a2e419c5f471ea3536"
+  },
+  {
+    "Brier_control": 0.09440975485398488,
+    "Brier_equal_class": 0.0813083601327412,
+    "Brier_modified": 0.06820696541149752,
+    "case_id": "16_documented_coordinate_conversion",
+    "class_denominators": {
+      "0": {
+        "eligible": 23927,
+        "native_explicit": 6826,
+        "scored": 6826,
+        "truth_overlap": 24254
+      },
+      "1": {
+        "eligible": 23864,
+        "native_explicit": 23641,
+        "scored": 23641,
+        "truth_overlap": 24233
+      }
+    },
+    "evidence_class": "LEGAL_TRANSFORMATION",
+    "recalculated_metrics": {
+      "Brier": 0.07407758742004508,
+      "FPR": 0.1237913858775271,
+      "ML_interval_sensitivity": {
+        "Brier_infimum": 0.07350863860113376,
+        "Brier_supremum": 0.07465416563348767,
+        "log_loss_infimum": 0.23492562413182433,
+        "log_loss_supremum": "INFINITE_SUPREMUM",
+        "meaning": "bounds within original ML intervals; not sampling confidence intervals",
+        "threshold_interval_ambiguous": 0
+      },
+      "balanced_accuracy": 0.8894388529772299,
+      "confusion": {
+        "FN": 2301,
+        "FP": 845,
+        "TN": 5981,
+        "TP": 21340
+      },
+      "counts": {
+        "alignment_ineligible": 696,
+        "ambiguous_truth_join": 0,
+        "declared_population_opportunities": 48487,
+        "eligible_aligned_A_sites": 47791,
+        "eligible_missing_probability": 17324,
+        "evaluable_control": 6826,
+        "evaluable_modified": 23641,
+        "evaluable_points": 30467,
+        "input_records": 48487,
+        "input_unique_evidence_ids": 48487,
+        "no_truth_join": 0,
+        "points_without_valid_native_interval": 0,
+        "truth_join_candidates": 48487,
+        "unique_truth_join_records": 48487
+      },
+      "explicit_coverage_of_claimed_opportunities": 0.6283539917916142,
+      "filter_coverage_records": 1.0,
+      "fixed_threshold": 0.5,
+      "log_loss": 0.2383370449155335,
+      "normalized_source_join_sha256": "513cc6c10dd55babdf9184ea578bd78bd7da76cd5f0dc86c21f941381dd81404",
+      "probability_metrics_status": "SCOPED_NATIVE_INTERVAL",
+      "scope": "within this provider-supplied selected construct bundle; not native occupancy or between-model comparison",
+      "truth_join_yield": 1.0,
+      "valid_probability_semantics": true
+    },
+    "role": "EVALUATION",
+    "source_bundle": "execution/RMT-EXEC-001/results/evaluation_run_v1/controlled_cases/evaluation/16_documented_coordinate_conversion",
+    "source_metric": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/metrics/16_documented_coordinate_conversion.json",
+    "source_metric_sha256": "74a1917052e663e374956e445a747f098d7c2ac3ba7b22a2e419c5f471ea3536"
+  }
+]

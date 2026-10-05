@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "protocol_sha256": "a1d5c5e6c26e753fc87c591c90846c9e21d445e7e0c3d8a0fa3393723191489f",
+  "original_protocol_sha256": "90f77ad775147f97292dfcfb0669f3b6211a596698adab86d16b86bfa04b5f71",
+  "original_protocol_frozen_utc": "2026-09-07T14:05:50Z",
+  "public_derivation": "Non-scientific metadata removed; original analytical definitions unchanged. Not a new preregistration.",
+  "record_inputs": [
+    {
+      "role": "development_control",
+      "path": "execution/RMT-EXEC-001/results/canary_dev_control_v2/read_sites.tsv.gz",
+      "bytes": 2965505,
+      "sha256": "1037a054c845148c4e545392c99ececaf3cafdec64fae9a0de6f84ad450c9090"
+    },
+    {
+      "role": "development_modified",
+      "path": "execution/RMT-EXEC-001/results/canary_dev_m6A_v2/read_sites.tsv.gz",
+      "bytes": 3192445,
+      "sha256": "0f13d4b8223fc4f9d5ce1d6c613d417ee65e816231f4640f2cf49a8f084b15f3"
+    },
+    {
+      "role": "evaluation_control",
+      "path": "execution/RMT-EXEC-001/results/evaluation_run_v1/canaries/ONT2026_control_A/read_sites.tsv.gz",
+      "bytes": 34269517,
+      "sha256": "7d6010f83e4895782fc7ae7ba0bce013e4911ac13501b1c085bfa43be5ac83c6"
+    },
+    {
+      "role": "evaluation_modified",
+      "path": "execution/RMT-EXEC-001/results/evaluation_run_v1/canaries/ONT2026_m6A/read_sites.tsv.gz",
+      "bytes": 37987452,
+      "sha256": "193a296eea48f7f05ecc7e4c734f2ca64cf28edc37ed2fe715b4203cf603597f"
+    }
+  ],
+  "scope": "Scientific input identity; original read-level files are not distributed here."
+}

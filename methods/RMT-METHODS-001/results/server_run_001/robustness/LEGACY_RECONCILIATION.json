@@ -1,0 +1,50 @@
+[
+  {
+    "release": "2025_DRACH",
+    "condition": "canonical",
+    "source": "execution/RMT-EXEC-001/results/development_test_final/metrics/00_canonical.json",
+    "status": "PASS"
+  },
+  {
+    "release": "2025_DRACH",
+    "condition": "site_mean_as_read",
+    "source": "execution/RMT-EXEC-001/results/development_test_final/metrics/07_site_score_as_read_probability.json",
+    "status": "PASS"
+  },
+  {
+    "release": "2025_DRACH",
+    "condition": "missing_zero",
+    "source": "execution/RMT-EXEC-001/results/development_test_final/metrics/09_missing_probability_imputed_zero.json",
+    "status": "PASS"
+  },
+  {
+    "release": "2025_DRACH",
+    "condition": "high_p_filter",
+    "source": "execution/RMT-EXEC-001/results/development_test_final/metrics/08_filtered_output_claimed_all_records.json",
+    "status": "PASS"
+  },
+  {
+    "release": "2026_all5mer",
+    "condition": "canonical",
+    "source": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/metrics/00_canonical.json",
+    "status": "PASS"
+  },
+  {
+    "release": "2026_all5mer",
+    "condition": "site_mean_as_read",
+    "source": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/metrics/07_site_score_as_read_probability.json",
+    "status": "PASS"
+  },
+  {
+    "release": "2026_all5mer",
+    "condition": "missing_zero",
+    "source": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/metrics/09_missing_probability_imputed_zero.json",
+    "status": "PASS"
+  },
+  {
+    "release": "2026_all5mer",
+    "condition": "high_p_filter",
+    "source": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/evaluation/metrics/08_filtered_output_claimed_all_records.json",
+    "status": "PASS"
+  }
+]

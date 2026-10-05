@@ -1,0 +1,105 @@
+{
+  "role_split": "2025 DRACH development vs 2026 all5mer evaluation; no exact construct sequence overlap; same provider and already-seen resource names",
+  "samples": [
+    {
+      "files": {
+        "bam": {
+          "bytes": 11414202,
+          "path": ".cache/ont2025/basecalls/control_DRACH.bam",
+          "sha256": "49b6738a15cba0accac9a71d7f251545f5f2cac58bdb5333f7e3413645a9ccf6",
+          "url": "https://ont-open-data.s3.amazonaws.com/rna-modbase-validation_2025.03/basecalls/control_DRACH.bam"
+        },
+        "bed": {
+          "bytes": 520,
+          "path": ".cache/ont2025/references/drach_context_A_sites.bed",
+          "sha256": "8d4116382e1529ea5a979c805b43d16ab149bdc2b513c5102e443056708fd6b3",
+          "url": "https://ont-open-data.s3.amazonaws.com/rna-modbase-validation_2025.03/references/drach_context_A_sites.bed"
+        },
+        "fasta": {
+          "bytes": 580,
+          "path": ".cache/ont2025/references/drach_context_strands.fa",
+          "sha256": "b635fa1993531e77537ad1080d59f49473ffbf92b1d30da7041920ff41dae48b",
+          "url": "https://ont-open-data.s3.amazonaws.com/rna-modbase-validation_2025.03/references/drach_context_strands.fa"
+        }
+      },
+      "role": "DEVELOPMENT",
+      "sample_id": "ONT2025_DRACH_control"
+    },
+    {
+      "files": {
+        "bam": {
+          "bytes": 12287200,
+          "path": ".cache/ont2025/basecalls/m6A_DRACH.bam",
+          "sha256": "4439bd6a102538e4e05ac195a4bf1b612f629d321b22b3147504fdc945eb12b8",
+          "url": "https://ont-open-data.s3.amazonaws.com/rna-modbase-validation_2025.03/basecalls/m6A_DRACH.bam"
+        },
+        "bed": {
+          "bytes": 520,
+          "path": ".cache/ont2025/references/drach_context_m6A_sites.bed",
+          "sha256": "d9580209bec4ed1a97898f5c586ecf0675b08a4adcdf2167255e06ae699b310d",
+          "url": "https://ont-open-data.s3.amazonaws.com/rna-modbase-validation_2025.03/references/drach_context_m6A_sites.bed"
+        },
+        "fasta": {
+          "bytes": 580,
+          "path": ".cache/ont2025/references/drach_context_strands.fa",
+          "sha256": "b635fa1993531e77537ad1080d59f49473ffbf92b1d30da7041920ff41dae48b",
+          "url": "https://ont-open-data.s3.amazonaws.com/rna-modbase-validation_2025.03/references/drach_context_strands.fa"
+        }
+      },
+      "role": "DEVELOPMENT",
+      "sample_id": "ONT2025_DRACH_m6A"
+    },
+    {
+      "files": {
+        "bam": {
+          "bytes": 108095235,
+          "path": ".cache/ont2026/basecalls/control_A.bam",
+          "sha256": "5383f62cb21a6fb5716f5b0d9cfda7fb3a163f98e56996206c8af010281c1194",
+          "url": "https://ont-open-data.s3.amazonaws.com/rna-mod-validation-all5mer-2026.07/basecalls/control_A.bam"
+        },
+        "bed": {
+          "bytes": 9728,
+          "path": ".cache/ont2026/references/control_A_positions.bed",
+          "sha256": "b1b2257d66f87ae1f0a89c833c99919c33a9b31a9c94b24ba3ebc1217f13beba",
+          "url": "https://ont-open-data.s3.amazonaws.com/rna-mod-validation-all5mer-2026.07/references/control_A_positions.bed"
+        },
+        "fasta": {
+          "bytes": 4096,
+          "path": ".cache/ont2026/references/A_reference.fasta",
+          "sha256": "c1170a99fafadbd0aac6d64d7842588bbcdb8c163780b86aa71dfa836a161700",
+          "url": "https://ont-open-data.s3.amazonaws.com/rna-mod-validation-all5mer-2026.07/references/A_reference.fasta"
+        }
+      },
+      "role": "EVALUATION",
+      "sample_id": "ONT2026_control_A"
+    },
+    {
+      "files": {
+        "bam": {
+          "bytes": 123340699,
+          "path": ".cache/ont2026/basecalls/m6A.bam",
+          "sha256": "a78587a0befa922af08586c996ae12aadc394a0a06eb7815cbbe71acd578e1e5",
+          "url": "https://ont-open-data.s3.amazonaws.com/rna-mod-validation-all5mer-2026.07/basecalls/m6A.bam"
+        },
+        "bed": {
+          "bytes": 9728,
+          "path": ".cache/ont2026/references/m6A_positions.bed",
+          "sha256": "34b6387ca4b1f18fd0b86dcfcab143d9cdc436c3652bddd408516d82fae96e2a",
+          "url": "https://ont-open-data.s3.amazonaws.com/rna-mod-validation-all5mer-2026.07/references/m6A_positions.bed"
+        },
+        "fasta": {
+          "bytes": 4096,
+          "path": ".cache/ont2026/references/A_reference.fasta",
+          "sha256": "c1170a99fafadbd0aac6d64d7842588bbcdb8c163780b86aa71dfa836a161700",
+          "url": "https://ont-open-data.s3.amazonaws.com/rna-mod-validation-all5mer-2026.07/references/A_reference.fasta"
+        }
+      },
+      "role": "EVALUATION",
+      "sample_id": "ONT2026_m6A"
+    }
+  ],
+  "source_mapping_locators": {
+    "DEVELOPMENT": "ONT 2025 source page DRACH oligos section and official S3 object list; exact BED/FASTA contents",
+    "EVALUATION": "ONT 2026 official commands.sh lines 50-67, sample-specific modkit validate commands; original script inspected, never executed"
+  }
+}

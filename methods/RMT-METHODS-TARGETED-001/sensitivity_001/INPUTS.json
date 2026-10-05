@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "protocol_sha256": "22a1849d1ce87105ecef0f43b947dec8c0ee26a3cf7d56e40f290f537833deeb",
+  "original_protocol_sha256": "b8e06235ee2e50ff3b9719154de9e1baf7795394758dd300f12b8524a4c8820f",
+  "original_protocol_frozen_utc": "2026-09-08T21:30:36.418838+00:00",
+  "public_derivation": "Non-scientific metadata removed; original analytical definitions unchanged. Not a new preregistration.",
+  "record_inputs": [
+    {
+      "role": "development_control",
+      "path": "execution/RMT-EXEC-001/results/canary_dev_control_v2/read_sites.tsv.gz",
+      "bytes": 2965505,
+      "sha256": "1037a054c845148c4e545392c99ececaf3cafdec64fae9a0de6f84ad450c9090"
+    },
+    {
+      "role": "development_modified",
+      "path": "execution/RMT-EXEC-001/results/canary_dev_m6A_v2/read_sites.tsv.gz",
+      "bytes": 3192445,
+      "sha256": "0f13d4b8223fc4f9d5ce1d6c613d417ee65e816231f4640f2cf49a8f084b15f3"
+    },
+    {
+      "role": "evaluation_control",
+      "path": "execution/RMT-EXEC-001/results/evaluation_run_v1/canaries/ONT2026_control_A/read_sites.tsv.gz",
+      "bytes": 34269517,
+      "sha256": "7d6010f83e4895782fc7ae7ba0bce013e4911ac13501b1c085bfa43be5ac83c6"
+    },
+    {
+      "role": "evaluation_modified",
+      "path": "execution/RMT-EXEC-001/results/evaluation_run_v1/canaries/ONT2026_m6A/read_sites.tsv.gz",
+      "bytes": 37987452,
+      "sha256": "193a296eea48f7f05ecc7e4c734f2ca64cf28edc37ed2fe715b4203cf603597f"
+    }
+  ],
+  "source_curves_sha256": "441bdb5accc32aa4dfb2f2d0f5bbed97a03ea28896000e4ed6dee49a944c4411",
+  "source_classes_sha256": "7ac709547213833c8aafbf3ad4a4ab10261a97f9845562c14ff3fa5055747959",
+  "source_decomposition_sha256": "8569c7e59ee6e9cc478e62a495e243f2f519acc0ddfecd1eded28a4afb26a837",
+  "scope": "Same original input hashes and parent scientific tables; no internal workflow inventory."
+}

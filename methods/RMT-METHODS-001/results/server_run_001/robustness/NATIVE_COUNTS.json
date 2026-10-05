@@ -1,0 +1,50 @@
+[
+  {
+    "input_role": "development_control",
+    "source": "execution/RMT-EXEC-001/results/canary_dev_control_v2/read_sites.tsv.gz",
+    "opportunities": 197563,
+    "eligible": 195537,
+    "explicit": 20877,
+    "selected_original_opportunities": 1978,
+    "status_explicit": 20877,
+    "status_dot_low_probability_assumption": 174660,
+    "status_alignment_deletion_or_skip": 1004,
+    "status_canonical_base_mismatch": 1022
+  },
+  {
+    "input_role": "development_modified",
+    "source": "execution/RMT-EXEC-001/results/canary_dev_m6A_v2/read_sites.tsv.gz",
+    "opportunities": 196265,
+    "eligible": 193590,
+    "explicit": 192495,
+    "selected_original_opportunities": 1979,
+    "status_explicit": 192495,
+    "status_alignment_deletion_or_skip": 1159,
+    "status_canonical_base_mismatch": 1516,
+    "status_dot_low_probability_assumption": 1095
+  },
+  {
+    "input_role": "evaluation_control",
+    "source": "execution/RMT-EXEC-001/results/evaluation_run_v1/canaries/ONT2026_control_A/read_sites.tsv.gz",
+    "opportunities": 2360963,
+    "eligible": 2326496,
+    "explicit": 680046,
+    "selected_original_opportunities": 24254,
+    "status_dot_low_probability_assumption": 1646450,
+    "status_explicit": 680046,
+    "status_alignment_deletion_or_skip": 17166,
+    "status_canonical_base_mismatch": 17301
+  },
+  {
+    "input_role": "evaluation_modified",
+    "source": "execution/RMT-EXEC-001/results/evaluation_run_v1/canaries/ONT2026_m6A/read_sites.tsv.gz",
+    "opportunities": 2321542,
+    "eligible": 2282238,
+    "explicit": 2260276,
+    "selected_original_opportunities": 24233,
+    "status_explicit": 2260276,
+    "status_alignment_deletion_or_skip": 18808,
+    "status_dot_low_probability_assumption": 21962,
+    "status_canonical_base_mismatch": 20496
+  }
+]

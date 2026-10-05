@@ -1,0 +1,617 @@
+{
+  "schema_version": 1,
+  "analysis_id": "RNA-MODTRUTH-PUBLIC-CODE-AGGREGATE-20261005-003",
+  "freeze_status": "candidate",
+  "project_root_relative_to_manifest": ".",
+  "scope": "Public code, scientific protocol/input identities and frozen aggregates; no record-level replay claim.",
+  "derivations": [
+    {
+      "path": "methods/RMT-METHODS-001/PROTOCOL.json",
+      "source_sha256": "90f77ad775147f97292dfcfb0669f3b6211a596698adab86d16b86bfa04b5f71",
+      "public_sha256": "a1d5c5e6c26e753fc87c591c90846c9e21d445e7e0c3d8a0fa3393723191489f",
+      "change": "Scientific metadata only or file-location/hash-binding adaptation; no scientific definition or result change."
+    },
+    {
+      "path": "methods/RMT-METHODS-001/code/prepare_manuscript_evidence.py",
+      "source_sha256": "e237d4c15cff1eeea3708c7c54b79701dcf31b51bcc631981503193406f060ae",
+      "public_sha256": "d61cbf3a87309982fa9ad6a7cc8912d1e32dd81087e1f769080b96c813fa6449",
+      "change": "Scientific metadata only or file-location/hash-binding adaptation; no scientific definition or result change."
+    },
+    {
+      "path": "methods/RMT-METHODS-001/code/reproduce_methods.py",
+      "source_sha256": "986f15cf5578ba8e8c0c30eeb526d7ba003b5fbf8a3fcd5a087007f8e4e32e36",
+      "public_sha256": "a427c65e4d33743b4965a86e644540f307fabe5eb4fce33c3799b9d83a5f617a",
+      "change": "Scientific metadata only or file-location/hash-binding adaptation; no scientific definition or result change."
+    },
+    {
+      "path": "methods/RMT-METHODS-001/code/robustness.py",
+      "source_sha256": "920fc9de7118a07d854122c4dda78524173fa7ee1c04df42b81eaf8e8f4bb822",
+      "public_sha256": "30d8402ac891027071981cce3f7dbcde6151ce213407c16047ff2fb0750be971",
+      "change": "Scientific metadata only or file-location/hash-binding adaptation; no scientific definition or result change."
+    },
+    {
+      "path": "methods/RMT-METHODS-TARGETED-001/PROTOCOL.json",
+      "source_sha256": "5035c5c9d78dc3176c562e4b2f4fe245cedaf7a0cebc03b3c8523d5857b8ee3f",
+      "public_sha256": "f316813640ec10df5efcd943f52219a84b0b0feed39666f6e6e8c5d49c469d33",
+      "change": "Scientific metadata only or file-location/hash-binding adaptation; no scientific definition or result change."
+    },
+    {
+      "path": "methods/RMT-METHODS-TARGETED-001/code/analyze.py",
+      "source_sha256": "33306c4da10410a27f1254f35118072478b0cce718db962432b6d6e03d61c0bb",
+      "public_sha256": "d782ac384b58c0069a25099e2c1d1fb48a91ce7ec3906dfdba3bc787f78a44d8",
+      "change": "Scientific metadata only or file-location/hash-binding adaptation; no scientific definition or result change."
+    },
+    {
+      "path": "methods/RMT-METHODS-TARGETED-001/sensitivity_001/PROTOCOL.json",
+      "source_sha256": "b8e06235ee2e50ff3b9719154de9e1baf7795394758dd300f12b8524a4c8820f",
+      "public_sha256": "22a1849d1ce87105ecef0f43b947dec8c0ee26a3cf7d56e40f290f537833deeb",
+      "change": "Scientific metadata only or file-location/hash-binding adaptation; no scientific definition or result change."
+    },
+    {
+      "path": "methods/RMT-METHODS-TARGETED-001/sensitivity_001/code/analyze_intervals.py",
+      "source_sha256": "386a2e4beea97b007b904e5f643bceddc70fda897ecbff065dac4fd577e375e5",
+      "public_sha256": "9de9126d7a074e0f835a62b7d48944befb6da625826a3e4b4834785b3d319934",
+      "change": "Scientific metadata only or file-location/hash-binding adaptation; no scientific definition or result change."
+    },
+    {
+      "path": "methods/RMT-METHODS-TARGETED-001/sensitivity_001/code/present_constructs.py",
+      "source_sha256": "474af3c99075a8af3caefa524d7e4955fab144f3f57d4dc197d2180c3c8b04bf",
+      "public_sha256": "ce0debc4d59801b1458d12eaaeea382b2318e569362e5340c58c35077672f8b2",
+      "change": "Scientific metadata only or file-location/hash-binding adaptation; no scientific definition or result change."
+    },
+    {
+      "path": "methods/RMT-METHODS-TARGETED-001/tool/PARENT_SOURCE_BINDING.json",
+      "source_sha256": "6a95e8e2da7a57daa5c907533158f04c9b3cee22fe3b4a4d6fe99151155e402e",
+      "public_sha256": "e7e3eccae06d25ececb9ea51f43c133a19847c1586cd6e659237328e284f6713",
+      "change": "Scientific metadata only or file-location/hash-binding adaptation; no scientific definition or result change."
+    },
+    {
+      "path": "methods/RMT-METHODS-TARGETED-001/tool/README.md",
+      "source_sha256": "cb3522f932bc21613831e926433a93e327f28b8fdabfa59b6bcdfabcfde41f05",
+      "public_sha256": "b2cfb738900d154dc3c80147a992d0aee6be454861108e42dc184192c3b3f5f9",
+      "change": "Scientific metadata only or file-location/hash-binding adaptation; no scientific definition or result change."
+    },
+    {
+      "path": "methods/RMT-METHODS-TARGETED-001/tool/src/rmt_targeted/__init__.py",
+      "source_sha256": "b7e135f30905f18fd61b0cc84a9dcea558a6268250fcce76ad0022d120fb474c",
+      "public_sha256": "48d849fe681a54741c6432f5e3813091b913957685ec0fa17e23273817215b3e",
+      "change": "Scientific metadata only or file-location/hash-binding adaptation; no scientific definition or result change."
+    },
+    {
+      "path": "methods/RMT-METHODS-TARGETED-001/tool/src/rmt_targeted/cli.py",
+      "source_sha256": "4af40aac6ca92fa84d73423cc1f12f547f534eb1d13e5560663f75afaf5807cb",
+      "public_sha256": "780b158a3cfb8258f824b67a6a86c890949e34b7c1cfbeff26062cd4f9522518",
+      "change": "Scientific metadata only or file-location/hash-binding adaptation; no scientific definition or result change."
+    }
+  ],
+  "files": [
+    {
+      "role": "retained_source",
+      "path": "execution/RMT-EXEC-001/canonical_bundles/INPUTS.json",
+      "bytes": 4862,
+      "sha256": "891fabe890f2ecfed4724f92f508bbbc5ece3cbe5dde24035b795f665e9e6ad3"
+    },
+    {
+      "role": "retained_source",
+      "path": "execution/RMT-EXEC-001/code/bundle.py",
+      "bytes": 7307,
+      "sha256": "b613af1eb3df8e08f7c6533a6e327b0e016665d7f9dfb5386dfe572a4d102dcf"
+    },
+    {
+      "role": "retained_source",
+      "path": "execution/RMT-EXEC-001/code/canary.py",
+      "bytes": 17773,
+      "sha256": "9705e6589c4f066bf6635ae8e9c237606c655ea72984b62d8f22394b0457834a"
+    },
+    {
+      "role": "retained_source",
+      "path": "execution/RMT-EXEC-001/code/cases.py",
+      "bytes": 8345,
+      "sha256": "c1e1d1472472e345d8beba88febb98bfd78a25a6224232b485d0d9c253ab7d1b"
+    },
+    {
+      "role": "retained_source",
+      "path": "execution/RMT-EXEC-001/code/cross_format.py",
+      "bytes": 3112,
+      "sha256": "4b6d9aefb3eae496b1d9eec0765ea8caeb8db2206cd900dab2053713107964c4"
+    },
+    {
+      "role": "retained_source",
+      "path": "execution/RMT-EXEC-001/code/evaluate.py",
+      "bytes": 6263,
+      "sha256": "bd59c5871da73647b118406836a64d11fb2973afa4d13da30c161f0514b2d28a"
+    },
+    {
+      "role": "retained_source",
+      "path": "execution/RMT-EXEC-001/code/measure.py",
+      "bytes": 913,
+      "sha256": "62f50a936aeb867e96192f10f569ac6cadbf329ddecf1245dcd49d4ba661a900"
+    },
+    {
+      "role": "retained_source",
+      "path": "execution/RMT-EXEC-001/code/metrics.py",
+      "bytes": 6112,
+      "sha256": "3e76eaaf61b0e773ad81c80ff7a38b5e537519ca76f47c12fb9291ad6505b5ba"
+    },
+    {
+      "role": "retained_source",
+      "path": "execution/RMT-EXEC-001/code/native_tools.py",
+      "bytes": 2667,
+      "sha256": "f4bb9ccaf55b665fbcffade3aae745ed948b886c2e2548071ac96f7a67cf5796"
+    },
+    {
+      "role": "retained_source",
+      "path": "execution/RMT-EXEC-001/code/rmt.py",
+      "bytes": 11146,
+      "sha256": "2128def6752cad4e5e56e31f95c1671397ea08f5cf3a731617bf83f31fe1df42"
+    },
+    {
+      "role": "retained_source",
+      "path": "execution/RMT-EXEC-001/code/simple_baseline.py",
+      "bytes": 9951,
+      "sha256": "ee83760e3006df0c161c74336e3d406269310b0d1ecc75cf3af948d5531d47e4"
+    },
+    {
+      "role": "retained_source",
+      "path": "execution/RMT-EXEC-001/code/structure_baseline.py",
+      "bytes": 3093,
+      "sha256": "1f4966be638a9788e7269b730ac4263e7bcb6c64d4bc009f06d5160151ec8277"
+    },
+    {
+      "role": "retained_source",
+      "path": "execution/RMT-EXEC-001/code/tools_baseline.py",
+      "bytes": 5015,
+      "sha256": "db2498ca14a9527aa99b0e32c1da6c858ae5d080c6ba046d214356bafb5f80b1"
+    },
+    {
+      "role": "retained_source",
+      "path": "execution/RMT-EXEC-001/requirements.lock",
+      "bytes": 161,
+      "sha256": "1807bd75d9c17dfba4b272b5afd1e86d8e25c13fa85b6eb19770164f7dee5c15"
+    },
+    {
+      "role": "retained_source",
+      "path": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/native_evaluation/default_confidence_filter.tsv",
+      "bytes": 600,
+      "sha256": "aeb886f769fee31fbc2369f739b224f816988b7c378f3553b5a259256d1d7a88"
+    },
+    {
+      "role": "retained_source",
+      "path": "execution/RMT-EXEC-001/results/evaluation_run_v1/results/native_evaluation/no_confidence_filter.tsv",
+      "bytes": 581,
+      "sha256": "560edcf6340b074f9a0e82e7f6a993f07d6368b0781bc7ac56043456e00ba946"
+    },
+    {
+      "role": "retained_source",
+      "path": "execution/RMT-EXEC-001/results/m6anet_cross_format_v2.json",
+      "bytes": 1699,
+      "sha256": "81a9d29c112e8d333ec2fe6a19c05d57d9ce7d05071400604ed79f48044004f6"
+    },
+    {
+      "role": "retained_source",
+      "path": "execution/RMT-EXEC-001/results/native_development_v1/default_confidence_filter.tsv",
+      "bytes": 512,
+      "sha256": "9ebaa656d061a08679d15c903b4db39ce35e6489e76e4b282539adca5998aa55"
+    },
+    {
+      "role": "retained_source",
+      "path": "execution/RMT-EXEC-001/results/native_development_v1/no_confidence_filter.tsv",
+      "bytes": 491,
+      "sha256": "a9e138ae88c64b50a893aeabea941ecc92fcf2ba63576e68e5ca599479687960"
+    },
+    {
+      "role": "retained_source",
+      "path": "execution/RMT-EXEC-001/tests/test_core.py",
+      "bytes": 3071,
+      "sha256": "0c802a3913364ad0f67d2c64fe5abd37acb0be525eeccadc9ef4b294d9d6c6eb"
+    },
+    {
+      "role": "retained_source",
+      "path": "methods/RMT-METHODS-001/INPUTS.json",
+      "bytes": 1536,
+      "sha256": "212c4f34ee4833a7d33efeed3140cd360f18b4b07a7ee43e373dbacf38e8fbd9"
+    },
+    {
+      "role": "retained_source",
+      "path": "methods/RMT-METHODS-001/PROTOCOL.json",
+      "bytes": 4652,
+      "sha256": "a1d5c5e6c26e753fc87c591c90846c9e21d445e7e0c3d8a0fa3393723191489f"
+    },
+    {
+      "role": "retained_source",
+      "path": "methods/RMT-METHODS-001/code/check_regression.py",
+      "bytes": 7606,
+      "sha256": "2a8b0816050b09dbdeca64ad9c6e1f04e8dcfd9aa728e3e90548acf87f4ad96a"
+    },
+    {
+      "role": "retained_source",
+      "path": "methods/RMT-METHODS-001/code/checkers_v2/bundle.py",
+      "bytes": 7307,
+      "sha256": "b613af1eb3df8e08f7c6533a6e327b0e016665d7f9dfb5386dfe572a4d102dcf"
+    },
+    {
+      "role": "retained_source",
+      "path": "methods/RMT-METHODS-001/code/checkers_v2/rmt.py",
+      "bytes": 11764,
+      "sha256": "2a6bdd583675031432956a3656ab8bff67bb238b1f652ef1eb324568809d25bd"
+    },
+    {
+      "role": "retained_source",
+      "path": "methods/RMT-METHODS-001/code/checkers_v2/simple_baseline.py",
+      "bytes": 11082,
+      "sha256": "c03c0682fa558adcf6bc6ac1f371b49dbabafed338c1b5aa317f30ffd1bbfcbf"
+    },
+    {
+      "role": "retained_source",
+      "path": "methods/RMT-METHODS-001/code/prepare_manuscript_evidence.py",
+      "bytes": 7983,
+      "sha256": "d61cbf3a87309982fa9ad6a7cc8912d1e32dd81087e1f769080b96c813fa6449"
+    },
+    {
+      "role": "retained_source",
+      "path": "methods/RMT-METHODS-001/code/reproduce_methods.py",
+      "bytes": 2719,
+      "sha256": "a427c65e4d33743b4965a86e644540f307fabe5eb4fce33c3799b9d83a5f617a"
+    },
+    {
+      "role": "retained_source",
+      "path": "methods/RMT-METHODS-001/code/robustness.py",
+      "bytes": 11279,
+      "sha256": "30d8402ac891027071981cce3f7dbcde6151ce213407c16047ff2fb0750be971"
+    },
+    {
+      "role": "retained_source",
+      "path": "methods/RMT-METHODS-001/code/test_methods.py",
+      "bytes": 1636,
+      "sha256": "b95ed0b5184e5b7ef243b5e2352ab4fec950ff2b70e426e89e36126f35042ed5"
+    },
+    {
+      "role": "retained_source",
+      "path": "methods/RMT-METHODS-001/evidence/server_002/AGGREGATE_METRICS.tsv",
+      "bytes": 29566,
+      "sha256": "afdfb3b4d7c28446ee998d1abfa5089716446934b50074d87c0ac81b78547fad"
+    },
+    {
+      "role": "retained_source",
+      "path": "methods/RMT-METHODS-001/evidence/server_002/ALL_CASE_EFFECTS.tsv",
+      "bytes": 11573,
+      "sha256": "1e0bf18af07988831b49e35e54b500f6d6a6b922e39c7af222345255bc4a0f3f"
+    },
+    {
+      "role": "retained_source",
+      "path": "methods/RMT-METHODS-001/evidence/server_002/COMPOSITION.tsv",
+      "bytes": 6437,
+      "sha256": "61640198859ccbb1641b14c3cddbdf40a61c9b6394e8fb7b9cb6e1a0c21dfb54"
+    },
+    {
+      "role": "retained_source",
+      "path": "methods/RMT-METHODS-001/evidence/server_002/CONSTRUCT_CONTRASTS.tsv",
+      "bytes": 626667,
+      "sha256": "8fa2c3328510ff09204eb64d17b8921ce4f41b56ed15af387c377575f53bd9a7"
+    },
+    {
+      "role": "retained_source",
+      "path": "methods/RMT-METHODS-001/evidence/server_002/COVERAGE.tsv",
+      "bytes": 11671,
+      "sha256": "f5c3a49980b4da8a7320f5b417fcca5997c28c1af8e6b39fa273a585dfd1f483"
+    },
+    {
+      "role": "retained_source",
+      "path": "methods/RMT-METHODS-001/evidence/server_002/METHOD_ENDPOINT_SOURCE.tsv",
+      "bytes": 24114,
+      "sha256": "195d6d2a8b171b3c8fc01697f0c59e863a2650aaa9dd64c186ea46604f0d1e24"
+    },
+    {
+      "role": "retained_source",
+      "path": "methods/RMT-METHODS-001/evidence/server_002/METHOD_SCOPE.tsv",
+      "bytes": 2421,
+      "sha256": "a87a8ca5e0ace66abe9b811fd48ceff077523207897e2a8ac5351caea8f12485"
+    },
+    {
+      "role": "retained_source",
+      "path": "methods/RMT-METHODS-001/evidence/server_002/NATIVE_MODKIT.tsv",
+      "bytes": 3859,
+      "sha256": "173a1f2d73cf494224e673fe8b7eae561d4499b69ab2f2176b0681a8e9d5c202"
+    },
+    {
+      "role": "retained_source",
+      "path": "methods/RMT-METHODS-001/evidence/server_002/QUANTIZATION_BOUNDS.tsv",
+      "bytes": 2069,
+      "sha256": "983a099dca0f7fcbae761df5f11f24f6d89faf21f5c6e94a232c76d7554b3c75"
+    },
+    {
+      "role": "retained_source",
+      "path": "methods/RMT-METHODS-001/results/server_run_001/facts/FACTS.json",
+      "bytes": 129965,
+      "sha256": "96927fbb8ed75d758e5c6f7f62fc9283cdebe5f1f9588125e25641e3965a99c0"
+    },
+    {
+      "role": "retained_source",
+      "path": "methods/RMT-METHODS-001/results/server_run_001/facts/METHOD_CHECKS.json",
+      "bytes": 91875,
+      "sha256": "5c3c5159882dddeb0d8b54b292f840ccc6f8943f5c14b387b32891e788da6386"
+    },
+    {
+      "role": "retained_source",
+      "path": "methods/RMT-METHODS-001/results/server_run_001/facts/READ_MAP_REGRESSION.json",
+      "bytes": 9371,
+      "sha256": "92b28c60d0a3eff912d8dfcd0c4a1bcb2671232e1d2051f1f96e06946feecd8a"
+    },
+    {
+      "role": "retained_source",
+      "path": "methods/RMT-METHODS-001/results/server_run_001/robustness/LEGACY_RECONCILIATION.json",
+      "bytes": 1724,
+      "sha256": "79b046988a30775d9832e98b3a0415a45107fe8277f5d0e092d441d8d4dc0b4d"
+    },
+    {
+      "role": "retained_source",
+      "path": "methods/RMT-METHODS-001/results/server_run_001/robustness/METRICS.json",
+      "bytes": 1698573,
+      "sha256": "8c9a31cbcfe2650fe72c593b9d6278997f8a5e1cd889d2862610b73fe0e874c2"
+    },
+    {
+      "role": "retained_source",
+      "path": "methods/RMT-METHODS-001/results/server_run_001/robustness/METRICS.tsv",
+      "bytes": 562814,
+      "sha256": "6f337e18685b6dc970a324697bfa23a26af3e399f5ce741748bc13b84c54ab8c"
+    },
+    {
+      "role": "retained_source",
+      "path": "methods/RMT-METHODS-001/results/server_run_001/robustness/NATIVE_COUNTS.json",
+      "bytes": 1782,
+      "sha256": "1e1f34d5d60bc7a5f517bc7fb3d74bb548c8ed7212fa06562ccbfff37cd25ab9"
+    },
+    {
+      "role": "retained_source",
+      "path": "methods/RMT-METHODS-001/results/server_run_001/robustness/SAMPLING_FRAME.tsv",
+      "bytes": 7443,
+      "sha256": "04673a24fad033d0bc31a003027386cd3f6d01baa5ec100b5da2fec7be7daa8a"
+    },
+    {
+      "role": "retained_source",
+      "path": "methods/RMT-METHODS-TARGETED-001/INPUTS.json",
+      "bytes": 1548,
+      "sha256": "0fddb573e54c5dc39c6d8676e1b3a5f2c9d42b28abd6fa3139cfc8df771bf2c0"
+    },
+    {
+      "role": "retained_source",
+      "path": "methods/RMT-METHODS-TARGETED-001/PROTOCOL.json",
+      "bytes": 4909,
+      "sha256": "f316813640ec10df5efcd943f52219a84b0b0feed39666f6e6e8c5d49c469d33"
+    },
+    {
+      "role": "retained_source",
+      "path": "methods/RMT-METHODS-TARGETED-001/code/analyze.py",
+      "bytes": 14175,
+      "sha256": "d782ac384b58c0069a25099e2c1d1fb48a91ce7ec3906dfdba3bc787f78a44d8"
+    },
+    {
+      "role": "retained_source",
+      "path": "methods/RMT-METHODS-TARGETED-001/code/run_science.py",
+      "bytes": 1669,
+      "sha256": "603610cf3885b24ff4ddc80c4d318307c55d9f6a9582cf69c4514e48f1a69448"
+    },
+    {
+      "role": "retained_source",
+      "path": "methods/RMT-METHODS-TARGETED-001/code/summarize_results.py",
+      "bytes": 3558,
+      "sha256": "0b849495d4f403acb0ed70c37a58733190fd84ad089ddb8c67cbd0c27b8b80a5"
+    },
+    {
+      "role": "retained_source",
+      "path": "methods/RMT-METHODS-TARGETED-001/code/test_analysis.py",
+      "bytes": 1946,
+      "sha256": "b4c5af35d833c547c1f75636d07ff4ef7a49f129b9c61a1bc6aef3f5bedfb74d"
+    },
+    {
+      "role": "retained_source",
+      "path": "methods/RMT-METHODS-TARGETED-001/run_001/results/CONTROLLED_HIDING_BOUNDS.tsv",
+      "bytes": 1250,
+      "sha256": "c225cd507cdcf4a341b44d874acb7233d530016fa516e7256c43128bd6db8be0"
+    },
+    {
+      "role": "retained_source",
+      "path": "methods/RMT-METHODS-TARGETED-001/run_001/results/EXCLUSION_REASONS.tsv",
+      "bytes": 26474,
+      "sha256": "26fe1bd5c1803fc7095a5f55c213abeb92593f567699b859182512e636f168f9"
+    },
+    {
+      "role": "retained_source",
+      "path": "methods/RMT-METHODS-TARGETED-001/run_001/results/FILTER_CLASS_METRICS.tsv",
+      "bytes": 174874,
+      "sha256": "7ac709547213833c8aafbf3ad4a4ab10261a97f9845562c14ff3fa5055747959"
+    },
+    {
+      "role": "retained_source",
+      "path": "methods/RMT-METHODS-TARGETED-001/run_001/results/FILTER_CURVES.tsv",
+      "bytes": 175297,
+      "sha256": "441bdb5accc32aa4dfb2f2d0f5bbed97a03ea28896000e4ed6dee49a944c4411"
+    },
+    {
+      "role": "retained_source",
+      "path": "methods/RMT-METHODS-TARGETED-001/run_001/results/FIXED_CONSTRUCT_WEIGHTS.tsv",
+      "bytes": 3295,
+      "sha256": "63e6f6eca02bba403737e9d6bbbfb35d01b1baf3ba0dd57c619c15a3eebbdfdb"
+    },
+    {
+      "role": "retained_source",
+      "path": "methods/RMT-METHODS-TARGETED-001/run_001/results/LOSS_DECOMPOSITION.tsv",
+      "bytes": 8560,
+      "sha256": "8569c7e59ee6e9cc478e62a495e243f2f519acc0ddfecd1eded28a4afb26a837"
+    },
+    {
+      "role": "retained_source",
+      "path": "methods/RMT-METHODS-TARGETED-001/run_001/results/PARENT_RECONCILIATION.tsv",
+      "bytes": 17149,
+      "sha256": "0e2f7320c983d3cacf2d89181c7781abb4ba8804ad2457dca941d907f96f0e31"
+    },
+    {
+      "role": "retained_source",
+      "path": "methods/RMT-METHODS-TARGETED-001/run_001/results/SITE_VARIANCE_IDENTITY.tsv",
+      "bytes": 6191,
+      "sha256": "0fcf618fee1a8f08de3bb095fe71de01a87a0498aa2b60dbb3b2e8a14f35b376"
+    },
+    {
+      "role": "retained_source",
+      "path": "methods/RMT-METHODS-TARGETED-001/sensitivity_001/CONSTRUCT_CONSISTENCY_SOURCE.csv",
+      "bytes": 120214,
+      "sha256": "96c7ef083887ecb9461531a00e67103349e1093623f026c5ac3956a86b4195e8"
+    },
+    {
+      "role": "retained_source",
+      "path": "methods/RMT-METHODS-TARGETED-001/sensitivity_001/INPUTS.json",
+      "bytes": 1848,
+      "sha256": "35de8d52ebb1d9c53ebf102102658f43197df864b02b277ed4206cefae62daae"
+    },
+    {
+      "role": "retained_source",
+      "path": "methods/RMT-METHODS-TARGETED-001/sensitivity_001/PROTOCOL.json",
+      "bytes": 4510,
+      "sha256": "22a1849d1ce87105ecef0f43b947dec8c0ee26a3cf7d56e40f290f537833deeb"
+    },
+    {
+      "role": "retained_source",
+      "path": "methods/RMT-METHODS-TARGETED-001/sensitivity_001/code/analyze_intervals.py",
+      "bytes": 13818,
+      "sha256": "9de9126d7a074e0f835a62b7d48944befb6da625826a3e4b4834785b3d319934"
+    },
+    {
+      "role": "retained_source",
+      "path": "methods/RMT-METHODS-TARGETED-001/sensitivity_001/code/present_constructs.py",
+      "bytes": 11907,
+      "sha256": "ce0debc4d59801b1458d12eaaeea382b2318e569362e5340c58c35077672f8b2"
+    },
+    {
+      "role": "retained_source",
+      "path": "methods/RMT-METHODS-TARGETED-001/sensitivity_001/code/run.py",
+      "bytes": 1536,
+      "sha256": "26bd3bc9fd6513a4891049521d20edcf64a7ec52abd80d1ace4511a4777b0184"
+    },
+    {
+      "role": "retained_source",
+      "path": "methods/RMT-METHODS-TARGETED-001/sensitivity_001/code/test_intervals.py",
+      "bytes": 4291,
+      "sha256": "6013ef894ba8cf821868c129437fd8de7872112fa7551152b38c5ce5353a842e"
+    },
+    {
+      "role": "retained_source",
+      "path": "methods/RMT-METHODS-TARGETED-001/sensitivity_001/run_001/results/CLASS_INTERVALS.tsv",
+      "bytes": 126565,
+      "sha256": "5d6e51aa0357cd3f6277a1fc87d2f2ece294b03f77e37c4db337b8486bc5fa16"
+    },
+    {
+      "role": "retained_source",
+      "path": "methods/RMT-METHODS-TARGETED-001/sensitivity_001/run_001/results/DECOMPOSITION_ENCLOSURES.tsv",
+      "bytes": 6868,
+      "sha256": "4782858df3b2733105e16e27f1b1e0182cbd8ab9e0793b2a56c3795c2de15311"
+    },
+    {
+      "role": "retained_source",
+      "path": "methods/RMT-METHODS-TARGETED-001/sensitivity_001/run_001/results/DIRECTION_CERTIFICATION.tsv",
+      "bytes": 369877,
+      "sha256": "e98ee2ec7c4c53a7ea10a4e51139d96a8d9cefe8ff393ea7a5a6dc635240630c"
+    },
+    {
+      "role": "retained_source",
+      "path": "methods/RMT-METHODS-TARGETED-001/sensitivity_001/run_001/results/FIXED_CONSTRUCT_INTERVALS.tsv",
+      "bytes": 2524,
+      "sha256": "b9a4138e19be743dcc0ef85f9338410152bb2285917724e5ba4c4409b5698c4a"
+    },
+    {
+      "role": "retained_source",
+      "path": "methods/RMT-METHODS-TARGETED-001/sensitivity_001/run_001/results/PARENT_RECONCILIATION.tsv",
+      "bytes": 172981,
+      "sha256": "07c8c23ff2713aa38d41d8ec21787578a4240cb672e0e2b533eca4223473bc9e"
+    },
+    {
+      "role": "retained_source",
+      "path": "methods/RMT-METHODS-TARGETED-001/sensitivity_001/run_001/results/SUMMARY_INTERVALS.tsv",
+      "bytes": 90060,
+      "sha256": "06e0eb05022bd3bf21a89ecac39280652a8f596b497abcb1958d4224c7b51dc4"
+    },
+    {
+      "role": "retained_source",
+      "path": "methods/RMT-METHODS-TARGETED-001/tool/PARENT_SOURCE_BINDING.json",
+      "bytes": 1924,
+      "sha256": "e7e3eccae06d25ececb9ea51f43c133a19847c1586cd6e659237328e284f6713"
+    },
+    {
+      "role": "retained_source",
+      "path": "methods/RMT-METHODS-TARGETED-001/tool/README.md",
+      "bytes": 7312,
+      "sha256": "b2cfb738900d154dc3c80147a992d0aee6be454861108e42dc184192c3b3f5f9"
+    },
+    {
+      "role": "retained_source",
+      "path": "methods/RMT-METHODS-TARGETED-001/tool/build_backend.py",
+      "bytes": 2227,
+      "sha256": "2eeb98bda4a1b04dcfe2a190dfb3d06491b05f3387cc1bbfb90154129470a79f"
+    },
+    {
+      "role": "retained_source",
+      "path": "methods/RMT-METHODS-TARGETED-001/tool/pyproject.toml",
+      "bytes": 337,
+      "sha256": "61e3fb94d0c7a5196cbf04cf8dfc260f4ba98fd2c35ed6685a2ee81213792471"
+    },
+    {
+      "role": "retained_source",
+      "path": "methods/RMT-METHODS-TARGETED-001/tool/src/rmt_targeted/__init__.py",
+      "bytes": 83,
+      "sha256": "48d849fe681a54741c6432f5e3813091b913957685ec0fa17e23273817215b3e"
+    },
+    {
+      "role": "retained_source",
+      "path": "methods/RMT-METHODS-TARGETED-001/tool/src/rmt_targeted/__main__.py",
+      "bytes": 49,
+      "sha256": "76fa916e93e0ae1a6c1bb51dcc0bcf289c014e9f760a47165f8a84401ccf41d7"
+    },
+    {
+      "role": "retained_source",
+      "path": "methods/RMT-METHODS-TARGETED-001/tool/src/rmt_targeted/b2_core.py",
+      "bytes": 8070,
+      "sha256": "4fb32f6686c8470339aea624e3a32f9aab2141cb772778d3b2cf728ca7ec8e2b"
+    },
+    {
+      "role": "retained_source",
+      "path": "methods/RMT-METHODS-TARGETED-001/tool/src/rmt_targeted/bundle.py",
+      "bytes": 2796,
+      "sha256": "e8eeab5b9dc05f0f828580be8816fe56c54664ecc877ad162dbee7ec63748f62"
+    },
+    {
+      "role": "retained_source",
+      "path": "methods/RMT-METHODS-TARGETED-001/tool/src/rmt_targeted/cli.py",
+      "bytes": 5027,
+      "sha256": "780b158a3cfb8258f824b67a6a86c890949e34b7c1cfbeff26062cd4f9522518"
+    },
+    {
+      "role": "retained_source",
+      "path": "methods/RMT-METHODS-TARGETED-001/tool/src/rmt_targeted/example.py",
+      "bytes": 4495,
+      "sha256": "747668707d45e97b07713ca19305422bd2735af24b3254bfee2f07a797fa9a8d"
+    },
+    {
+      "role": "retained_source",
+      "path": "methods/RMT-METHODS-TARGETED-001/tool/src/rmt_targeted/guard.py",
+      "bytes": 9443,
+      "sha256": "a30eee722fca6ed8c8115c0e93703143dced906c4379e261eacf8016399942bc"
+    },
+    {
+      "role": "retained_source",
+      "path": "methods/RMT-METHODS-TARGETED-001/tool/src/rmt_targeted/rmt_core.py",
+      "bytes": 8397,
+      "sha256": "ec7aa1f1b8b5a1fbede44df55283fd9a60b6c94081b4b1076e7b702f361493eb"
+    },
+    {
+      "role": "retained_source",
+      "path": "methods/RMT-METHODS-TARGETED-001/tool/src/rmt_targeted/summary.py",
+      "bytes": 5129,
+      "sha256": "f75c91231b80ba1f0c0070418e86509e3d33e42be6d7022ad3624236a785baa8"
+    },
+    {
+      "role": "retained_source",
+      "path": "methods/RMT-METHODS-TARGETED-001/tool/tests/test_tool.py",
+      "bytes": 11261,
+      "sha256": "5d2c837fe9e3012ebba25f8afb838b183e743328dc848796eaaa6f55dcb0a31f"
+    }
+  ]
+}

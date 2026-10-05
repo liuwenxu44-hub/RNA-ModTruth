@@ -1,0 +1,7 @@
+full_contingency_table: [["ground_truth_label","A","17596","69426","a","C","G","T","Deletion"],["A",2203420,20537,8971,93568,4872,5130,7299,17166],["a",213424,6081,12798,2049935,5801,4651,10044,18808]]
+raw_accuracy: 92.26556
+raw_contingency_table: [["ground_truth_label","A","17596","69426","a"],["A",2161503,20146,8800,91788],["a",213424,6081,12798,2049935]]
+filter_threshold: 0.6875
+percent_of_mod_called_removed: 9.84794527300511
+filtered_accuracy: 95.826164
+filtered_contingency_table: [["ground_truth_label","A","17596","69426","a"],["A",2034701,8690,3275,40903],["a",112497,1720,4667,1908515]]

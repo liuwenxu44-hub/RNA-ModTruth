@@ -1,0 +1,16 @@
+[build-system]
+requires = []
+build-backend = "build_backend"
+backend-path = ["."]
+
+[project]
+name = "rmt-targeted"
+version = "0.1.0"
+description = "Local source-bound export validation and conditional summaries"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+rmt-targeted = "rmt_targeted.cli:main"
+

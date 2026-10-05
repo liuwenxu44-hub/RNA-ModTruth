@@ -1,0 +1,38 @@
+{
+  "id": "RMT-METHODS-TARGETED-001/sensitivity_001",
+  "analysis_class": "POSTHOC_QUANTIZATION_SENSITIVITY",
+  "prior_results_seen": true,
+  "scientific_question": "Does the newly observed midpoint-defined high-threshold equal-class Brier pattern survive uncertainty in recorded ML probabilities and threshold membership?",
+  "population": "Same four frozen saved joins, original N eligible and O explicit, both releases separate, all constructs. This does not identify missing native scores or performance on N/all molecules.",
+  "thresholds": [
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9,
+    0.95,
+    0.99
+  ],
+  "selection": "Symmetric max(q,1-q)>=t only. t=0.5 is the O baseline. No new threshold, optimum selection, one-sided sweep or new resampling.",
+  "interval_model": "Each explicit prequantization model score q, not biological true probability, is constrained by the existing marginal ML interval [m/256,(m+1)/256). No extra cross-record/cross-modification constraints are imposed. Envelopes are conservative if further constraints exist; no stochastic independence assumption, confidence interval, new statistical-method or model ranking claim.",
+  "layers": {
+    "midpoint_reference": "Copy prior midpoint-defined counts and metrics with exact hash/selector and reconcile newly read histograms",
+    "fixed_membership": "Keep S chosen by recorded midpoint, vary only q within original ML intervals. Use endpoint infima/suprema for class, observed and equal-class Brier; these do not enforce latent q selection on fixed S",
+    "variable_membership": "For each bin intersect its half-open interval with q<=1-t or q>=t. Distinguish mandatory, optional and impossible retention. For retained q compute loss infimum/supremum on the actual retained intersection; count of selected optional records can be any integer 0..n. Optimize mean loss with its selected denominator, not only total loss or all-in/all-out scenarios"
+  },
+  "ratio_optimization": "For each bound combine mandatory endpoint loss totals with optional-bin endpoint losses. Sort optional-bin endpoint losses ascending for infimum or descending for supremum. Starting with mandatory records, include the whole next bin only if it improves the current ratio. Along a single equal-loss bin the derivative has fixed sign, so an optimum is at zero/all counts (ties immaterial). If no mandatory records, bound the nonempty-selected estimand and explicitly flag possible empty selection. Empty feasible selection is not silently made estimable.",
+  "weights": "Observed selected composition, 1/2 per class, and original 1/K per construct with 1/2 within class. Original K=5/32. Any required class lacking guaranteed nonzero retention flags potential undefined estimate; do not drop groups or silently renormalize.",
+  "contrasts": "All six adjacent threshold comparisons and every threshold against t=0.5, with all results retained. Lower_next-upper_previous>tol certifies increase; upper_next-lower_previous<-tol certifies decrease. Otherwise NOT_CERTIFIED_BY_MARGINAL_ENVELOPES. Separate per-threshold envelopes ignore coupling of the same q across thresholds, so overlap never proves a feasible reversal or equality.",
+  "decomposition": "For ALL truth-class decomposition versus t=0.5, form conservative interval-arithmetic enclosures for within-class and class-weight terms using marginal class-loss and selected-class-weight ranges. Report sign/dominance only if strictly separated under tol. These component ranges are not sharp joint bounds and their endpoints must not be added as a decomposition identity. Reconcile exact midpoint terms with the original result.",
+  "numeric_tolerance": 1e-10,
+  "missingness": "Existing N and O stay fixed, eligible omitted scores stay missing. No inferred historical omission threshold, deletion/base mismatch promotion or zero filling.",
+  "item2": "Re-present the existing five 2025 construct curves for all seven thresholds in readable Markdown and machine-readable source table with hashes/selectors. Show provider-condition truth and scored denominators. No leave-one-construct-out, no significance test, no biological-replicate interpretation. Reused values are labelled REUSED_PRIOR_RESULT, not new independent evidence.",
+  "outputs": [
+    "class and pooled interval tables",
+    "fixed-construct interval table",
+    "direction-certification table",
+    "conservative class-decomposition enclosures",
+    "prior reconciliation",
+    "construct consistency source crosswalk"
+  ]
+}
